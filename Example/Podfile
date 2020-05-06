@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'LSBluetoothSDK_Demo_iOS_Example' do
+  pod 'LSBluetoothSDK_Demo_iOS', :path => '../'
+
+  target 'LSBluetoothSDK_Demo_iOS_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
