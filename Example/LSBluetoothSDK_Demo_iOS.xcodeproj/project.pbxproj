@@ -13,15 +13,62 @@
 		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
 		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
 		6003F59E195388D20070C39A /* LSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* LSAppDelegate.m */; };
-		6003F5A7195388D20070C39A /* LSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* LSViewController.m */; };
-		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
 		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
-		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
-		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		B384F45624629F4E00874E2E /* CustomTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = B384F3D324629F4D00874E2E /* CustomTableView.m */; };
+		B384F45724629F4E00874E2E /* weight_scale.png in Resources */ = {isa = PBXBuildFile; fileRef = B384F3D424629F4D00874E2E /* weight_scale.png */; };
+		B384F45824629F4E00874E2E /* ScanFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = B384F3D624629F4D00874E2E /* ScanFilter.m */; };
+		B384F45924629F4E00874E2E /* ic_user_info.png in Resources */ = {isa = PBXBuildFile; fileRef = B384F3D724629F4D00874E2E /* ic_user_info.png */; };
+		B384F45A24629F4E00874E2E /* DeviceAlarmClock+Handler.m in Sources */ = {isa = PBXBuildFile; fileRef = B384F3D924629F4D00874E2E /* DeviceAlarmClock+Handler.m */; };
+		B384F45B24629F4E00874E2E /* LSBluetooth-Demo.podspec in Resources */ = {isa = PBXBuildFile; fileRef = B384F3DA24629F4D00874E2E /* LSBluetooth-Demo.podspec */; };
+		B384F45C24629F4E00874E2E /* DeviceUserProfiles.m in Sources */ = {isa = PBXBuildFile; fileRef = B384F3DB24629F4D00874E2E /* DeviceUserProfiles.m */; };
+		B384F45D24629F4E00874E2E /* UserDetailsTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B384F3DD24629F4D00874E2E /* UserDetailsTVC.m */; };
+		B384F45E24629F4E00874E2E /* DataFormatConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = B384F3DF24629F4D00874E2E /* DataFormatConverter.m */; };
+		B384F45F24629F4E00874E2E /* ic_device_list.png in Resources */ = {isa = PBXBuildFile; fileRef = B384F3E124629F4D00874E2E /* ic_device_list.png */; };
+		B384F46024629F4E00874E2E /* LSDeviceSettingProfiles.m in Sources */ = {isa = PBXBuildFile; fileRef = B384F3E324629F4D00874E2E /* LSDeviceSettingProfiles.m */; };
+		B384F46124629F4E00874E2E /* ic_user_info_header.png in Resources */ = {isa = PBXBuildFile; fileRef = B384F3E424629F4D00874E2E /* ic_user_info_header.png */; };
+		B384F46224629F4E00874E2E /* LSUsageExample.m in Sources */ = {isa = PBXBuildFile; fileRef = B384F3E724629F4D00874E2E /* LSUsageExample.m */; };
+		B384F46324629F4E00874E2E /* unknown.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B384F3E824629F4D00874E2E /* unknown.jpg */; };
+		B384F46424629F4E00874E2E /* BleDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = B384F3EB24629F4D00874E2E /* BleDevice.m */; };
+		B384F46524629F4E00874E2E /* UserNameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B384F3EC24629F4D00874E2E /* UserNameCell.xib */; };
+		B384F46624629F4E00874E2E /* BleDevice+Handler.m in Sources */ = {isa = PBXBuildFile; fileRef = B384F3EE24629F4D00874E2E /* BleDevice+Handler.m */; };
+		B384F46724629F4E00874E2E /* DeviceUserProfiles+Handler.m in Sources */ = {isa = PBXBuildFile; fileRef = B384F3EF24629F4D00874E2E /* DeviceUserProfiles+Handler.m */; };
+		B384F46824629F4E00874E2E /* DeviceAlarmClock.m in Sources */ = {isa = PBXBuildFile; fileRef = B384F3F024629F4D00874E2E /* DeviceAlarmClock.m */; };
+		B384F46924629F4E00874E2E /* DeviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B384F3F224629F4D00874E2E /* DeviceViewController.m */; };
+		B384F46A24629F4E00874E2E /* DeviceUser+Handler.m in Sources */ = {isa = PBXBuildFile; fileRef = B384F3F324629F4D00874E2E /* DeviceUser+Handler.m */; };
+		B384F46B24629F4E00874E2E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B384F3F424629F4D00874E2E /* LaunchScreen.xib */; };
+		B384F46C24629F4E00874E2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B384F3F624629F4D00874E2E /* Main.storyboard */; };
+		B384F46D24629F4E00874E2E /* ChooseDeviceTypeTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B384F3F824629F4D00874E2E /* ChooseDeviceTypeTVC.m */; };
+		B384F46E24629F4E00874E2E /* LSDatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B384F3F924629F4D00874E2E /* LSDatabaseManager.m */; };
+		B384F46F24629F4E00874E2E /* pedometer.png in Resources */ = {isa = PBXBuildFile; fileRef = B384F3FA24629F4D00874E2E /* pedometer.png */; };
+		B384F47024629F4E00874E2E /* DeviceUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B384F3FD24629F4D00874E2E /* DeviceUser.m */; };
+		B384F47124629F4E00874E2E /* UserNameTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B384F3FE24629F4D00874E2E /* UserNameTableViewCell.m */; };
+		B384F47324629F4E00874E2E /* blood_pressure.png in Resources */ = {isa = PBXBuildFile; fileRef = B384F40224629F4D00874E2E /* blood_pressure.png */; };
+		B384F47424629F4E00874E2E /* ScanResultsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B384F40324629F4D00874E2E /* ScanResultsTableViewCell.m */; };
+		B384F47524629F4E00874E2E /* AlertViewUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = B384F40424629F4D00874E2E /* AlertViewUtils.m */; };
+		B384F47724629F4E00874E2E /* DeviceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B384F40624629F4D00874E2E /* DeviceTableViewCell.m */; };
+		B384F47924629F4E00874E2E /* height.png in Resources */ = {isa = PBXBuildFile; fileRef = B384F40A24629F4D00874E2E /* height.png */; };
+		B384F47A24629F4E00874E2E /* ScanResultsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B384F40B24629F4D00874E2E /* ScanResultsCell.xib */; };
+		B384F47B24629F4E00874E2E /* PairedDeviceListTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B384F40D24629F4D00874E2E /* PairedDeviceListTVC.m */; };
+		B384F47C24629F4E00874E2E /* fat_scale.png in Resources */ = {isa = PBXBuildFile; fileRef = B384F40F24629F4D00874E2E /* fat_scale.png */; };
+		B384F47D24629F4E00874E2E /* NSDate+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = B384F41024629F4D00874E2E /* NSDate+Utils.m */; };
+		B384F47E24629F4E00874E2E /* kitchen_scale.png in Resources */ = {isa = PBXBuildFile; fileRef = B384F41124629F4D00874E2E /* kitchen_scale.png */; };
+		B384F47F24629F4E00874E2E /* DeviceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B384F41224629F4D00874E2E /* DeviceCell.xib */; };
+		B384F48024629F4E00874E2E /* SearchDeviceTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B384F41324629F4D00874E2E /* SearchDeviceTVC.m */; };
+		B384F48A24629F4E00874E2E /* ScanFilter+Handler.m in Sources */ = {isa = PBXBuildFile; fileRef = B384F42C24629F4D00874E2E /* ScanFilter+Handler.m */; };
+		B384F48B24629F4E00874E2E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B384F42D24629F4D00874E2E /* Info.plist */; };
+		B384F48C24629F4E00874E2E /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B384F42E24629F4D00874E2E /* Model.xcdatamodeld */; };
+		B384F48D24629F4E00874E2E /* LSDeviceSettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B384F43724629F4D00874E2E /* LSDeviceSettingItem.m */; };
+		B384F48E24629F4E00874E2E /* PedometerSettingTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B384F43824629F4D00874E2E /* PedometerSettingTVC.m */; };
+		B384F48F24629F4E00874E2E /* BaseSettingItemTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B384F43924629F4D00874E2E /* BaseSettingItemTVC.m */; };
+		B384F49024629F4E00874E2E /* PedometerAlarmClockTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B384F43A24629F4D00874E2E /* PedometerAlarmClockTVC.m */; };
+		B384F49124629F4E00874E2E /* FatScaleSettingTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B384F43C24629F4D00874E2E /* FatScaleSettingTVC.m */; };
+		B384F49224629F4E00874E2E /* UpgradeFileItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B384F43E24629F4D00874E2E /* UpgradeFileItem.m */; };
+		B384F49624629F4E00874E2E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B384F44324629F4D00874E2E /* Images.xcassets */; };
+		B384F49924629F8C00874E2E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B384F49724629F8C00874E2E /* LaunchScreen.xib */; };
 		BE2A21D94CB7B1D14FAFE49A /* Pods_LSBluetoothSDK_Demo_iOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2DF8A0C833D7379809C928C /* Pods_LSBluetoothSDK_Demo_iOS_Tests.framework */; };
 		F400D7C22E361C90337D556E /* Pods_LSBluetoothSDK_Demo_iOS_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B6FB95582E469913583C7D8 /* Pods_LSBluetoothSDK_Demo_iOS_Example.framework */; };
 /* End PBXBuildFile section */
@@ -50,23 +97,105 @@
 		6003F59B195388D20070C39A /* LSBluetoothSDK_Demo_iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LSBluetoothSDK_Demo_iOS-Prefix.pch"; sourceTree = "<group>"; };
 		6003F59C195388D20070C39A /* LSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSAppDelegate.h; sourceTree = "<group>"; };
 		6003F59D195388D20070C39A /* LSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A5195388D20070C39A /* LSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSViewController.h; sourceTree = "<group>"; };
-		6003F5A6195388D20070C39A /* LSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSViewController.m; sourceTree = "<group>"; };
-		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* LSBluetoothSDK_Demo_iOS_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LSBluetoothSDK_Demo_iOS_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7CFD97EF8439B242FDDC3E5D /* Pods-LSBluetoothSDK_Demo_iOS_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSBluetoothSDK_Demo_iOS_Tests.release.xcconfig"; path = "Target Support Files/Pods-LSBluetoothSDK_Demo_iOS_Tests/Pods-LSBluetoothSDK_Demo_iOS_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B384F3D324629F4D00874E2E /* CustomTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableView.m; sourceTree = "<group>"; };
+		B384F3D424629F4D00874E2E /* weight_scale.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weight_scale.png; sourceTree = "<group>"; };
+		B384F3D524629F4D00874E2E /* UserNameTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserNameTableViewCell.h; sourceTree = "<group>"; };
+		B384F3D624629F4D00874E2E /* ScanFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanFilter.m; sourceTree = "<group>"; };
+		B384F3D724629F4D00874E2E /* ic_user_info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_user_info.png; sourceTree = "<group>"; };
+		B384F3D824629F4D00874E2E /* DeviceUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceUser.h; sourceTree = "<group>"; };
+		B384F3D924629F4D00874E2E /* DeviceAlarmClock+Handler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DeviceAlarmClock+Handler.m"; sourceTree = "<group>"; };
+		B384F3DA24629F4D00874E2E /* LSBluetooth-Demo.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "LSBluetooth-Demo.podspec"; sourceTree = "<group>"; };
+		B384F3DB24629F4D00874E2E /* DeviceUserProfiles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceUserProfiles.m; sourceTree = "<group>"; };
+		B384F3DD24629F4D00874E2E /* UserDetailsTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDetailsTVC.m; sourceTree = "<group>"; };
+		B384F3DE24629F4D00874E2E /* DeviceTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceTableViewCell.h; sourceTree = "<group>"; };
+		B384F3DF24629F4D00874E2E /* DataFormatConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataFormatConverter.m; sourceTree = "<group>"; };
+		B384F3E024629F4D00874E2E /* AlertViewUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertViewUtils.h; sourceTree = "<group>"; };
+		B384F3E124629F4D00874E2E /* ic_device_list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_device_list.png; sourceTree = "<group>"; };
+		B384F3E224629F4D00874E2E /* ScanResultsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanResultsTableViewCell.h; sourceTree = "<group>"; };
+		B384F3E324629F4D00874E2E /* LSDeviceSettingProfiles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSDeviceSettingProfiles.m; sourceTree = "<group>"; };
+		B384F3E424629F4D00874E2E /* ic_user_info_header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_user_info_header.png; sourceTree = "<group>"; };
+		B384F3E524629F4D00874E2E /* SearchDeviceTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchDeviceTVC.h; sourceTree = "<group>"; };
+		B384F3E624629F4D00874E2E /* NSDate+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utils.h"; sourceTree = "<group>"; };
+		B384F3E724629F4D00874E2E /* LSUsageExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSUsageExample.m; sourceTree = "<group>"; };
+		B384F3E824629F4D00874E2E /* unknown.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = unknown.jpg; sourceTree = "<group>"; };
+		B384F3E924629F4D00874E2E /* DatabaseManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseManagerDelegate.h; sourceTree = "<group>"; };
+		B384F3EA24629F4D00874E2E /* PairedDeviceListTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PairedDeviceListTVC.h; sourceTree = "<group>"; };
+		B384F3EB24629F4D00874E2E /* BleDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BleDevice.m; sourceTree = "<group>"; };
+		B384F3EC24629F4D00874E2E /* UserNameCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserNameCell.xib; sourceTree = "<group>"; };
+		B384F3ED24629F4D00874E2E /* UpgradeFileItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpgradeFileItem.h; sourceTree = "<group>"; };
+		B384F3EE24629F4D00874E2E /* BleDevice+Handler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BleDevice+Handler.m"; sourceTree = "<group>"; };
+		B384F3EF24629F4D00874E2E /* DeviceUserProfiles+Handler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DeviceUserProfiles+Handler.m"; sourceTree = "<group>"; };
+		B384F3F024629F4D00874E2E /* DeviceAlarmClock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceAlarmClock.m; sourceTree = "<group>"; };
+		B384F3F124629F4D00874E2E /* ScanFilter+Handler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ScanFilter+Handler.h"; sourceTree = "<group>"; };
+		B384F3F224629F4D00874E2E /* DeviceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceViewController.m; sourceTree = "<group>"; };
+		B384F3F324629F4D00874E2E /* DeviceUser+Handler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DeviceUser+Handler.m"; sourceTree = "<group>"; };
+		B384F3F524629F4D00874E2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B384F3F724629F4D00874E2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B384F3F824629F4D00874E2E /* ChooseDeviceTypeTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseDeviceTypeTVC.m; sourceTree = "<group>"; };
+		B384F3F924629F4D00874E2E /* LSDatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSDatabaseManager.m; sourceTree = "<group>"; };
+		B384F3FA24629F4D00874E2E /* pedometer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pedometer.png; sourceTree = "<group>"; };
+		B384F3FB24629F4D00874E2E /* DeviceUserProfiles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceUserProfiles.h; sourceTree = "<group>"; };
+		B384F3FC24629F4D00874E2E /* DeviceAlarmClock+Handler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DeviceAlarmClock+Handler.h"; sourceTree = "<group>"; };
+		B384F3FD24629F4D00874E2E /* DeviceUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceUser.m; sourceTree = "<group>"; };
+		B384F3FE24629F4D00874E2E /* UserNameTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserNameTableViewCell.m; sourceTree = "<group>"; };
+		B384F3FF24629F4D00874E2E /* ScanFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanFilter.h; sourceTree = "<group>"; };
+		B384F40024629F4D00874E2E /* CustomTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableView.h; sourceTree = "<group>"; };
+		B384F40224629F4D00874E2E /* blood_pressure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blood_pressure.png; sourceTree = "<group>"; };
+		B384F40324629F4D00874E2E /* ScanResultsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanResultsTableViewCell.m; sourceTree = "<group>"; };
+		B384F40424629F4D00874E2E /* AlertViewUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertViewUtils.m; sourceTree = "<group>"; };
+		B384F40624629F4D00874E2E /* DeviceTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceTableViewCell.m; sourceTree = "<group>"; };
+		B384F40724629F4D00874E2E /* DataFormatConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataFormatConverter.h; sourceTree = "<group>"; };
+		B384F40824629F4D00874E2E /* UserDetailsTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDetailsTVC.h; sourceTree = "<group>"; };
+		B384F40A24629F4D00874E2E /* height.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = height.png; sourceTree = "<group>"; };
+		B384F40B24629F4D00874E2E /* ScanResultsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScanResultsCell.xib; sourceTree = "<group>"; };
+		B384F40C24629F4D00874E2E /* BleDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BleDevice.h; sourceTree = "<group>"; };
+		B384F40D24629F4D00874E2E /* PairedDeviceListTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PairedDeviceListTVC.m; sourceTree = "<group>"; };
+		B384F40E24629F4D00874E2E /* LSUsageExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSUsageExample.h; sourceTree = "<group>"; };
+		B384F40F24629F4D00874E2E /* fat_scale.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fat_scale.png; sourceTree = "<group>"; };
+		B384F41024629F4D00874E2E /* NSDate+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utils.m"; sourceTree = "<group>"; };
+		B384F41124629F4D00874E2E /* kitchen_scale.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kitchen_scale.png; sourceTree = "<group>"; };
+		B384F41224629F4D00874E2E /* DeviceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeviceCell.xib; sourceTree = "<group>"; };
+		B384F41324629F4D00874E2E /* SearchDeviceTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchDeviceTVC.m; sourceTree = "<group>"; };
+		B384F41424629F4D00874E2E /* LSDeviceSettingProfiles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSDeviceSettingProfiles.h; sourceTree = "<group>"; };
+		B384F42624629F4D00874E2E /* LSDatabaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSDatabaseManager.h; sourceTree = "<group>"; };
+		B384F42724629F4D00874E2E /* ChooseDeviceTypeTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseDeviceTypeTVC.h; sourceTree = "<group>"; };
+		B384F42824629F4D00874E2E /* LSDatabaseAvailability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSDatabaseAvailability.h; sourceTree = "<group>"; };
+		B384F42924629F4D00874E2E /* DeviceUser+Handler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DeviceUser+Handler.h"; sourceTree = "<group>"; };
+		B384F42A24629F4D00874E2E /* DeviceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceViewController.h; sourceTree = "<group>"; };
+		B384F42B24629F4D00874E2E /* DeviceAlarmClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceAlarmClock.h; sourceTree = "<group>"; };
+		B384F42C24629F4D00874E2E /* ScanFilter+Handler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ScanFilter+Handler.m"; sourceTree = "<group>"; };
+		B384F42D24629F4D00874E2E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B384F42F24629F4D00874E2E /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		B384F43024629F4D00874E2E /* BleDevice+Handler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BleDevice+Handler.h"; sourceTree = "<group>"; };
+		B384F43124629F4D00874E2E /* DeviceUserProfiles+Handler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DeviceUserProfiles+Handler.h"; sourceTree = "<group>"; };
+		B384F43324629F4D00874E2E /* BaseSettingItemTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseSettingItemTVC.h; sourceTree = "<group>"; };
+		B384F43424629F4D00874E2E /* PedometerSettingTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PedometerSettingTVC.h; sourceTree = "<group>"; };
+		B384F43524629F4D00874E2E /* PedometerAlarmClockTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PedometerAlarmClockTVC.h; sourceTree = "<group>"; };
+		B384F43624629F4D00874E2E /* FatScaleSettingTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FatScaleSettingTVC.h; sourceTree = "<group>"; };
+		B384F43724629F4D00874E2E /* LSDeviceSettingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSDeviceSettingItem.m; sourceTree = "<group>"; };
+		B384F43824629F4D00874E2E /* PedometerSettingTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PedometerSettingTVC.m; sourceTree = "<group>"; };
+		B384F43924629F4D00874E2E /* BaseSettingItemTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseSettingItemTVC.m; sourceTree = "<group>"; };
+		B384F43A24629F4D00874E2E /* PedometerAlarmClockTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PedometerAlarmClockTVC.m; sourceTree = "<group>"; };
+		B384F43B24629F4D00874E2E /* LSDeviceSettingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSDeviceSettingItem.h; sourceTree = "<group>"; };
+		B384F43C24629F4D00874E2E /* FatScaleSettingTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FatScaleSettingTVC.m; sourceTree = "<group>"; };
+		B384F43D24629F4D00874E2E /* LSSettinItemDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSSettinItemDelegate.h; sourceTree = "<group>"; };
+		B384F43E24629F4D00874E2E /* UpgradeFileItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpgradeFileItem.m; sourceTree = "<group>"; };
+		B384F44324629F4D00874E2E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "../../../BluetoothDemo-iOS/LSBluetooth-Demo/Images.xcassets"; sourceTree = "<group>"; };
+		B384F49824629F8C00874E2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "../../../BluetoothDemo-iOS/LSBluetooth-Demo/Base.lproj/LaunchScreen.xib"; sourceTree = "<group>"; };
+		B384F49A2462A16400874E2E /* LSSleepAnalyze.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LSSleepAnalyze.framework; path = "../../BluetoothDemo-iOS/LSSleepAnalyze.framework"; sourceTree = "<group>"; };
+		B384F49B2462A16500874E2E /* LSScaleFormula.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LSScaleFormula.framework; path = "../../BluetoothDemo-iOS/LSScaleFormula.framework"; sourceTree = "<group>"; };
 		D2DF8A0C833D7379809C928C /* Pods_LSBluetoothSDK_Demo_iOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LSBluetoothSDK_Demo_iOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB8D76C3DEDA3855C1B85090 /* Pods-LSBluetoothSDK_Demo_iOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSBluetoothSDK_Demo_iOS_Example.debug.xcconfig"; path = "Target Support Files/Pods-LSBluetoothSDK_Demo_iOS_Example/Pods-LSBluetoothSDK_Demo_iOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		F433629B7ACB3D190F684AA9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		F6E93C2F5644D7092A1F32E8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		FF4914AFC82F746520C394F9 /* LSBluetoothSDK_Demo_iOS.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LSBluetoothSDK_Demo_iOS.podspec; path = ../LSBluetoothSDK_Demo_iOS.podspec; sourceTree = "<group>"; };
+		F433629B7ACB3D190F684AA9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		F6E93C2F5644D7092A1F32E8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		FF4914AFC82F746520C394F9 /* LSBluetoothSDK_Demo_iOS.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LSBluetoothSDK_Demo_iOS.podspec; path = ../LSBluetoothSDK_Demo_iOS.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +232,6 @@
 				03857A882242646575931F2A /* Pods-LSBluetoothSDK_Demo_iOS_Tests.debug.xcconfig */,
 				7CFD97EF8439B242FDDC3E5D /* Pods-LSBluetoothSDK_Demo_iOS_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -131,6 +259,8 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B384F49B2462A16500874E2E /* LSScaleFormula.framework */,
+				B384F49A2462A16400874E2E /* LSSleepAnalyze.framework */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
@@ -144,13 +274,9 @@
 		6003F593195388D20070C39A /* Example for LSBluetoothSDK_Demo_iOS */ = {
 			isa = PBXGroup;
 			children = (
-				6003F59C195388D20070C39A /* LSAppDelegate.h */,
-				6003F59D195388D20070C39A /* LSAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A5195388D20070C39A /* LSViewController.h */,
-				6003F5A6195388D20070C39A /* LSViewController.m */,
-				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
-				6003F5A8195388D20070C39A /* Images.xcassets */,
+				B384F44324629F4D00874E2E /* Images.xcassets */,
+				B384F3D224629F4D00874E2E /* LSBluetooth-Demo */,
+				B384F49724629F8C00874E2E /* LaunchScreen.xib */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
 			name = "Example for LSBluetoothSDK_Demo_iOS";
@@ -160,6 +286,8 @@
 		6003F594195388D20070C39A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6003F59C195388D20070C39A /* LSAppDelegate.h */,
+				6003F59D195388D20070C39A /* LSAppDelegate.m */,
 				6003F595195388D20070C39A /* LSBluetoothSDK_Demo_iOS-Info.plist */,
 				6003F596195388D20070C39A /* InfoPlist.strings */,
 				6003F599195388D20070C39A /* main.m */,
@@ -197,6 +325,104 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		B384F3D224629F4D00874E2E /* LSBluetooth-Demo */ = {
+			isa = PBXGroup;
+			children = (
+				B384F3D324629F4D00874E2E /* CustomTableView.m */,
+				B384F3D424629F4D00874E2E /* weight_scale.png */,
+				B384F3D524629F4D00874E2E /* UserNameTableViewCell.h */,
+				B384F3D624629F4D00874E2E /* ScanFilter.m */,
+				B384F3D724629F4D00874E2E /* ic_user_info.png */,
+				B384F3D824629F4D00874E2E /* DeviceUser.h */,
+				B384F3D924629F4D00874E2E /* DeviceAlarmClock+Handler.m */,
+				B384F3DA24629F4D00874E2E /* LSBluetooth-Demo.podspec */,
+				B384F3DB24629F4D00874E2E /* DeviceUserProfiles.m */,
+				B384F3DD24629F4D00874E2E /* UserDetailsTVC.m */,
+				B384F3DE24629F4D00874E2E /* DeviceTableViewCell.h */,
+				B384F3DF24629F4D00874E2E /* DataFormatConverter.m */,
+				B384F3E024629F4D00874E2E /* AlertViewUtils.h */,
+				B384F3E124629F4D00874E2E /* ic_device_list.png */,
+				B384F3E224629F4D00874E2E /* ScanResultsTableViewCell.h */,
+				B384F3E324629F4D00874E2E /* LSDeviceSettingProfiles.m */,
+				B384F3E424629F4D00874E2E /* ic_user_info_header.png */,
+				B384F3E524629F4D00874E2E /* SearchDeviceTVC.h */,
+				B384F3E624629F4D00874E2E /* NSDate+Utils.h */,
+				B384F3E724629F4D00874E2E /* LSUsageExample.m */,
+				B384F3E824629F4D00874E2E /* unknown.jpg */,
+				B384F3E924629F4D00874E2E /* DatabaseManagerDelegate.h */,
+				B384F3EA24629F4D00874E2E /* PairedDeviceListTVC.h */,
+				B384F3EB24629F4D00874E2E /* BleDevice.m */,
+				B384F3EC24629F4D00874E2E /* UserNameCell.xib */,
+				B384F3ED24629F4D00874E2E /* UpgradeFileItem.h */,
+				B384F3EE24629F4D00874E2E /* BleDevice+Handler.m */,
+				B384F3EF24629F4D00874E2E /* DeviceUserProfiles+Handler.m */,
+				B384F3F024629F4D00874E2E /* DeviceAlarmClock.m */,
+				B384F3F124629F4D00874E2E /* ScanFilter+Handler.h */,
+				B384F3F224629F4D00874E2E /* DeviceViewController.m */,
+				B384F3F324629F4D00874E2E /* DeviceUser+Handler.m */,
+				B384F3F424629F4D00874E2E /* LaunchScreen.xib */,
+				B384F3F624629F4D00874E2E /* Main.storyboard */,
+				B384F3F824629F4D00874E2E /* ChooseDeviceTypeTVC.m */,
+				B384F3F924629F4D00874E2E /* LSDatabaseManager.m */,
+				B384F3FA24629F4D00874E2E /* pedometer.png */,
+				B384F3FB24629F4D00874E2E /* DeviceUserProfiles.h */,
+				B384F3FC24629F4D00874E2E /* DeviceAlarmClock+Handler.h */,
+				B384F3FD24629F4D00874E2E /* DeviceUser.m */,
+				B384F3FE24629F4D00874E2E /* UserNameTableViewCell.m */,
+				B384F3FF24629F4D00874E2E /* ScanFilter.h */,
+				B384F40024629F4D00874E2E /* CustomTableView.h */,
+				B384F40224629F4D00874E2E /* blood_pressure.png */,
+				B384F40324629F4D00874E2E /* ScanResultsTableViewCell.m */,
+				B384F40424629F4D00874E2E /* AlertViewUtils.m */,
+				B384F40624629F4D00874E2E /* DeviceTableViewCell.m */,
+				B384F40724629F4D00874E2E /* DataFormatConverter.h */,
+				B384F40824629F4D00874E2E /* UserDetailsTVC.h */,
+				B384F40A24629F4D00874E2E /* height.png */,
+				B384F40B24629F4D00874E2E /* ScanResultsCell.xib */,
+				B384F40C24629F4D00874E2E /* BleDevice.h */,
+				B384F40D24629F4D00874E2E /* PairedDeviceListTVC.m */,
+				B384F40E24629F4D00874E2E /* LSUsageExample.h */,
+				B384F40F24629F4D00874E2E /* fat_scale.png */,
+				B384F41024629F4D00874E2E /* NSDate+Utils.m */,
+				B384F41124629F4D00874E2E /* kitchen_scale.png */,
+				B384F41224629F4D00874E2E /* DeviceCell.xib */,
+				B384F41324629F4D00874E2E /* SearchDeviceTVC.m */,
+				B384F41424629F4D00874E2E /* LSDeviceSettingProfiles.h */,
+				B384F42624629F4D00874E2E /* LSDatabaseManager.h */,
+				B384F42724629F4D00874E2E /* ChooseDeviceTypeTVC.h */,
+				B384F42824629F4D00874E2E /* LSDatabaseAvailability.h */,
+				B384F42924629F4D00874E2E /* DeviceUser+Handler.h */,
+				B384F42A24629F4D00874E2E /* DeviceViewController.h */,
+				B384F42B24629F4D00874E2E /* DeviceAlarmClock.h */,
+				B384F42C24629F4D00874E2E /* ScanFilter+Handler.m */,
+				B384F42D24629F4D00874E2E /* Info.plist */,
+				B384F42E24629F4D00874E2E /* Model.xcdatamodeld */,
+				B384F43024629F4D00874E2E /* BleDevice+Handler.h */,
+				B384F43124629F4D00874E2E /* DeviceUserProfiles+Handler.h */,
+				B384F43224629F4D00874E2E /* setting view */,
+				B384F43E24629F4D00874E2E /* UpgradeFileItem.m */,
+			);
+			path = "LSBluetooth-Demo";
+			sourceTree = "<group>";
+		};
+		B384F43224629F4D00874E2E /* setting view */ = {
+			isa = PBXGroup;
+			children = (
+				B384F43324629F4D00874E2E /* BaseSettingItemTVC.h */,
+				B384F43424629F4D00874E2E /* PedometerSettingTVC.h */,
+				B384F43524629F4D00874E2E /* PedometerAlarmClockTVC.h */,
+				B384F43624629F4D00874E2E /* FatScaleSettingTVC.h */,
+				B384F43724629F4D00874E2E /* LSDeviceSettingItem.m */,
+				B384F43824629F4D00874E2E /* PedometerSettingTVC.m */,
+				B384F43924629F4D00874E2E /* BaseSettingItemTVC.m */,
+				B384F43A24629F4D00874E2E /* PedometerAlarmClockTVC.m */,
+				B384F43B24629F4D00874E2E /* LSDeviceSettingItem.h */,
+				B384F43C24629F4D00874E2E /* FatScaleSettingTVC.m */,
+				B384F43D24629F4D00874E2E /* LSSettinItemDelegate.h */,
+			);
+			path = "setting view";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -227,6 +453,7 @@
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
+				98F0EC7EA847B313547D2473 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -248,6 +475,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = alex.wu;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = HZEC6N5GYF;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -258,6 +488,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -277,10 +508,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
-				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
-				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				B384F45924629F4E00874E2E /* ic_user_info.png in Resources */,
+				B384F49624629F4E00874E2E /* Images.xcassets in Resources */,
+				B384F46124629F4E00874E2E /* ic_user_info_header.png in Resources */,
+				B384F46C24629F4E00874E2E /* Main.storyboard in Resources */,
+				B384F47E24629F4E00874E2E /* kitchen_scale.png in Resources */,
+				B384F47924629F4E00874E2E /* height.png in Resources */,
+				B384F46324629F4E00874E2E /* unknown.jpg in Resources */,
+				B384F48B24629F4E00874E2E /* Info.plist in Resources */,
+				B384F45F24629F4E00874E2E /* ic_device_list.png in Resources */,
+				B384F46524629F4E00874E2E /* UserNameCell.xib in Resources */,
+				B384F45724629F4E00874E2E /* weight_scale.png in Resources */,
+				B384F46F24629F4E00874E2E /* pedometer.png in Resources */,
+				B384F46B24629F4E00874E2E /* LaunchScreen.xib in Resources */,
+				B384F47C24629F4E00874E2E /* fat_scale.png in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				B384F47324629F4E00874E2E /* blood_pressure.png in Resources */,
+				B384F49924629F8C00874E2E /* LaunchScreen.xib in Resources */,
+				B384F45B24629F4E00874E2E /* LSBluetooth-Demo.podspec in Resources */,
+				B384F47A24629F4E00874E2E /* ScanResultsCell.xib in Resources */,
+				B384F47F24629F4E00874E2E /* DeviceCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +586,30 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		98F0EC7EA847B313547D2473 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LSBluetoothSDK_Demo_iOS_Tests/Pods-LSBluetoothSDK_Demo_iOS_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/LSAuthorization/LSAuthorization.framework",
+				"${PODS_ROOT}/LSBluetoothSDK_iOS/LSDeviceBluetooth.framework",
+				"${BUILT_PRODUCTS_DIR}/LSNetworkingModule/LSNetworkingModule.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LSAuthorization.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LSDeviceBluetooth.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LSNetworkingModule.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LSBluetoothSDK_Demo_iOS_Tests/Pods-LSBluetoothSDK_Demo_iOS_Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D4AB6C6E752FF0272AEB5F46 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -346,11 +617,17 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-LSBluetoothSDK_Demo_iOS_Example/Pods-LSBluetoothSDK_Demo_iOS_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/LSBluetoothSDK_Demo_iOS/LSBluetoothSDK_Demo_iOS.framework",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/LSAuthorization/LSAuthorization.framework",
+				"${PODS_ROOT}/LSBluetoothSDK_iOS/LSDeviceBluetooth.framework",
+				"${BUILT_PRODUCTS_DIR}/LSNetworkingModule/LSNetworkingModule.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LSBluetoothSDK_Demo_iOS.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LSAuthorization.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LSDeviceBluetooth.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LSNetworkingModule.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -364,9 +641,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B384F45824629F4E00874E2E /* ScanFilter.m in Sources */,
+				B384F47524629F4E00874E2E /* AlertViewUtils.m in Sources */,
+				B384F49124629F4E00874E2E /* FatScaleSettingTVC.m in Sources */,
+				B384F46E24629F4E00874E2E /* LSDatabaseManager.m in Sources */,
+				B384F46624629F4E00874E2E /* BleDevice+Handler.m in Sources */,
+				B384F46924629F4E00874E2E /* DeviceViewController.m in Sources */,
+				B384F48F24629F4E00874E2E /* BaseSettingItemTVC.m in Sources */,
+				B384F48C24629F4E00874E2E /* Model.xcdatamodeld in Sources */,
+				B384F47424629F4E00874E2E /* ScanResultsTableViewCell.m in Sources */,
+				B384F45D24629F4E00874E2E /* UserDetailsTVC.m in Sources */,
+				B384F49224629F4E00874E2E /* UpgradeFileItem.m in Sources */,
+				B384F48D24629F4E00874E2E /* LSDeviceSettingItem.m in Sources */,
 				6003F59E195388D20070C39A /* LSAppDelegate.m in Sources */,
-				6003F5A7195388D20070C39A /* LSViewController.m in Sources */,
+				B384F47B24629F4E00874E2E /* PairedDeviceListTVC.m in Sources */,
+				B384F48E24629F4E00874E2E /* PedometerSettingTVC.m in Sources */,
+				B384F45E24629F4E00874E2E /* DataFormatConverter.m in Sources */,
+				B384F48A24629F4E00874E2E /* ScanFilter+Handler.m in Sources */,
+				B384F49024629F4E00874E2E /* PedometerAlarmClockTVC.m in Sources */,
+				B384F46D24629F4E00874E2E /* ChooseDeviceTypeTVC.m in Sources */,
+				B384F47D24629F4E00874E2E /* NSDate+Utils.m in Sources */,
+				B384F47724629F4E00874E2E /* DeviceTableViewCell.m in Sources */,
+				B384F47124629F4E00874E2E /* UserNameTableViewCell.m in Sources */,
+				B384F46424629F4E00874E2E /* BleDevice.m in Sources */,
+				B384F48024629F4E00874E2E /* SearchDeviceTVC.m in Sources */,
+				B384F47024629F4E00874E2E /* DeviceUser.m in Sources */,
+				B384F46724629F4E00874E2E /* DeviceUserProfiles+Handler.m in Sources */,
+				B384F46A24629F4E00874E2E /* DeviceUser+Handler.m in Sources */,
+				B384F45A24629F4E00874E2E /* DeviceAlarmClock+Handler.m in Sources */,
+				B384F45C24629F4E00874E2E /* DeviceUserProfiles.m in Sources */,
+				B384F45624629F4E00874E2E /* CustomTableView.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				B384F46024629F4E00874E2E /* LSDeviceSettingProfiles.m in Sources */,
+				B384F46224629F4E00874E2E /* LSUsageExample.m in Sources */,
+				B384F46824629F4E00874E2E /* DeviceAlarmClock.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,12 +713,28 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */ = {
+		B384F3F424629F4D00874E2E /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				71719F9E1E33DC2100824A3D /* Base */,
+				B384F3F524629F4D00874E2E /* Base */,
 			);
-			name = LaunchScreen.storyboard;
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		B384F3F624629F4D00874E2E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B384F3F724629F4D00874E2E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B384F49724629F8C00874E2E /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B384F49824629F8C00874E2E /* Base */,
+			);
+			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -494,6 +818,7 @@
 			baseConfigurationReference = DB8D76C3DEDA3855C1B85090 /* Pods-LSBluetoothSDK_Demo_iOS_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HZEC6N5GYF;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LSBluetoothSDK_Demo_iOS/LSBluetoothSDK_Demo_iOS-Prefix.pch";
 				INFOPLIST_FILE = "LSBluetoothSDK_Demo_iOS/LSBluetoothSDK_Demo_iOS-Info.plist";
@@ -510,6 +835,7 @@
 			baseConfigurationReference = 08A072014F06B62F1D859C7C /* Pods-LSBluetoothSDK_Demo_iOS_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = HZEC6N5GYF;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LSBluetoothSDK_Demo_iOS/LSBluetoothSDK_Demo_iOS-Prefix.pch";
 				INFOPLIST_FILE = "LSBluetoothSDK_Demo_iOS/LSBluetoothSDK_Demo_iOS-Info.plist";
@@ -598,6 +924,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B384F42E24629F4D00874E2E /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B384F42F24629F4D00874E2E /* Model.xcdatamodel */,
+			);
+			currentVersion = B384F42F24629F4D00874E2E /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 6003F582195388D10070C39A /* Project object */;
 }

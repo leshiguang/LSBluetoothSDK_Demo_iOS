@@ -1,0 +1,2227 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00A3C6D6FD5E3CE1BD192F49082DB14C /* RequestInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A5FA9D205D7B4778A43C03AE632252D5 /* RequestInfo.m */; };
+		0254EABA2D0AACFBFA5E2BAD753C5E2D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1936C9F1731B954CDD4989081C7A72CB /* Foundation.framework */; };
+		02ECD4C5066311FB5DB0884078B9F8B9 /* ServerComunicationManagerInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A223935391956F13C0918C9D36C83FB /* ServerComunicationManagerInternal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		077EA0189CDB2E9FE9A99FCD939DC15A /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 54A81B6F5D781628C28ABF825640E151 /* en.lproj */; };
+		0940288B49E5CE94BA22768FF491610F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1936C9F1731B954CDD4989081C7A72CB /* Foundation.framework */; };
+		09E2F57C3C2B897ACC8AF5C49F1E9592 /* UIImage+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C6F485DDC4EEE8BDC505B70D43FDFEB /* UIImage+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		09E785555B549DE5974C744DB8324B91 /* UIRefreshControl+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A887C903BCFC5A87534DA87CC4B4517 /* UIRefreshControl+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0BF9FD078FF0CE63671E1BC39097F4F0 /* ServerCommunicationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F65D024991F8084E122DD8D8EA3475D /* ServerCommunicationManager.m */; };
+		0C49E00F22B1D228A70D7FB2DA260E04 /* ProtocolSimulator.h in Headers */ = {isa = PBXBuildFile; fileRef = 146AA3C510B41AF58D8D07F6FAA5ADBC /* ProtocolSimulator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0D40EE6956924384435BBBD4B718DEC8 /* AFImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = A15AC3984792AC93738D8ACAAD067C97 /* AFImageDownloader.m */; };
+		0F262287ADA030A2171C82472EE69D34 /* LSAuthorizeResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 932F7DC9E0AA51CAE13CC9314CE66D7C /* LSAuthorizeResponse.m */; };
+		0FC8140EA8312333BBCEB7F06EA015EA /* LSBluetoothSDK_Demo_iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A0996EED9E4CDC59BF8076BD1604FDB /* LSBluetoothSDK_Demo_iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		109424A0DF7F1D0B1663D79BA7899F4B /* LSAuthorizeResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C125DDECA2EAF0119B808A5FFDD6A98 /* LSAuthorizeResponse.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		135A06555FFD6AE156C3FD69E02E1CF5 /* BaseNetworkError.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D914795C0D421C46583D39440D9EB06 /* BaseNetworkError.m */; };
+		169B3FC2BD33B8FBC2D4C35A1C1DC6BF /* AFHTTPSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 59F6D20D88E45AB3C553A95ED525E9C4 /* AFHTTPSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		17D6A066C5F987FEFF8B89D7EFDFD375 /* AFURLRequestSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = EED2084B4D09866B2DA4699379CDD767 /* AFURLRequestSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1AC36159DEDD4452C304D5B1FFB688D1 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72C00A5833F9ED248700F31FA9BDC196 /* MobileCoreServices.framework */; };
+		1C2B19E106F2D5977481097A04C887F4 /* ServerCommunicationDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D2846D6A875E121C3B44E2503584F39B /* ServerCommunicationDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1EBC0744EB505EAFF898156CF82E6E09 /* LSBluetoothSDK_iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D778E3E312E19F3862FDFE055F50A556 /* LSBluetoothSDK_iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23D3F47EE34888B6B87A91E1E92B7A63 /* ja.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 79B5C3232558A89588E9A2BCA2707320 /* ja.lproj */; };
+		2514DE25C2AECC4B4D4F5277EB40888A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1936C9F1731B954CDD4989081C7A72CB /* Foundation.framework */; };
+		2749CC91FE7DC86C50045CCC1E36487F /* zh-Hans.lproj in Resources */ = {isa = PBXBuildFile; fileRef = EA8B316B7B0C79BD8D459FEA05024547 /* zh-Hans.lproj */; };
+		2AE1F29F045D02727E815DBBAC8C7B4F /* AFNetworkActivityIndicatorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B7C13F2A30E7BFA84DB78216CE94832 /* AFNetworkActivityIndicatorManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B97D54E10423DEA011EC8EAF0BD92E9 /* LSAuthorization-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F218E5B415EAC7C0B9A479172A3AFF4F /* LSAuthorization-dummy.m */; };
+		3033C2DE9CB2085ECBB95717CFB6425A /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BD1B95F14894EF4D982D77456650D6BC /* AFAutoPurgingImageCache.m */; };
+		31AE4A92657507537C9A5BD62BF33C74 /* ConfigFileCenterProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = E74872FE35BD4817BEB426D4C185714B /* ConfigFileCenterProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		326162BC7876644A419211C1C110CCCC /* ConfigFileCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = E61C78EBBC0D75775D5DC65FF3F1C250 /* ConfigFileCenter.m */; };
+		34A7C5747B4C0825465453E196E57FAA /* UIButton+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 1755849B1AC216AF04C383B31CBDF2B3 /* UIButton+AFNetworking.m */; };
+		352FE0BAAC8195227CB10CC6A5D23319 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B891ACC430036782CCC110C82736387 /* ReplaceMe.m */; };
+		3A186F3A7711FAAB8C60562D63FF0D9F /* UIProgressView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 859F2501E0EDB9DFCA4DFEE18312F535 /* UIProgressView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BDC8FBDB7922AA1ABA2C90DBA2DBB35 /* AFNetworking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A6235C3EF850FC0749E0411DE46B90FA /* AFNetworking-dummy.m */; };
+		3CD3A9D86398841A3A199C036B738762 /* Pods-LSBluetoothSDK_Demo_iOS_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A61B2972F094557343A616E8D789ED /* Pods-LSBluetoothSDK_Demo_iOS_Tests-dummy.m */; };
+		3E112DA53DD725C9A3185A54EB342EAF /* AFSecurityPolicy.h in Headers */ = {isa = PBXBuildFile; fileRef = 46DA10786525B1B93F6F896BEC444AB8 /* AFSecurityPolicy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E4E3F96A6DC44A316DA6138CF8D8CF3 /* BaseNetworkError.h in Headers */ = {isa = PBXBuildFile; fileRef = BCB672F30133C1DF643EDA9CED029829 /* BaseNetworkError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F735659AD11E2F5D6281E1261265994 /* RequestErrorStringUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A99274C2C0783FC7F9D76DF0723C249 /* RequestErrorStringUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		44DEA3ECF92991425A0D17168E2B9ED3 /* LSJSonResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8847DC3B3F95A5B6B0886CD5DA688CB7 /* LSJSonResponse.m */; };
+		45AD6149EEB2883EAC09063B5FDD6F5B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F11FC4ED966F37B4A8EACFDAA3D1445 /* CoreGraphics.framework */; };
+		47FF1D17418AB1144FDE0E46427F4877 /* AFURLResponseSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = AC8462A19783A9A7067AE514D2F7577B /* AFURLResponseSerialization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CC08F0C07E025B6607B49CDD8302D56 /* ErrorObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF7933FC5A9C2EFBF8802FC01192212 /* ErrorObject.m */; };
+		4F8754D3572D0C207EE024D99D1894D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1936C9F1731B954CDD4989081C7A72CB /* Foundation.framework */; };
+		5036C1D6D87D4DA731C972A410C17ABC /* AFNetworking-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E25AA157A1D77F6A0D5D270E507DD5DF /* AFNetworking-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		515F355109E352EA25B179A5B1E1699F /* LSJSonResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CCE034D70D47DCD158CA1747DC176B4 /* LSJSonResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		51F868BDCF3C3552FAF1CF3C51FE1604 /* HttpErrcode.h in Headers */ = {isa = PBXBuildFile; fileRef = E5E75FAE91EFFE21B0106856D254BE2A /* HttpErrcode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		555808C5DA287BFBDCE0FC8C7ED5B47F /* ErrorObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 4081DB0BCB358AC3A91B90782B1E88FE /* ErrorObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55F9AF275CDDB10AE7A42D4B9CA78E15 /* LSNetworkingModule-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E657CD105EA81BB090EAC7A3B104A8A /* LSNetworkingModule-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5CF76433BDB6F530A6A759FFAA02797B /* Protocols in Resources */ = {isa = PBXBuildFile; fileRef = F60326BF8E6DA2E9EF0C866DB437C682 /* Protocols */; };
+		61588E11E8BA35480E9CE06D5430F229 /* RequestErrorStringUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 77F1CE02554B73FDD7E51E2123D2E229 /* RequestErrorStringUtility.m */; };
+		626C878583DFF8A1B301A058DB5CCEDA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1936C9F1731B954CDD4989081C7A72CB /* Foundation.framework */; };
+		66D11AAC275DF6B2482926E9C30A1313 /* RequestMap.m in Sources */ = {isa = PBXBuildFile; fileRef = C16164DD95E0A2CBFD04682633D31C81 /* RequestMap.m */; };
+		67A889D81D573E92FE3E95ECC105EDE8 /* ErrorObjectHandleDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D75EF67F17F5E82F44412AEEF99A4249 /* ErrorObjectHandleDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		693523854D11E4D02FEB92D6451A6F9C /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D37FBCBFD7CA2C2E5782A8FC09AFF40 /* ReplaceMe.m */; };
+		6D1AF7B837821ABB0D277C8F2A5500B8 /* LSBluetoothSDK_iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7830A2CE3BEEEDCBE85A2E4BE711048E /* LSBluetoothSDK_iOS-dummy.m */; };
+		6E4C66ABA27A0F4EFDAA3E8B21A9384F /* AFNetworkActivityIndicatorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A27EF6E6D5F218D3527A40437030BE0 /* AFNetworkActivityIndicatorManager.m */; };
+		6F6C4414DE96E08267712DA4C17C3CBB /* UIImageView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 3478464F2FB61446852DA3C700E303E9 /* UIImageView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70469A769629568D6F33AB9F086841B5 /* LSNetwokingURLCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 141ABBC24A7956D80856BF4EDDB5DC8B /* LSNetwokingURLCache.m */; };
+		769B6260247C5624A11411541C0AA4E2 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = F98A1AF0051F5C0EEB06B634A4A00FD9 /* AFSecurityPolicy.m */; };
+		77876997CA63145CC72A2D6FB5758513 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C52DD0F1039B2AD30F65A3929D5BEB8 /* AFHTTPSessionManager.m */; };
+		7C0D7D311CC6769838173DF850B68814 /* BaseNetworkErrorProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 92AB7D66BCBAE20D227418C879B6413F /* BaseNetworkErrorProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C42AF32D7B109DB9B82C0FC45E4DD14 /* ServerCommunicationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E4A7D58FB97B3D9E74AE444EE3D5C22 /* ServerCommunicationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C5460826AE799D943912BC40A1DD035 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D51AC99BD7216F28C56BE580A6EBBFF /* ReplaceMe.m */; };
+		7C665F7FA22A01EA305ABB5EDE3E49D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1936C9F1731B954CDD4989081C7A72CB /* Foundation.framework */; };
+		7CD0C8EBB21039253CE70BA225B6BAF7 /* LSBaseResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = C9E6EE962C2209C39027B45BF09B49AE /* LSBaseResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E9DD3A110F5B51B2E0E7CEFDCBBC974 /* LSBluetoothSDK_Demo_iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FE344AB570DF67FFA6A92C3DBD5D9EF1 /* LSBluetoothSDK_Demo_iOS-dummy.m */; };
+		7F372985CE80B69B5524CC3277E1C1AF /* AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 459E1AF91655A948CBAA933C0A5C8726 /* AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81063A2579A10DF1ACE2B62938BDC573 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F22015501463D8C9689FA53938F38304 /* AFNetworking.framework */; };
+		856B571FA3AE9D65E81FACB19E3557F4 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 670186C5945C583D36901771B7C9C912 /* AFURLSessionManager.m */; };
+		870044029B3BA449A0932AAE3A495DE9 /* AFAutoPurgingImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = AA230C618B37143348A979860ED80EBA /* AFAutoPurgingImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F96E82F250EE718FA3F08AC9AB58423 /* UIActivityIndicatorView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = BFABD4B4AC7502EE033E05B58A25FB96 /* UIActivityIndicatorView+AFNetworking.m */; };
+		903F5A87CC6867609EBBBD5A7D0D0C06 /* LSAuthorizeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 493E4047323EE543C3030E1481333D91 /* LSAuthorizeRequest.m */; };
+		941B09C712F7569CA8D1F622DA10E3FD /* LSCustomHeaderRequestSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 294F3EAD33EEB9E0C6BCDF214C20A018 /* LSCustomHeaderRequestSerializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		95DAE5AD46A86973A77907D38716F694 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 186D54AA2806C98E3309775754E8CA20 /* AFNetworkReachabilityManager.m */; };
+		98114570DFFDF5BD81B7724B4810501D /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0CEB1BFC86FE60FA8C15A4914D003C /* UIProgressView+AFNetworking.m */; };
+		9A9F19944ED5E2E7D7A78C5EA037D873 /* LSNetworkingModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 691EB2B2905703943B51B9705D3C66C1 /* LSNetworkingModule.framework */; };
+		9B41316D2DE09092FA0143B33A74B769 /* UIKit+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CE9AC5D1421DD27D42C83717ED3144C /* UIKit+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9E07A9571F0A00BCD13EE15FF56B6362 /* Pods-LSBluetoothSDK_Demo_iOS_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C89240A3237072E6A26B2DBA9D60E337 /* Pods-LSBluetoothSDK_Demo_iOS_Example-dummy.m */; };
+		A4A5126C834E049C7205FE230CAF1393 /* LSAuthorization.h in Headers */ = {isa = PBXBuildFile; fileRef = FB906307477325FD6722B275C98EA9FF /* LSAuthorization.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5D86CC71480778ECD0EE81138D48C91 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 66D715800B257F381166FBD6A362D7F3 /* AFURLResponseSerialization.m */; };
+		A5DB8C5CF6287A490E278C9A879FC643 /* RequestInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = A03BC4862A5E1C017381B96EA8C5F133 /* RequestInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A93BD560DD062BA5B515267570761CBE /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1CCA04CAD5892A9CA9CD287B11F4AC2 /* Security.framework */; };
+		A9E429ECAF059D9D471F3AE5C1BAC2B0 /* AFNetworkReachabilityManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 36E595D5EC7DE7477742C7C6D05F5DA0 /* AFNetworkReachabilityManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AEA4CF8EE7E08C13B4A71A634F9F3B5B /* UIButton+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = FE905234B0EE3FB3C1C22574EA6CCDC7 /* UIButton+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AECB9FD1C271F734476CBF6E84BBFC51 /* UIImageView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A0C6BA654C3A1873CEEA8DFB65BBFF /* UIImageView+AFNetworking.m */; };
+		AFCC22F9B767DD206C2B9DFB7B50C120 /* LSAuthorizeRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 638DE7F81DA3EA7F0384393500189074 /* LSAuthorizeRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B26EDD2D9A9BC8CDDEADEA8DBEC606A7 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7252A85F940975E5B1E41DD4D7F39FD2 /* SystemConfiguration.framework */; };
+		B5AD0B8F0F9304975A01978B2908B62F /* UIActivityIndicatorView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = 41381CF21D3EAB44D655C86D3614295A /* UIActivityIndicatorView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B647E57AF07AC3F3C56CBDCC9C3EEC6B /* LSAuthorization.m in Sources */ = {isa = PBXBuildFile; fileRef = E65FD4F814E3418339596B371695C020 /* LSAuthorization.m */; };
+		B691CD147B34C7698DB66F7B157F68B9 /* ServerCommunicationProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F3C00373D8ED7C0F16C6D693A77863D /* ServerCommunicationProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6B40DEC67F56732B79015E29900002C /* LSAuthorization.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 11CD4D7777EBC5DDF9ED76D87AF6472C /* LSAuthorization.bundle */; };
+		BA4D13046F2C532BFBA296E2721FCC84 /* ProtocolSimulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3462E6FC1A205F91E813BBC87E4E56D6 /* ProtocolSimulator.m */; };
+		BBA1290C5D08DC0649E8D88AD7634831 /* LSProtocolPathUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 84F0BA090DF0894E49C47FDF2CC9E998 /* LSProtocolPathUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C04074E59EF2E298E0D26418C2AEF06B /* Pods-LSBluetoothSDK_Demo_iOS_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 95550ED424E3887CFABE1B2FDB931C43 /* Pods-LSBluetoothSDK_Demo_iOS_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C0EFBB6AADB81A434DCF4672922C60CB /* ConfigFileCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = B2E01441ED88EEEF576D3F8891C91131 /* ConfigFileCenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C533D5525D98E7D630A6486735E861C6 /* LSBaseRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 783D0BEDD48DD67B4EBE69E98A30B92D /* LSBaseRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8C1ECBB622A017070BAE67112AC9D58 /* LSNetworkingModule-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5254EE2122FFD0EC96CCE621269BDE6F /* LSNetworkingModule-dummy.m */; };
+		CB6B5BBDCAFDA535BB9C46C59EA35B65 /* LSNetwokingURLCache.h in Headers */ = {isa = PBXBuildFile; fileRef = BBA6DF5EFD1BE59BE45C664E1D68A29F /* LSNetwokingURLCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE4ABE89D0B37264A3ABB89A187405A8 /* LSBluetoothManager+AddDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 54EA699BE10AE548A9C8465C72757012 /* LSBluetoothManager+AddDevice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE506EF4AE39340EFFECD72AE26A59CB /* ErrorObjectProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = B84DE1E7A991A2B35552064274DE4461 /* ErrorObjectProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF398A3CAF24FC8852C9114413AB9F19 /* Pods-LSBluetoothSDK_Demo_iOS_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AD847BFA6B3C3E41E987EF10CEBA29A6 /* Pods-LSBluetoothSDK_Demo_iOS_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0A3E830A61D5F7631C20DFBF23F5EC5 /* LSBluetoothManager+AddDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = C6821FA9BF3D1AC42267585446F8177D /* LSBluetoothManager+AddDevice.m */; };
+		D1F3CD10E5F4EE2FA6FE363B3F93C840 /* LSCustomHeaderRequestSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = FE35EDC6A547BF948A80F22FAD07A87D /* LSCustomHeaderRequestSerializer.m */; };
+		D2693BB9C638B39C86F84497B59FDDAB /* LSBaseResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC7843CFA9EE3E09212A5741DD6090D /* LSBaseResponse.m */; };
+		D29F2AD07AF58334781F008905C30C35 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0FA9AA43BB0CC6C9CA085559914DEB /* UIRefreshControl+AFNetworking.m */; };
+		D59E2A517A48D101120EB57F90F140A5 /* AFURLSessionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A1ED77B4E1902805FC445FAED1A0246A /* AFURLSessionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7EA0E34C96EE4D36F0D0980BAFFDFE2 /* LSAuthorization-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BF8D52A877C2A836FC13B56AF4A9E20 /* LSAuthorization-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC2186197E507C0C73DFB0600D54867A /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 8701530136E6D8FB9BD5EA0253DB8190 /* UIWebView+AFNetworking.m */; };
+		E17973BC9CEAE4ED0A7492450F95ACEF /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B9152B6F18DD63E5BDABDF13618FE82 /* AFURLRequestSerialization.m */; };
+		E261B82A0EEFE0EA897EA1A36C69C1CE /* AFImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = EF62DEED3B50142F0AA1FA6A36432C7F /* AFImageDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E4CE483AA08BFAF4C2B9CECDAC3F77DD /* LSBaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F12F6F0C627DB1B79EC338ACBB1AE86C /* LSBaseRequest.m */; };
+		E611B514B16A97C93E2C19676C2B435B /* LSNetworkingModule.h in Headers */ = {isa = PBXBuildFile; fileRef = 207E02C74C82EB2A70D15F06A870F214 /* LSNetworkingModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E87959A7AC9D9C2AFCB605CDCF666786 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1936C9F1731B954CDD4989081C7A72CB /* Foundation.framework */; };
+		EDDC2B2F75F7FC09804A2E45838A2107 /* RequestMap.h in Headers */ = {isa = PBXBuildFile; fileRef = 12896E60BB44EB34E6CA3856BDC83BD3 /* RequestMap.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EFA0EBE4318CA8647A768CE2E67DC971 /* ServerCommunicationEventsDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 577A254A6C3D5DFA7D524655554A9523 /* ServerCommunicationEventsDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0ADF25CB11BBC790F8E7A4BFF361816 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1A3E1A68605DEA5C481FB42CD58DB3D /* UIKit.framework */; };
+		F407B4E0B40A8AA4CA7443563F105E40 /* AFCompatibilityMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 57E5E981BFD2678BE65751AD29D33DE9 /* AFCompatibilityMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4FED6C37367BC46B92BB3FE18D233B8 /* UIWebView+AFNetworking.h in Headers */ = {isa = PBXBuildFile; fileRef = A125185B32E9CA352F35C72C41AF6B4D /* UIWebView+AFNetworking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA863E21768E7A3ED742EF72099D07AD /* Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F7766B50FCDE0CA7CEDE81DC438933D9 /* Resources.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		09017E9D115A1A00E93D7FAAD008ABE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50E004361FDD7C079254DBB4B74093E1;
+			remoteInfo = LSNetworkingModule;
+		};
+		1F21566BB91F82436C42DB75B3E8B9D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 395F835CB31F6C045A739DBFD662563C;
+			remoteInfo = LSBluetoothSDK_iOS;
+		};
+		226E75E89E3D0E68D78396DB27CA6374 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AFDE22B661CCBDB90A226E730A0EB054;
+			remoteInfo = "LSAuthorization-LSAuthorization";
+		};
+		2388F9BC0AA556C94A9365A61C346A04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69D53824F19BDFCE5FBA624B37445D1A;
+			remoteInfo = LSAuthorization;
+		};
+		26FAA356ABD241BD7F2CA6D8DCE697FF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0130B3724283586C0E9D2A112D4F2AA1;
+			remoteInfo = AFNetworking;
+		};
+		3841C7981DFFA9C126E8893E874D458E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69D53824F19BDFCE5FBA624B37445D1A;
+			remoteInfo = LSAuthorization;
+		};
+		4244338E643BC9D82977712E0C2AB4A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 395F835CB31F6C045A739DBFD662563C;
+			remoteInfo = LSBluetoothSDK_iOS;
+		};
+		5452D29F55EF9758B01EBAAF0D368DC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 395F835CB31F6C045A739DBFD662563C;
+			remoteInfo = LSBluetoothSDK_iOS;
+		};
+		6CABF26E47A097AF9361ABF4EB70099B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 067CCF346286F2633830B6F655FC2158;
+			remoteInfo = "LSNetworkingModule-Resources";
+		};
+		9356AA32D91D65EF1D4F3E92CE7C5B09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69D53824F19BDFCE5FBA624B37445D1A;
+			remoteInfo = LSAuthorization;
+		};
+		B7695B328BE03A4FCFA05019FEB573B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50E004361FDD7C079254DBB4B74093E1;
+			remoteInfo = LSNetworkingModule;
+		};
+		D8D593E27615E01205958B04EF98899D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 02953019232D5BA21E11664DB3C1FB78;
+			remoteInfo = "Pods-LSBluetoothSDK_Demo_iOS_Example";
+		};
+		D8FDDE73C19C7DCBC8E77A061B685830 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0130B3724283586C0E9D2A112D4F2AA1;
+			remoteInfo = AFNetworking;
+		};
+		DF5458F05D42FBBBEF580BD51A9B5076 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50E004361FDD7C079254DBB4B74093E1;
+			remoteInfo = LSNetworkingModule;
+		};
+		E6A5B0F248FD6B4016EFC41153E827E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED56681FC19D39E81D81C5D60744911A;
+			remoteInfo = LSBluetoothSDK_Demo_iOS;
+		};
+		FC4CE01FC7E73D41D0A85251E2FFF217 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0130B3724283586C0E9D2A112D4F2AA1;
+			remoteInfo = AFNetworking;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		025D5D533ED8141EB3B39B170A62D84C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		032DC227F1EDCAD162B8D64EA26A25B0 /* Pods_LSBluetoothSDK_Demo_iOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LSBluetoothSDK_Demo_iOS_Tests.framework; path = "Pods-LSBluetoothSDK_Demo_iOS_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		042FFFB24C5206457609BBE2D3A55B3F /* LSBluetoothSDK_Demo_iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LSBluetoothSDK_Demo_iOS-prefix.pch"; sourceTree = "<group>"; };
+		0954417CBBABA05CB7C338339EB70CF1 /* LSNetworkingModule-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LSNetworkingModule-prefix.pch"; sourceTree = "<group>"; };
+		09A61B2972F094557343A616E8D789ED /* Pods-LSBluetoothSDK_Demo_iOS_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LSBluetoothSDK_Demo_iOS_Tests-dummy.m"; sourceTree = "<group>"; };
+		0B9152B6F18DD63E5BDABDF13618FE82 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLRequestSerialization.m; path = AFNetworking/AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		0CE9AC5D1421DD27D42C83717ED3144C /* UIKit+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIKit+AFNetworking.h"; path = "UIKit+AFNetworking/UIKit+AFNetworking.h"; sourceTree = "<group>"; };
+		0D51AC99BD7216F28C56BE580A6EBBFF /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = LSBluetoothSDK_iOS/Classes/ReplaceMe.m; sourceTree = "<group>"; };
+		118F107BD09B98DC8AEB5930264D8C98 /* AFNetworking-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-prefix.pch"; sourceTree = "<group>"; };
+		11CD4D7777EBC5DDF9ED76D87AF6472C /* LSAuthorization.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = LSAuthorization.bundle; path = "LSAuthorization-LSAuthorization.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		12896E60BB44EB34E6CA3856BDC83BD3 /* RequestMap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RequestMap.h; path = LSNetworkingModule/Classes/RequestMap.h; sourceTree = "<group>"; };
+		141ABBC24A7956D80856BF4EDDB5DC8B /* LSNetwokingURLCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LSNetwokingURLCache.m; path = LSNetworkingModule/Classes/LSNetwokingURLCache.m; sourceTree = "<group>"; };
+		146AA3C510B41AF58D8D07F6FAA5ADBC /* ProtocolSimulator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ProtocolSimulator.h; path = LSNetworkingModule/Classes/ProtocolSimulator.h; sourceTree = "<group>"; };
+		1755849B1AC216AF04C383B31CBDF2B3 /* UIButton+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+AFNetworking.m"; path = "UIKit+AFNetworking/UIButton+AFNetworking.m"; sourceTree = "<group>"; };
+		186D54AA2806C98E3309775754E8CA20 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkReachabilityManager.m; path = AFNetworking/AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		1936C9F1731B954CDD4989081C7A72CB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		1D914795C0D421C46583D39440D9EB06 /* BaseNetworkError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BaseNetworkError.m; path = LSNetworkingModule/Classes/BaseNetworkError.m; sourceTree = "<group>"; };
+		1E657CD105EA81BB090EAC7A3B104A8A /* LSNetworkingModule-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LSNetworkingModule-umbrella.h"; sourceTree = "<group>"; };
+		1ECE8FDA8B8CC95A3B33C551DAA875B2 /* Pods-LSBluetoothSDK_Demo_iOS_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LSBluetoothSDK_Demo_iOS_Tests.modulemap"; sourceTree = "<group>"; };
+		1F3C00373D8ED7C0F16C6D693A77863D /* ServerCommunicationProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ServerCommunicationProtocol.h; path = LSNetworkingModule/Classes/ServerCommunicationProtocol.h; sourceTree = "<group>"; };
+		207E02C74C82EB2A70D15F06A870F214 /* LSNetworkingModule.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LSNetworkingModule.h; path = LSNetworkingModule/Classes/LSNetworkingModule.h; sourceTree = "<group>"; };
+		24480F8C348611FFFF223828D384866E /* AFNetworking.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AFNetworking.xcconfig; sourceTree = "<group>"; };
+		29400646BF12641D12CD9CEF5AC2A426 /* LSBluetoothSDK_iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LSBluetoothSDK_iOS.modulemap; sourceTree = "<group>"; };
+		294F3EAD33EEB9E0C6BCDF214C20A018 /* LSCustomHeaderRequestSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LSCustomHeaderRequestSerializer.h; path = LSNetworkingModule/Classes/LSCustomHeaderRequestSerializer.h; sourceTree = "<group>"; };
+		2C6F485DDC4EEE8BDC505B70D43FDFEB /* UIImage+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+AFNetworking.h"; path = "UIKit+AFNetworking/UIImage+AFNetworking.h"; sourceTree = "<group>"; };
+		2DC7843CFA9EE3E09212A5741DD6090D /* LSBaseResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LSBaseResponse.m; path = LSNetworkingModule/Classes/LSBaseResponse.m; sourceTree = "<group>"; };
+		3462E6FC1A205F91E813BBC87E4E56D6 /* ProtocolSimulator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ProtocolSimulator.m; path = LSNetworkingModule/Classes/ProtocolSimulator.m; sourceTree = "<group>"; };
+		3478464F2FB61446852DA3C700E303E9 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
+		36A0C6BA654C3A1873CEEA8DFB65BBFF /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		36E595D5EC7DE7477742C7C6D05F5DA0 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkReachabilityManager.h; path = AFNetworking/AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		36ED891677583E4BAFA59CF44B64AC10 /* LSDeviceBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LSDeviceBluetooth.framework; sourceTree = "<group>"; };
+		3A0996EED9E4CDC59BF8076BD1604FDB /* LSBluetoothSDK_Demo_iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LSBluetoothSDK_Demo_iOS-umbrella.h"; sourceTree = "<group>"; };
+		3BBE47C242FC3EDBD6AF4E538DD4A4E2 /* Pods-LSBluetoothSDK_Demo_iOS_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LSBluetoothSDK_Demo_iOS_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3F0FA9AA43BB0CC6C9CA085559914DEB /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIRefreshControl+AFNetworking.m"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
+		4081DB0BCB358AC3A91B90782B1E88FE /* ErrorObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ErrorObject.h; path = LSNetworkingModule/Classes/ErrorObject.h; sourceTree = "<group>"; };
+		41381CF21D3EAB44D655C86D3614295A /* UIActivityIndicatorView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActivityIndicatorView+AFNetworking.h"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"; sourceTree = "<group>"; };
+		44AB428163841FEA6B6C4E88C332ED73 /* Pods-LSBluetoothSDK_Demo_iOS_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LSBluetoothSDK_Demo_iOS_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		456EABEA599F9E738EFADB5B9D1BB982 /* Pods_LSBluetoothSDK_Demo_iOS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LSBluetoothSDK_Demo_iOS_Example.framework; path = "Pods-LSBluetoothSDK_Demo_iOS_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		459E1AF91655A948CBAA933C0A5C8726 /* AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworking.h; path = AFNetworking/AFNetworking.h; sourceTree = "<group>"; };
+		46DA10786525B1B93F6F896BEC444AB8 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFSecurityPolicy.h; path = AFNetworking/AFSecurityPolicy.h; sourceTree = "<group>"; };
+		477019B1B76727F4D5A3656B671E939D /* Pods-LSBluetoothSDK_Demo_iOS_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LSBluetoothSDK_Demo_iOS_Example.modulemap"; sourceTree = "<group>"; };
+		493E4047323EE543C3030E1481333D91 /* LSAuthorizeRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LSAuthorizeRequest.m; path = LSAuthorization/Classes/Public/LSAuthorizeRequest.m; sourceTree = "<group>"; };
+		4E4A7D58FB97B3D9E74AE444EE3D5C22 /* ServerCommunicationManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ServerCommunicationManager.h; path = LSNetworkingModule/Classes/ServerCommunicationManager.h; sourceTree = "<group>"; };
+		4F65D024991F8084E122DD8D8EA3475D /* ServerCommunicationManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ServerCommunicationManager.m; path = LSNetworkingModule/Classes/ServerCommunicationManager.m; sourceTree = "<group>"; };
+		5254EE2122FFD0EC96CCE621269BDE6F /* LSNetworkingModule-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LSNetworkingModule-dummy.m"; sourceTree = "<group>"; };
+		52CD9884AEEC4C178DF16DF3DF296210 /* ResourceBundle-Resources-LSNetworkingModule-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Resources-LSNetworkingModule-Info.plist"; sourceTree = "<group>"; };
+		53DF6EA78EBABBB58C00CA1F71272C1C /* LSBluetoothSDK_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LSBluetoothSDK_iOS.framework; path = LSBluetoothSDK_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54A81B6F5D781628C28ABF825640E151 /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = en.lproj; path = LSNetworkingModule/Assets/LSNetworkingModule.bundle/en.lproj; sourceTree = "<group>"; };
+		54EA699BE10AE548A9C8465C72757012 /* LSBluetoothManager+AddDevice.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "LSBluetoothManager+AddDevice.h"; path = "LSBluetoothSDK_iOS/Classes/LSBluetoothManager+AddDevice.h"; sourceTree = "<group>"; };
+		577A254A6C3D5DFA7D524655554A9523 /* ServerCommunicationEventsDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ServerCommunicationEventsDelegate.h; path = LSNetworkingModule/Classes/ServerCommunicationEventsDelegate.h; sourceTree = "<group>"; };
+		57E5E981BFD2678BE65751AD29D33DE9 /* AFCompatibilityMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFCompatibilityMacros.h; path = AFNetworking/AFCompatibilityMacros.h; sourceTree = "<group>"; };
+		59F6D20D88E45AB3C553A95ED525E9C4 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFHTTPSessionManager.h; path = AFNetworking/AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		5A27EF6E6D5F218D3527A40437030BE0 /* AFNetworkActivityIndicatorManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFNetworkActivityIndicatorManager.m; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.m"; sourceTree = "<group>"; };
+		5B7C13F2A30E7BFA84DB78216CE94832 /* AFNetworkActivityIndicatorManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFNetworkActivityIndicatorManager.h; path = "UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"; sourceTree = "<group>"; };
+		5B891ACC430036782CCC110C82736387 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = LSBluetoothSDK_Demo_iOS/Classes/ReplaceMe.m; sourceTree = "<group>"; };
+		5CC74B5B26D5E7735063EB62EF5A1BE8 /* LSNetworkingModule.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LSNetworkingModule.modulemap; sourceTree = "<group>"; };
+		638DE7F81DA3EA7F0384393500189074 /* LSAuthorizeRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LSAuthorizeRequest.h; path = LSAuthorization/Classes/Public/LSAuthorizeRequest.h; sourceTree = "<group>"; };
+		64C8DE778A0630DD189ED43EB2609AC6 /* LSNetworkingModule.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LSNetworkingModule.xcconfig; sourceTree = "<group>"; };
+		66D715800B257F381166FBD6A362D7F3 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLResponseSerialization.m; path = AFNetworking/AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		670186C5945C583D36901771B7C9C912 /* AFURLSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFURLSessionManager.m; path = AFNetworking/AFURLSessionManager.m; sourceTree = "<group>"; };
+		68A1001F40D273C86B8A76CE4E0D17C6 /* Pods-LSBluetoothSDK_Demo_iOS_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LSBluetoothSDK_Demo_iOS_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		691EB2B2905703943B51B9705D3C66C1 /* LSNetworkingModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LSNetworkingModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BF8D52A877C2A836FC13B56AF4A9E20 /* LSAuthorization-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LSAuthorization-umbrella.h"; sourceTree = "<group>"; };
+		6C52DD0F1039B2AD30F65A3929D5BEB8 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFHTTPSessionManager.m; path = AFNetworking/AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		6CCE034D70D47DCD158CA1747DC176B4 /* LSJSonResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LSJSonResponse.h; path = LSNetworkingModule/Classes/LSJSonResponse.h; sourceTree = "<group>"; };
+		6E98A042547013525CB04048F7C49787 /* LSAuthorization-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LSAuthorization-Info.plist"; sourceTree = "<group>"; };
+		6F11FC4ED966F37B4A8EACFDAA3D1445 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		7052710768B11B6226898D6E660C6C2F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		710B00AB95DCE023B07DC90E32E2D950 /* LSBluetoothSDK_iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LSBluetoothSDK_iOS-prefix.pch"; sourceTree = "<group>"; };
+		7252A85F940975E5B1E41DD4D7F39FD2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		72C00A5833F9ED248700F31FA9BDC196 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		75C9D99CBDE11F304B220CC86D4A3BF3 /* LSAuthorization-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LSAuthorization-prefix.pch"; sourceTree = "<group>"; };
+		77F1CE02554B73FDD7E51E2123D2E229 /* RequestErrorStringUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RequestErrorStringUtility.m; path = LSNetworkingModule/Classes/RequestErrorStringUtility.m; sourceTree = "<group>"; };
+		7830A2CE3BEEEDCBE85A2E4BE711048E /* LSBluetoothSDK_iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LSBluetoothSDK_iOS-dummy.m"; sourceTree = "<group>"; };
+		783D0BEDD48DD67B4EBE69E98A30B92D /* LSBaseRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LSBaseRequest.h; path = LSNetworkingModule/Classes/LSBaseRequest.h; sourceTree = "<group>"; };
+		79B5C3232558A89588E9A2BCA2707320 /* ja.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = ja.lproj; path = LSNetworkingModule/Assets/LSNetworkingModule.bundle/ja.lproj; sourceTree = "<group>"; };
+		7A99274C2C0783FC7F9D76DF0723C249 /* RequestErrorStringUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RequestErrorStringUtility.h; path = LSNetworkingModule/Classes/RequestErrorStringUtility.h; sourceTree = "<group>"; };
+		7D0DF40DF973BD0FB27F35CE530AF25B /* Pods-LSBluetoothSDK_Demo_iOS_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LSBluetoothSDK_Demo_iOS_Tests-Info.plist"; sourceTree = "<group>"; };
+		84F0BA090DF0894E49C47FDF2CC9E998 /* LSProtocolPathUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LSProtocolPathUtils.h; path = LSAuthorization/Classes/Public/LSProtocolPathUtils.h; sourceTree = "<group>"; };
+		859F2501E0EDB9DFCA4DFEE18312F535 /* UIProgressView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIProgressView+AFNetworking.h"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.h"; sourceTree = "<group>"; };
+		8701530136E6D8FB9BD5EA0253DB8190 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIWebView+AFNetworking.m"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
+		8847DC3B3F95A5B6B0886CD5DA688CB7 /* LSJSonResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LSJSonResponse.m; path = LSNetworkingModule/Classes/LSJSonResponse.m; sourceTree = "<group>"; };
+		8A41F1048B8F61A004317EFD53BB832D /* Pods-LSBluetoothSDK_Demo_iOS_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LSBluetoothSDK_Demo_iOS_Example.release.xcconfig"; sourceTree = "<group>"; };
+		8A887C903BCFC5A87534DA87CC4B4517 /* UIRefreshControl+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIRefreshControl+AFNetworking.h"; path = "UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"; sourceTree = "<group>"; };
+		8C125DDECA2EAF0119B808A5FFDD6A98 /* LSAuthorizeResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LSAuthorizeResponse.h; path = LSAuthorization/Classes/Public/LSAuthorizeResponse.h; sourceTree = "<group>"; };
+		8D37FBCBFD7CA2C2E5782A8FC09AFF40 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = LSNetworkingModule/Classes/ReplaceMe.m; sourceTree = "<group>"; };
+		925B365AC31AE808CBF8E786F6EE9F68 /* Pods-LSBluetoothSDK_Demo_iOS_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LSBluetoothSDK_Demo_iOS_Example-frameworks.sh"; sourceTree = "<group>"; };
+		927D76FAC0328AB97BBC37E07862B84F /* Pods-LSBluetoothSDK_Demo_iOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LSBluetoothSDK_Demo_iOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		92AB7D66BCBAE20D227418C879B6413F /* BaseNetworkErrorProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BaseNetworkErrorProtocol.h; path = LSNetworkingModule/Classes/BaseNetworkErrorProtocol.h; sourceTree = "<group>"; };
+		932AFAC94BFB769B75A58D50683EE0D4 /* LSAuthorizationFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LSAuthorizationFramework.framework; path = "LSAuthorizationFramework-0.1.6/ios/LSAuthorizationFramework.framework"; sourceTree = "<group>"; };
+		932F7DC9E0AA51CAE13CC9314CE66D7C /* LSAuthorizeResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LSAuthorizeResponse.m; path = LSAuthorization/Classes/Public/LSAuthorizeResponse.m; sourceTree = "<group>"; };
+		9535F4AF2A8BBB546B67961C5FC95CFA /* ResourceBundle-LSAuthorization-LSAuthorization-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-LSAuthorization-LSAuthorization-Info.plist"; sourceTree = "<group>"; };
+		95550ED424E3887CFABE1B2FDB931C43 /* Pods-LSBluetoothSDK_Demo_iOS_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LSBluetoothSDK_Demo_iOS_Example-umbrella.h"; sourceTree = "<group>"; };
+		9A223935391956F13C0918C9D36C83FB /* ServerComunicationManagerInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ServerComunicationManagerInternal.h; path = LSNetworkingModule/Classes/ServerComunicationManagerInternal.h; sourceTree = "<group>"; };
+		9C0E83FBBE28D9236338FD962BD6EE57 /* LSAuthorization.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LSAuthorization.framework; path = LSAuthorization.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D93C09265980E32C35F26822CA7E40C /* Pods-LSBluetoothSDK_Demo_iOS_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LSBluetoothSDK_Demo_iOS_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A03BC4862A5E1C017381B96EA8C5F133 /* RequestInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RequestInfo.h; path = LSNetworkingModule/Classes/RequestInfo.h; sourceTree = "<group>"; };
+		A125185B32E9CA352F35C72C41AF6B4D /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIWebView+AFNetworking.h"; path = "UIKit+AFNetworking/UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
+		A15AC3984792AC93738D8ACAAD067C97 /* AFImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFImageDownloader.m; path = "UIKit+AFNetworking/AFImageDownloader.m"; sourceTree = "<group>"; };
+		A1ED77B4E1902805FC445FAED1A0246A /* AFURLSessionManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLSessionManager.h; path = AFNetworking/AFURLSessionManager.h; sourceTree = "<group>"; };
+		A4FA15D44DF6BAC7550EDEED10862AA3 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AFNetworking.framework; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A57771B6230892F206CB17112AE57BEC /* Pods-LSBluetoothSDK_Demo_iOS_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LSBluetoothSDK_Demo_iOS_Example-Info.plist"; sourceTree = "<group>"; };
+		A5FA9D205D7B4778A43C03AE632252D5 /* RequestInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RequestInfo.m; path = LSNetworkingModule/Classes/RequestInfo.m; sourceTree = "<group>"; };
+		A6235C3EF850FC0749E0411DE46B90FA /* AFNetworking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AFNetworking-dummy.m"; sourceTree = "<group>"; };
+		A997CD03B7CA43ED22FF3D9FD4E85392 /* Pods-LSBluetoothSDK_Demo_iOS_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LSBluetoothSDK_Demo_iOS_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		AA230C618B37143348A979860ED80EBA /* AFAutoPurgingImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFAutoPurgingImageCache.h; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.h"; sourceTree = "<group>"; };
+		AC8462A19783A9A7067AE514D2F7577B /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLResponseSerialization.h; path = AFNetworking/AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		AD847BFA6B3C3E41E987EF10CEBA29A6 /* Pods-LSBluetoothSDK_Demo_iOS_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LSBluetoothSDK_Demo_iOS_Tests-umbrella.h"; sourceTree = "<group>"; };
+		AE81D68611DBAF4F8975BF4A45AF7000 /* LSBluetoothSDK_Demo_iOS.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LSBluetoothSDK_Demo_iOS.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B2E01441ED88EEEF576D3F8891C91131 /* ConfigFileCenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ConfigFileCenter.h; path = LSNetworkingModule/Classes/ConfigFileCenter.h; sourceTree = "<group>"; };
+		B449622F6E5D51B276081EA1AC86B2C6 /* LSBluetoothSDK_Demo_iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LSBluetoothSDK_Demo_iOS.xcconfig; sourceTree = "<group>"; };
+		B7ED86D56CDA3E1EC8DFE2264755B23D /* LSAuthorization.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LSAuthorization.modulemap; sourceTree = "<group>"; };
+		B84DE1E7A991A2B35552064274DE4461 /* ErrorObjectProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ErrorObjectProtocol.h; path = LSNetworkingModule/Classes/ErrorObjectProtocol.h; sourceTree = "<group>"; };
+		BBA6DF5EFD1BE59BE45C664E1D68A29F /* LSNetwokingURLCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LSNetwokingURLCache.h; path = LSNetworkingModule/Classes/LSNetwokingURLCache.h; sourceTree = "<group>"; };
+		BCB672F30133C1DF643EDA9CED029829 /* BaseNetworkError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BaseNetworkError.h; path = LSNetworkingModule/Classes/BaseNetworkError.h; sourceTree = "<group>"; };
+		BD1B95F14894EF4D982D77456650D6BC /* AFAutoPurgingImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFAutoPurgingImageCache.m; path = "UIKit+AFNetworking/AFAutoPurgingImageCache.m"; sourceTree = "<group>"; };
+		BF0CEB1BFC86FE60FA8C15A4914D003C /* UIProgressView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIProgressView+AFNetworking.m"; path = "UIKit+AFNetworking/UIProgressView+AFNetworking.m"; sourceTree = "<group>"; };
+		BFABD4B4AC7502EE033E05B58A25FB96 /* UIActivityIndicatorView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActivityIndicatorView+AFNetworking.m"; path = "UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.m"; sourceTree = "<group>"; };
+		C075C3B170B13AA17AE7261CDC60E865 /* LSBluetoothSDK_Demo_iOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LSBluetoothSDK_Demo_iOS-Info.plist"; sourceTree = "<group>"; };
+		C16164DD95E0A2CBFD04682633D31C81 /* RequestMap.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RequestMap.m; path = LSNetworkingModule/Classes/RequestMap.m; sourceTree = "<group>"; };
+		C57489BE783D4ECB34484AE52335E7DE /* LSBluetoothSDK_Demo_iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LSBluetoothSDK_Demo_iOS.modulemap; sourceTree = "<group>"; };
+		C6821FA9BF3D1AC42267585446F8177D /* LSBluetoothManager+AddDevice.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "LSBluetoothManager+AddDevice.m"; path = "LSBluetoothSDK_iOS/Classes/LSBluetoothManager+AddDevice.m"; sourceTree = "<group>"; };
+		C7DD76F37CD140687F796F2BB30146AD /* LSAuthorization.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LSAuthorization.xcconfig; sourceTree = "<group>"; };
+		C89240A3237072E6A26B2DBA9D60E337 /* Pods-LSBluetoothSDK_Demo_iOS_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LSBluetoothSDK_Demo_iOS_Example-dummy.m"; sourceTree = "<group>"; };
+		C9E6EE962C2209C39027B45BF09B49AE /* LSBaseResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LSBaseResponse.h; path = LSNetworkingModule/Classes/LSBaseResponse.h; sourceTree = "<group>"; };
+		CDE849BB515C19975FE7BE79E68E6AD5 /* AFNetworking-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AFNetworking-Info.plist"; sourceTree = "<group>"; };
+		D1A6DDFBD4F71D5CE43C9F96349F10ED /* Pods-LSBluetoothSDK_Demo_iOS_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LSBluetoothSDK_Demo_iOS_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		D1CCA04CAD5892A9CA9CD287B11F4AC2 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		D2846D6A875E121C3B44E2503584F39B /* ServerCommunicationDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ServerCommunicationDelegate.h; path = LSNetworkingModule/Classes/ServerCommunicationDelegate.h; sourceTree = "<group>"; };
+		D75EF67F17F5E82F44412AEEF99A4249 /* ErrorObjectHandleDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ErrorObjectHandleDelegate.h; path = LSNetworkingModule/Classes/ErrorObjectHandleDelegate.h; sourceTree = "<group>"; };
+		D778E3E312E19F3862FDFE055F50A556 /* LSBluetoothSDK_iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LSBluetoothSDK_iOS-umbrella.h"; sourceTree = "<group>"; };
+		E25AA157A1D77F6A0D5D270E507DD5DF /* AFNetworking-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AFNetworking-umbrella.h"; sourceTree = "<group>"; };
+		E3FB3A954891E22163E1EE1D2CB276B5 /* Pods-LSBluetoothSDK_Demo_iOS_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LSBluetoothSDK_Demo_iOS_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E5E75FAE91EFFE21B0106856D254BE2A /* HttpErrcode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HttpErrcode.h; path = LSNetworkingModule/Classes/HttpErrcode.h; sourceTree = "<group>"; };
+		E61C78EBBC0D75775D5DC65FF3F1C250 /* ConfigFileCenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ConfigFileCenter.m; path = LSNetworkingModule/Classes/ConfigFileCenter.m; sourceTree = "<group>"; };
+		E65FD4F814E3418339596B371695C020 /* LSAuthorization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LSAuthorization.m; path = LSAuthorization/Classes/Public/LSAuthorization.m; sourceTree = "<group>"; };
+		E74872FE35BD4817BEB426D4C185714B /* ConfigFileCenterProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ConfigFileCenterProtocol.h; path = LSNetworkingModule/Classes/ConfigFileCenterProtocol.h; sourceTree = "<group>"; };
+		E7D92E2AE3AE165FE782F77B811D7B0E /* LSBluetoothSDK_iOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LSBluetoothSDK_iOS-Info.plist"; sourceTree = "<group>"; };
+		EA34E045E1D4A5EC814DFFEE48BA49F3 /* LSNetworkingModule.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LSNetworkingModule.framework; path = LSNetworkingModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA8B316B7B0C79BD8D459FEA05024547 /* zh-Hans.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = "zh-Hans.lproj"; path = "LSNetworkingModule/Assets/LSNetworkingModule.bundle/zh-Hans.lproj"; sourceTree = "<group>"; };
+		EBF7933FC5A9C2EFBF8802FC01192212 /* ErrorObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ErrorObject.m; path = LSNetworkingModule/Classes/ErrorObject.m; sourceTree = "<group>"; };
+		EED2084B4D09866B2DA4699379CDD767 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFURLRequestSerialization.h; path = AFNetworking/AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		EEF7BB5672D986457C326A2A5A10213F /* LSBluetoothSDK_iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LSBluetoothSDK_iOS.xcconfig; sourceTree = "<group>"; };
+		EF62DEED3B50142F0AA1FA6A36432C7F /* AFImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AFImageDownloader.h; path = "UIKit+AFNetworking/AFImageDownloader.h"; sourceTree = "<group>"; };
+		F12F6F0C627DB1B79EC338ACBB1AE86C /* LSBaseRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LSBaseRequest.m; path = LSNetworkingModule/Classes/LSBaseRequest.m; sourceTree = "<group>"; };
+		F1A3E1A68605DEA5C481FB42CD58DB3D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		F218E5B415EAC7C0B9A479172A3AFF4F /* LSAuthorization-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LSAuthorization-dummy.m"; sourceTree = "<group>"; };
+		F22015501463D8C9689FA53938F38304 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3E875B7011DA40EDDD87D46F0B06349 /* AFNetworking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AFNetworking.modulemap; sourceTree = "<group>"; };
+		F57FAFE223126B73AC676334710D7DCD /* LSNetworkingModule-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LSNetworkingModule-Info.plist"; sourceTree = "<group>"; };
+		F60326BF8E6DA2E9EF0C866DB437C682 /* Protocols */ = {isa = PBXFileReference; includeInIndex = 1; name = Protocols; path = LSAuthorization/Assets/Protocols; sourceTree = "<group>"; };
+		F7766B50FCDE0CA7CEDE81DC438933D9 /* Resources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Resources.bundle; path = "LSNetworkingModule-Resources.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F98A1AF0051F5C0EEB06B634A4A00FD9 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AFSecurityPolicy.m; path = AFNetworking/AFSecurityPolicy.m; sourceTree = "<group>"; };
+		FAD7977E8E6D78859992FA5DC4897A8D /* LSBluetoothSDK_Demo_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LSBluetoothSDK_Demo_iOS.framework; path = LSBluetoothSDK_Demo_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB906307477325FD6722B275C98EA9FF /* LSAuthorization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LSAuthorization.h; path = LSAuthorization/Classes/Public/LSAuthorization.h; sourceTree = "<group>"; };
+		FE344AB570DF67FFA6A92C3DBD5D9EF1 /* LSBluetoothSDK_Demo_iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LSBluetoothSDK_Demo_iOS-dummy.m"; sourceTree = "<group>"; };
+		FE35EDC6A547BF948A80F22FAD07A87D /* LSCustomHeaderRequestSerializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LSCustomHeaderRequestSerializer.m; path = LSNetworkingModule/Classes/LSCustomHeaderRequestSerializer.m; sourceTree = "<group>"; };
+		FE905234B0EE3FB3C1C22574EA6CCDC7 /* UIButton+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+AFNetworking.h"; path = "UIKit+AFNetworking/UIButton+AFNetworking.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2455D254A8606CD639FBD88F275F83A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F8754D3572D0C207EE024D99D1894D8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E919E9CF92A096D2E18997DA64A94B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2F27FBA921BABE759597DB524E6CD6DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E87959A7AC9D9C2AFCB605CDCF666786 /* Foundation.framework in Frameworks */,
+				9A9F19944ED5E2E7D7A78C5EA037D873 /* LSNetworkingModule.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F501AABE34365EB9A35A43BC09DE77F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81063A2579A10DF1ACE2B62938BDC573 /* AFNetworking.framework in Frameworks */,
+				7C665F7FA22A01EA305ABB5EDE3E49D6 /* Foundation.framework in Frameworks */,
+				F0ADF25CB11BBC790F8E7A4BFF361816 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99296CB2AAE82C49C9B4A74A8F4D8341 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45AD6149EEB2883EAC09063B5FDD6F5B /* CoreGraphics.framework in Frameworks */,
+				0254EABA2D0AACFBFA5E2BAD753C5E2D /* Foundation.framework in Frameworks */,
+				1AC36159DEDD4452C304D5B1FFB688D1 /* MobileCoreServices.framework in Frameworks */,
+				A93BD560DD062BA5B515267570761CBE /* Security.framework in Frameworks */,
+				B26EDD2D9A9BC8CDDEADEA8DBEC606A7 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B089FB2C9DBC96C5D3AB55C9FB9BEE1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				626C878583DFF8A1B301A058DB5CCEDA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7594C5B4AAAFACB8A61E6FA288E0602 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF90EDF868967DAB01D9C2DEB5E22A8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0940288B49E5CE94BA22768FF491610F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3A382DD80E6F98441EFFD2F3EE67744 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2514DE25C2AECC4B4D4F5277EB40888A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01A6804375D40924C9A7E68DBC591EEE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				54A81B6F5D781628C28ABF825640E151 /* en.lproj */,
+				79B5C3232558A89588E9A2BCA2707320 /* ja.lproj */,
+				EA8B316B7B0C79BD8D459FEA05024547 /* zh-Hans.lproj */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		053734953F40A71D483F75DFCB650760 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B05FD70D591E66D4AB1D45A8C6F4FC1E /* AFNetworking */,
+				908720D308E42AAE28AE352C247F5A19 /* LSAuthorization */,
+				8A2A3A3707C64D51854DC12AE1C88F3D /* LSBluetoothSDK_iOS */,
+				404FDEEE2EF713B828B93FA8B90CD322 /* LSNetworkingModule */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		06AEBF94E531BD5505632DB6C1267D25 /* Pods-LSBluetoothSDK_Demo_iOS_Example */ = {
+			isa = PBXGroup;
+			children = (
+				477019B1B76727F4D5A3656B671E939D /* Pods-LSBluetoothSDK_Demo_iOS_Example.modulemap */,
+				9D93C09265980E32C35F26822CA7E40C /* Pods-LSBluetoothSDK_Demo_iOS_Example-acknowledgements.markdown */,
+				A997CD03B7CA43ED22FF3D9FD4E85392 /* Pods-LSBluetoothSDK_Demo_iOS_Example-acknowledgements.plist */,
+				C89240A3237072E6A26B2DBA9D60E337 /* Pods-LSBluetoothSDK_Demo_iOS_Example-dummy.m */,
+				925B365AC31AE808CBF8E786F6EE9F68 /* Pods-LSBluetoothSDK_Demo_iOS_Example-frameworks.sh */,
+				A57771B6230892F206CB17112AE57BEC /* Pods-LSBluetoothSDK_Demo_iOS_Example-Info.plist */,
+				95550ED424E3887CFABE1B2FDB931C43 /* Pods-LSBluetoothSDK_Demo_iOS_Example-umbrella.h */,
+				927D76FAC0328AB97BBC37E07862B84F /* Pods-LSBluetoothSDK_Demo_iOS_Example.debug.xcconfig */,
+				8A41F1048B8F61A004317EFD53BB832D /* Pods-LSBluetoothSDK_Demo_iOS_Example.release.xcconfig */,
+			);
+			name = "Pods-LSBluetoothSDK_Demo_iOS_Example";
+			path = "Target Support Files/Pods-LSBluetoothSDK_Demo_iOS_Example";
+			sourceTree = "<group>";
+		};
+		3A5D39CE4D4C96D4F649F08387FBE66E /* LSBluetoothSDK_Demo_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5B891ACC430036782CCC110C82736387 /* ReplaceMe.m */,
+				3C543E56ACD999897E80FA5BF63DC6B8 /* Pod */,
+				4843FFB66670C5468B3171D09958DD4C /* Support Files */,
+			);
+			name = LSBluetoothSDK_Demo_iOS;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		3C543E56ACD999897E80FA5BF63DC6B8 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				7052710768B11B6226898D6E660C6C2F /* LICENSE */,
+				AE81D68611DBAF4F8975BF4A45AF7000 /* LSBluetoothSDK_Demo_iOS.podspec */,
+				025D5D533ED8141EB3B39B170A62D84C /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		3F36A7C1A51D001938236DD2D7CEE8DC /* Serialization */ = {
+			isa = PBXGroup;
+			children = (
+				EED2084B4D09866B2DA4699379CDD767 /* AFURLRequestSerialization.h */,
+				0B9152B6F18DD63E5BDABDF13618FE82 /* AFURLRequestSerialization.m */,
+				AC8462A19783A9A7067AE514D2F7577B /* AFURLResponseSerialization.h */,
+				66D715800B257F381166FBD6A362D7F3 /* AFURLResponseSerialization.m */,
+			);
+			name = Serialization;
+			sourceTree = "<group>";
+		};
+		404FDEEE2EF713B828B93FA8B90CD322 /* LSNetworkingModule */ = {
+			isa = PBXGroup;
+			children = (
+				BCB672F30133C1DF643EDA9CED029829 /* BaseNetworkError.h */,
+				1D914795C0D421C46583D39440D9EB06 /* BaseNetworkError.m */,
+				92AB7D66BCBAE20D227418C879B6413F /* BaseNetworkErrorProtocol.h */,
+				B2E01441ED88EEEF576D3F8891C91131 /* ConfigFileCenter.h */,
+				E61C78EBBC0D75775D5DC65FF3F1C250 /* ConfigFileCenter.m */,
+				E74872FE35BD4817BEB426D4C185714B /* ConfigFileCenterProtocol.h */,
+				4081DB0BCB358AC3A91B90782B1E88FE /* ErrorObject.h */,
+				EBF7933FC5A9C2EFBF8802FC01192212 /* ErrorObject.m */,
+				D75EF67F17F5E82F44412AEEF99A4249 /* ErrorObjectHandleDelegate.h */,
+				B84DE1E7A991A2B35552064274DE4461 /* ErrorObjectProtocol.h */,
+				E5E75FAE91EFFE21B0106856D254BE2A /* HttpErrcode.h */,
+				783D0BEDD48DD67B4EBE69E98A30B92D /* LSBaseRequest.h */,
+				F12F6F0C627DB1B79EC338ACBB1AE86C /* LSBaseRequest.m */,
+				C9E6EE962C2209C39027B45BF09B49AE /* LSBaseResponse.h */,
+				2DC7843CFA9EE3E09212A5741DD6090D /* LSBaseResponse.m */,
+				294F3EAD33EEB9E0C6BCDF214C20A018 /* LSCustomHeaderRequestSerializer.h */,
+				FE35EDC6A547BF948A80F22FAD07A87D /* LSCustomHeaderRequestSerializer.m */,
+				6CCE034D70D47DCD158CA1747DC176B4 /* LSJSonResponse.h */,
+				8847DC3B3F95A5B6B0886CD5DA688CB7 /* LSJSonResponse.m */,
+				BBA6DF5EFD1BE59BE45C664E1D68A29F /* LSNetwokingURLCache.h */,
+				141ABBC24A7956D80856BF4EDDB5DC8B /* LSNetwokingURLCache.m */,
+				207E02C74C82EB2A70D15F06A870F214 /* LSNetworkingModule.h */,
+				146AA3C510B41AF58D8D07F6FAA5ADBC /* ProtocolSimulator.h */,
+				3462E6FC1A205F91E813BBC87E4E56D6 /* ProtocolSimulator.m */,
+				8D37FBCBFD7CA2C2E5782A8FC09AFF40 /* ReplaceMe.m */,
+				7A99274C2C0783FC7F9D76DF0723C249 /* RequestErrorStringUtility.h */,
+				77F1CE02554B73FDD7E51E2123D2E229 /* RequestErrorStringUtility.m */,
+				A03BC4862A5E1C017381B96EA8C5F133 /* RequestInfo.h */,
+				A5FA9D205D7B4778A43C03AE632252D5 /* RequestInfo.m */,
+				12896E60BB44EB34E6CA3856BDC83BD3 /* RequestMap.h */,
+				C16164DD95E0A2CBFD04682633D31C81 /* RequestMap.m */,
+				D2846D6A875E121C3B44E2503584F39B /* ServerCommunicationDelegate.h */,
+				577A254A6C3D5DFA7D524655554A9523 /* ServerCommunicationEventsDelegate.h */,
+				4E4A7D58FB97B3D9E74AE444EE3D5C22 /* ServerCommunicationManager.h */,
+				4F65D024991F8084E122DD8D8EA3475D /* ServerCommunicationManager.m */,
+				1F3C00373D8ED7C0F16C6D693A77863D /* ServerCommunicationProtocol.h */,
+				9A223935391956F13C0918C9D36C83FB /* ServerComunicationManagerInternal.h */,
+				01A6804375D40924C9A7E68DBC591EEE /* Resources */,
+				D875D95E3DEAE9FDE42626319109455E /* Support Files */,
+			);
+			name = LSNetworkingModule;
+			path = LSNetworkingModule;
+			sourceTree = "<group>";
+		};
+		4843FFB66670C5468B3171D09958DD4C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C57489BE783D4ECB34484AE52335E7DE /* LSBluetoothSDK_Demo_iOS.modulemap */,
+				B449622F6E5D51B276081EA1AC86B2C6 /* LSBluetoothSDK_Demo_iOS.xcconfig */,
+				FE344AB570DF67FFA6A92C3DBD5D9EF1 /* LSBluetoothSDK_Demo_iOS-dummy.m */,
+				C075C3B170B13AA17AE7261CDC60E865 /* LSBluetoothSDK_Demo_iOS-Info.plist */,
+				042FFFB24C5206457609BBE2D3A55B3F /* LSBluetoothSDK_Demo_iOS-prefix.pch */,
+				3A0996EED9E4CDC59BF8076BD1604FDB /* LSBluetoothSDK_Demo_iOS-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LSBluetoothSDK_Demo_iOS";
+			sourceTree = "<group>";
+		};
+		5E94265A59C4FCE73651E54C4BEF242D /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				36E595D5EC7DE7477742C7C6D05F5DA0 /* AFNetworkReachabilityManager.h */,
+				186D54AA2806C98E3309775754E8CA20 /* AFNetworkReachabilityManager.m */,
+			);
+			name = Reachability;
+			sourceTree = "<group>";
+		};
+		60E11B30FCCE1FBA583AA3FF696446CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				36ED891677583E4BAFA59CF44B64AC10 /* LSDeviceBluetooth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6C0C07D4AF0CA505276D8D3E03A5AA29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				932AFAC94BFB769B75A58D50683EE0D4 /* LSAuthorizationFramework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		70D3293A1636175104E0111A319A7CA0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				29400646BF12641D12CD9CEF5AC2A426 /* LSBluetoothSDK_iOS.modulemap */,
+				EEF7BB5672D986457C326A2A5A10213F /* LSBluetoothSDK_iOS.xcconfig */,
+				7830A2CE3BEEEDCBE85A2E4BE711048E /* LSBluetoothSDK_iOS-dummy.m */,
+				E7D92E2AE3AE165FE782F77B811D7B0E /* LSBluetoothSDK_iOS-Info.plist */,
+				710B00AB95DCE023B07DC90E32E2D950 /* LSBluetoothSDK_iOS-prefix.pch */,
+				D778E3E312E19F3862FDFE055F50A556 /* LSBluetoothSDK_iOS-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LSBluetoothSDK_iOS";
+			sourceTree = "<group>";
+		};
+		8A2A3A3707C64D51854DC12AE1C88F3D /* LSBluetoothSDK_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				54EA699BE10AE548A9C8465C72757012 /* LSBluetoothManager+AddDevice.h */,
+				C6821FA9BF3D1AC42267585446F8177D /* LSBluetoothManager+AddDevice.m */,
+				0D51AC99BD7216F28C56BE580A6EBBFF /* ReplaceMe.m */,
+				60E11B30FCCE1FBA583AA3FF696446CF /* Frameworks */,
+				70D3293A1636175104E0111A319A7CA0 /* Support Files */,
+			);
+			name = LSBluetoothSDK_iOS;
+			path = LSBluetoothSDK_iOS;
+			sourceTree = "<group>";
+		};
+		8D28B0553892985C6CE811DBBE54ED40 /* NSURLSession */ = {
+			isa = PBXGroup;
+			children = (
+				57E5E981BFD2678BE65751AD29D33DE9 /* AFCompatibilityMacros.h */,
+				59F6D20D88E45AB3C553A95ED525E9C4 /* AFHTTPSessionManager.h */,
+				6C52DD0F1039B2AD30F65A3929D5BEB8 /* AFHTTPSessionManager.m */,
+				A1ED77B4E1902805FC445FAED1A0246A /* AFURLSessionManager.h */,
+				670186C5945C583D36901771B7C9C912 /* AFURLSessionManager.m */,
+			);
+			name = NSURLSession;
+			sourceTree = "<group>";
+		};
+		908720D308E42AAE28AE352C247F5A19 /* LSAuthorization */ = {
+			isa = PBXGroup;
+			children = (
+				FB906307477325FD6722B275C98EA9FF /* LSAuthorization.h */,
+				E65FD4F814E3418339596B371695C020 /* LSAuthorization.m */,
+				638DE7F81DA3EA7F0384393500189074 /* LSAuthorizeRequest.h */,
+				493E4047323EE543C3030E1481333D91 /* LSAuthorizeRequest.m */,
+				8C125DDECA2EAF0119B808A5FFDD6A98 /* LSAuthorizeResponse.h */,
+				932F7DC9E0AA51CAE13CC9314CE66D7C /* LSAuthorizeResponse.m */,
+				84F0BA090DF0894E49C47FDF2CC9E998 /* LSProtocolPathUtils.h */,
+				6C0C07D4AF0CA505276D8D3E03A5AA29 /* Frameworks */,
+				EB8E786AB7485BC176485686705BBC0B /* Resources */,
+				954EC66CA2CCD86B6DA520401571F120 /* Support Files */,
+			);
+			name = LSAuthorization;
+			path = LSAuthorization;
+			sourceTree = "<group>";
+		};
+		954EC66CA2CCD86B6DA520401571F120 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B7ED86D56CDA3E1EC8DFE2264755B23D /* LSAuthorization.modulemap */,
+				C7DD76F37CD140687F796F2BB30146AD /* LSAuthorization.xcconfig */,
+				F218E5B415EAC7C0B9A479172A3AFF4F /* LSAuthorization-dummy.m */,
+				6E98A042547013525CB04048F7C49787 /* LSAuthorization-Info.plist */,
+				75C9D99CBDE11F304B220CC86D4A3BF3 /* LSAuthorization-prefix.pch */,
+				6BF8D52A877C2A836FC13B56AF4A9E20 /* LSAuthorization-umbrella.h */,
+				9535F4AF2A8BBB546B67961C5FC95CFA /* ResourceBundle-LSAuthorization-LSAuthorization-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LSAuthorization";
+			sourceTree = "<group>";
+		};
+		A5C0C3FED04AC7D9C573AC7E8EFBFCE8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F3E875B7011DA40EDDD87D46F0B06349 /* AFNetworking.modulemap */,
+				24480F8C348611FFFF223828D384866E /* AFNetworking.xcconfig */,
+				A6235C3EF850FC0749E0411DE46B90FA /* AFNetworking-dummy.m */,
+				CDE849BB515C19975FE7BE79E68E6AD5 /* AFNetworking-Info.plist */,
+				118F107BD09B98DC8AEB5930264D8C98 /* AFNetworking-prefix.pch */,
+				E25AA157A1D77F6A0D5D270E507DD5DF /* AFNetworking-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AFNetworking";
+			sourceTree = "<group>";
+		};
+		AC2CBE21485F695440C49064D46EEA64 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3A5D39CE4D4C96D4F649F08387FBE66E /* LSBluetoothSDK_Demo_iOS */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		B05FD70D591E66D4AB1D45A8C6F4FC1E /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				459E1AF91655A948CBAA933C0A5C8726 /* AFNetworking.h */,
+				8D28B0553892985C6CE811DBBE54ED40 /* NSURLSession */,
+				5E94265A59C4FCE73651E54C4BEF242D /* Reachability */,
+				CB5519DA15C977C5497CBC630DBE64C1 /* Security */,
+				3F36A7C1A51D001938236DD2D7CEE8DC /* Serialization */,
+				A5C0C3FED04AC7D9C573AC7E8EFBFCE8 /* Support Files */,
+				BD9BB0D9573A32E6296F27EFF8CE0A7D /* UIKit */,
+			);
+			name = AFNetworking;
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		B28CBC9D49E42C004B695429F01A67DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4FA15D44DF6BAC7550EDEED10862AA3 /* AFNetworking.framework */,
+				11CD4D7777EBC5DDF9ED76D87AF6472C /* LSAuthorization.bundle */,
+				9C0E83FBBE28D9236338FD962BD6EE57 /* LSAuthorization.framework */,
+				FAD7977E8E6D78859992FA5DC4897A8D /* LSBluetoothSDK_Demo_iOS.framework */,
+				53DF6EA78EBABBB58C00CA1F71272C1C /* LSBluetoothSDK_iOS.framework */,
+				EA34E045E1D4A5EC814DFFEE48BA49F3 /* LSNetworkingModule.framework */,
+				456EABEA599F9E738EFADB5B9D1BB982 /* Pods_LSBluetoothSDK_Demo_iOS_Example.framework */,
+				032DC227F1EDCAD162B8D64EA26A25B0 /* Pods_LSBluetoothSDK_Demo_iOS_Tests.framework */,
+				F7766B50FCDE0CA7CEDE81DC438933D9 /* Resources.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB295901471E9D301780C5134007C252 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				06AEBF94E531BD5505632DB6C1267D25 /* Pods-LSBluetoothSDK_Demo_iOS_Example */,
+				CBDF3119C8E8D7BFF70E73179C7F11CE /* Pods-LSBluetoothSDK_Demo_iOS_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BD9BB0D9573A32E6296F27EFF8CE0A7D /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				AA230C618B37143348A979860ED80EBA /* AFAutoPurgingImageCache.h */,
+				BD1B95F14894EF4D982D77456650D6BC /* AFAutoPurgingImageCache.m */,
+				EF62DEED3B50142F0AA1FA6A36432C7F /* AFImageDownloader.h */,
+				A15AC3984792AC93738D8ACAAD067C97 /* AFImageDownloader.m */,
+				5B7C13F2A30E7BFA84DB78216CE94832 /* AFNetworkActivityIndicatorManager.h */,
+				5A27EF6E6D5F218D3527A40437030BE0 /* AFNetworkActivityIndicatorManager.m */,
+				41381CF21D3EAB44D655C86D3614295A /* UIActivityIndicatorView+AFNetworking.h */,
+				BFABD4B4AC7502EE033E05B58A25FB96 /* UIActivityIndicatorView+AFNetworking.m */,
+				FE905234B0EE3FB3C1C22574EA6CCDC7 /* UIButton+AFNetworking.h */,
+				1755849B1AC216AF04C383B31CBDF2B3 /* UIButton+AFNetworking.m */,
+				2C6F485DDC4EEE8BDC505B70D43FDFEB /* UIImage+AFNetworking.h */,
+				3478464F2FB61446852DA3C700E303E9 /* UIImageView+AFNetworking.h */,
+				36A0C6BA654C3A1873CEEA8DFB65BBFF /* UIImageView+AFNetworking.m */,
+				0CE9AC5D1421DD27D42C83717ED3144C /* UIKit+AFNetworking.h */,
+				859F2501E0EDB9DFCA4DFEE18312F535 /* UIProgressView+AFNetworking.h */,
+				BF0CEB1BFC86FE60FA8C15A4914D003C /* UIProgressView+AFNetworking.m */,
+				8A887C903BCFC5A87534DA87CC4B4517 /* UIRefreshControl+AFNetworking.h */,
+				3F0FA9AA43BB0CC6C9CA085559914DEB /* UIRefreshControl+AFNetworking.m */,
+				A125185B32E9CA352F35C72C41AF6B4D /* UIWebView+AFNetworking.h */,
+				8701530136E6D8FB9BD5EA0253DB8190 /* UIWebView+AFNetworking.m */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
+		C0F084728AF535D375DE54817AA5384B /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6F11FC4ED966F37B4A8EACFDAA3D1445 /* CoreGraphics.framework */,
+				1936C9F1731B954CDD4989081C7A72CB /* Foundation.framework */,
+				72C00A5833F9ED248700F31FA9BDC196 /* MobileCoreServices.framework */,
+				D1CCA04CAD5892A9CA9CD287B11F4AC2 /* Security.framework */,
+				7252A85F940975E5B1E41DD4D7F39FD2 /* SystemConfiguration.framework */,
+				F1A3E1A68605DEA5C481FB42CD58DB3D /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C34EF54CFB57B0A92CB07F6C67CE1A1A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F22015501463D8C9689FA53938F38304 /* AFNetworking.framework */,
+				691EB2B2905703943B51B9705D3C66C1 /* LSNetworkingModule.framework */,
+				C0F084728AF535D375DE54817AA5384B /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB5519DA15C977C5497CBC630DBE64C1 /* Security */ = {
+			isa = PBXGroup;
+			children = (
+				46DA10786525B1B93F6F896BEC444AB8 /* AFSecurityPolicy.h */,
+				F98A1AF0051F5C0EEB06B634A4A00FD9 /* AFSecurityPolicy.m */,
+			);
+			name = Security;
+			sourceTree = "<group>";
+		};
+		CBDF3119C8E8D7BFF70E73179C7F11CE /* Pods-LSBluetoothSDK_Demo_iOS_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1ECE8FDA8B8CC95A3B33C551DAA875B2 /* Pods-LSBluetoothSDK_Demo_iOS_Tests.modulemap */,
+				3BBE47C242FC3EDBD6AF4E538DD4A4E2 /* Pods-LSBluetoothSDK_Demo_iOS_Tests-acknowledgements.markdown */,
+				E3FB3A954891E22163E1EE1D2CB276B5 /* Pods-LSBluetoothSDK_Demo_iOS_Tests-acknowledgements.plist */,
+				09A61B2972F094557343A616E8D789ED /* Pods-LSBluetoothSDK_Demo_iOS_Tests-dummy.m */,
+				44AB428163841FEA6B6C4E88C332ED73 /* Pods-LSBluetoothSDK_Demo_iOS_Tests-frameworks.sh */,
+				7D0DF40DF973BD0FB27F35CE530AF25B /* Pods-LSBluetoothSDK_Demo_iOS_Tests-Info.plist */,
+				AD847BFA6B3C3E41E987EF10CEBA29A6 /* Pods-LSBluetoothSDK_Demo_iOS_Tests-umbrella.h */,
+				D1A6DDFBD4F71D5CE43C9F96349F10ED /* Pods-LSBluetoothSDK_Demo_iOS_Tests.debug.xcconfig */,
+				68A1001F40D273C86B8A76CE4E0D17C6 /* Pods-LSBluetoothSDK_Demo_iOS_Tests.release.xcconfig */,
+			);
+			name = "Pods-LSBluetoothSDK_Demo_iOS_Tests";
+			path = "Target Support Files/Pods-LSBluetoothSDK_Demo_iOS_Tests";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				AC2CBE21485F695440C49064D46EEA64 /* Development Pods */,
+				C34EF54CFB57B0A92CB07F6C67CE1A1A /* Frameworks */,
+				053734953F40A71D483F75DFCB650760 /* Pods */,
+				B28CBC9D49E42C004B695429F01A67DB /* Products */,
+				BB295901471E9D301780C5134007C252 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D875D95E3DEAE9FDE42626319109455E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5CC74B5B26D5E7735063EB62EF5A1BE8 /* LSNetworkingModule.modulemap */,
+				64C8DE778A0630DD189ED43EB2609AC6 /* LSNetworkingModule.xcconfig */,
+				5254EE2122FFD0EC96CCE621269BDE6F /* LSNetworkingModule-dummy.m */,
+				F57FAFE223126B73AC676334710D7DCD /* LSNetworkingModule-Info.plist */,
+				0954417CBBABA05CB7C338339EB70CF1 /* LSNetworkingModule-prefix.pch */,
+				1E657CD105EA81BB090EAC7A3B104A8A /* LSNetworkingModule-umbrella.h */,
+				52CD9884AEEC4C178DF16DF3DF296210 /* ResourceBundle-Resources-LSNetworkingModule-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LSNetworkingModule";
+			sourceTree = "<group>";
+		};
+		EB8E786AB7485BC176485686705BBC0B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F60326BF8E6DA2E9EF0C866DB437C682 /* Protocols */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		14BFFA788DAC1B9EA80DC2AF74415A63 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E4E3F96A6DC44A316DA6138CF8D8CF3 /* BaseNetworkError.h in Headers */,
+				7C0D7D311CC6769838173DF850B68814 /* BaseNetworkErrorProtocol.h in Headers */,
+				C0EFBB6AADB81A434DCF4672922C60CB /* ConfigFileCenter.h in Headers */,
+				31AE4A92657507537C9A5BD62BF33C74 /* ConfigFileCenterProtocol.h in Headers */,
+				555808C5DA287BFBDCE0FC8C7ED5B47F /* ErrorObject.h in Headers */,
+				67A889D81D573E92FE3E95ECC105EDE8 /* ErrorObjectHandleDelegate.h in Headers */,
+				CE506EF4AE39340EFFECD72AE26A59CB /* ErrorObjectProtocol.h in Headers */,
+				51F868BDCF3C3552FAF1CF3C51FE1604 /* HttpErrcode.h in Headers */,
+				C533D5525D98E7D630A6486735E861C6 /* LSBaseRequest.h in Headers */,
+				7CD0C8EBB21039253CE70BA225B6BAF7 /* LSBaseResponse.h in Headers */,
+				941B09C712F7569CA8D1F622DA10E3FD /* LSCustomHeaderRequestSerializer.h in Headers */,
+				515F355109E352EA25B179A5B1E1699F /* LSJSonResponse.h in Headers */,
+				CB6B5BBDCAFDA535BB9C46C59EA35B65 /* LSNetwokingURLCache.h in Headers */,
+				55F9AF275CDDB10AE7A42D4B9CA78E15 /* LSNetworkingModule-umbrella.h in Headers */,
+				E611B514B16A97C93E2C19676C2B435B /* LSNetworkingModule.h in Headers */,
+				0C49E00F22B1D228A70D7FB2DA260E04 /* ProtocolSimulator.h in Headers */,
+				3F735659AD11E2F5D6281E1261265994 /* RequestErrorStringUtility.h in Headers */,
+				A5DB8C5CF6287A490E278C9A879FC643 /* RequestInfo.h in Headers */,
+				EDDC2B2F75F7FC09804A2E45838A2107 /* RequestMap.h in Headers */,
+				1C2B19E106F2D5977481097A04C887F4 /* ServerCommunicationDelegate.h in Headers */,
+				EFA0EBE4318CA8647A768CE2E67DC971 /* ServerCommunicationEventsDelegate.h in Headers */,
+				7C42AF32D7B109DB9B82C0FC45E4DD14 /* ServerCommunicationManager.h in Headers */,
+				B691CD147B34C7698DB66F7B157F68B9 /* ServerCommunicationProtocol.h in Headers */,
+				02ECD4C5066311FB5DB0884078B9F8B9 /* ServerComunicationManagerInternal.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25523906BDB01C5142A2D75CF4267A9B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7EA0E34C96EE4D36F0D0980BAFFDFE2 /* LSAuthorization-umbrella.h in Headers */,
+				A4A5126C834E049C7205FE230CAF1393 /* LSAuthorization.h in Headers */,
+				AFCC22F9B767DD206C2B9DFB7B50C120 /* LSAuthorizeRequest.h in Headers */,
+				109424A0DF7F1D0B1663D79BA7899F4B /* LSAuthorizeResponse.h in Headers */,
+				BBA1290C5D08DC0649E8D88AD7634831 /* LSProtocolPathUtils.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C374A1F707DD33222B9ABF782F3F4A4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FC8140EA8312333BBCEB7F06EA015EA /* LSBluetoothSDK_Demo_iOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5303E2333DA292FBE4C7EC76B853634F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE4ABE89D0B37264A3ABB89A187405A8 /* LSBluetoothManager+AddDevice.h in Headers */,
+				1EBC0744EB505EAFF898156CF82E6E09 /* LSBluetoothSDK_iOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94093007C9478CF906004885CCEBD0EB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF398A3CAF24FC8852C9114413AB9F19 /* Pods-LSBluetoothSDK_Demo_iOS_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA246617621096B07CDE8D04305A5A6D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C04074E59EF2E298E0D26418C2AEF06B /* Pods-LSBluetoothSDK_Demo_iOS_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5F3954755BD8248E767F716DA24E14F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				870044029B3BA449A0932AAE3A495DE9 /* AFAutoPurgingImageCache.h in Headers */,
+				F407B4E0B40A8AA4CA7443563F105E40 /* AFCompatibilityMacros.h in Headers */,
+				169B3FC2BD33B8FBC2D4C35A1C1DC6BF /* AFHTTPSessionManager.h in Headers */,
+				E261B82A0EEFE0EA897EA1A36C69C1CE /* AFImageDownloader.h in Headers */,
+				2AE1F29F045D02727E815DBBAC8C7B4F /* AFNetworkActivityIndicatorManager.h in Headers */,
+				5036C1D6D87D4DA731C972A410C17ABC /* AFNetworking-umbrella.h in Headers */,
+				7F372985CE80B69B5524CC3277E1C1AF /* AFNetworking.h in Headers */,
+				A9E429ECAF059D9D471F3AE5C1BAC2B0 /* AFNetworkReachabilityManager.h in Headers */,
+				3E112DA53DD725C9A3185A54EB342EAF /* AFSecurityPolicy.h in Headers */,
+				17D6A066C5F987FEFF8B89D7EFDFD375 /* AFURLRequestSerialization.h in Headers */,
+				47FF1D17418AB1144FDE0E46427F4877 /* AFURLResponseSerialization.h in Headers */,
+				D59E2A517A48D101120EB57F90F140A5 /* AFURLSessionManager.h in Headers */,
+				B5AD0B8F0F9304975A01978B2908B62F /* UIActivityIndicatorView+AFNetworking.h in Headers */,
+				AEA4CF8EE7E08C13B4A71A634F9F3B5B /* UIButton+AFNetworking.h in Headers */,
+				09E2F57C3C2B897ACC8AF5C49F1E9592 /* UIImage+AFNetworking.h in Headers */,
+				6F6C4414DE96E08267712DA4C17C3CBB /* UIImageView+AFNetworking.h in Headers */,
+				9B41316D2DE09092FA0143B33A74B769 /* UIKit+AFNetworking.h in Headers */,
+				3A186F3A7711FAAB8C60562D63FF0D9F /* UIProgressView+AFNetworking.h in Headers */,
+				09E785555B549DE5974C744DB8324B91 /* UIRefreshControl+AFNetworking.h in Headers */,
+				F4FED6C37367BC46B92BB3FE18D233B8 /* UIWebView+AFNetworking.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0130B3724283586C0E9D2A112D4F2AA1 /* AFNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41D6DFBE997E173748D09E9A11D890A3 /* Build configuration list for PBXNativeTarget "AFNetworking" */;
+			buildPhases = (
+				F5F3954755BD8248E767F716DA24E14F /* Headers */,
+				E16D45883ACDDBE532CC4EABBA7C6196 /* Sources */,
+				99296CB2AAE82C49C9B4A74A8F4D8341 /* Frameworks */,
+				51B338009A28492821105E82A3A3C869 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AFNetworking;
+			productName = AFNetworking;
+			productReference = A4FA15D44DF6BAC7550EDEED10862AA3 /* AFNetworking.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		02953019232D5BA21E11664DB3C1FB78 /* Pods-LSBluetoothSDK_Demo_iOS_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3D6870AB56428C5DCF2BC1CCC6FC704 /* Build configuration list for PBXNativeTarget "Pods-LSBluetoothSDK_Demo_iOS_Example" */;
+			buildPhases = (
+				BA246617621096B07CDE8D04305A5A6D /* Headers */,
+				E1DBD5600DFB784CCE0190BE04700863 /* Sources */,
+				B089FB2C9DBC96C5D3AB55C9FB9BEE1B /* Frameworks */,
+				8280589C4D6AE83CB04181F85614E13E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9667D4F9CE713A4D08F3FD24132770E8 /* PBXTargetDependency */,
+				52854983DD6EB373F4E923D331F2B4C2 /* PBXTargetDependency */,
+				37482316AF065648979E3B5B2D8F5500 /* PBXTargetDependency */,
+				A42EFB0284DBE24F86053D136B76448F /* PBXTargetDependency */,
+				ECE436EEBE4FFCF0C7F286E358984D2F /* PBXTargetDependency */,
+			);
+			name = "Pods-LSBluetoothSDK_Demo_iOS_Example";
+			productName = "Pods-LSBluetoothSDK_Demo_iOS_Example";
+			productReference = 456EABEA599F9E738EFADB5B9D1BB982 /* Pods_LSBluetoothSDK_Demo_iOS_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		067CCF346286F2633830B6F655FC2158 /* LSNetworkingModule-Resources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AA067A0AF6C25EDEF846268AC7B06D8 /* Build configuration list for PBXNativeTarget "LSNetworkingModule-Resources" */;
+			buildPhases = (
+				56CCD3726CF2201EEDDFF55066E65919 /* Sources */,
+				B7594C5B4AAAFACB8A61E6FA288E0602 /* Frameworks */,
+				8FC7F87879AE9BAEDE2AD1A74097222C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LSNetworkingModule-Resources";
+			productName = "LSNetworkingModule-Resources";
+			productReference = F7766B50FCDE0CA7CEDE81DC438933D9 /* Resources.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		395F835CB31F6C045A739DBFD662563C /* LSBluetoothSDK_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F97524B73BAD441256502B980F73E15D /* Build configuration list for PBXNativeTarget "LSBluetoothSDK_iOS" */;
+			buildPhases = (
+				5303E2333DA292FBE4C7EC76B853634F /* Headers */,
+				F3113422AF19AD6B5C62BED2770071AB /* Sources */,
+				2455D254A8606CD639FBD88F275F83A8 /* Frameworks */,
+				548631918BFAE9E9D487233F944BBA79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA059C4421198070A6D00E0E1E7F3055 /* PBXTargetDependency */,
+			);
+			name = LSBluetoothSDK_iOS;
+			productName = LSBluetoothSDK_iOS;
+			productReference = 53DF6EA78EBABBB58C00CA1F71272C1C /* LSBluetoothSDK_iOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		50E004361FDD7C079254DBB4B74093E1 /* LSNetworkingModule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00CC3BD690A3377D048D905E5C32AD2E /* Build configuration list for PBXNativeTarget "LSNetworkingModule" */;
+			buildPhases = (
+				14BFFA788DAC1B9EA80DC2AF74415A63 /* Headers */,
+				4CF40CEBFDDAD96514834CF1B40FAA4D /* Sources */,
+				6F501AABE34365EB9A35A43BC09DE77F /* Frameworks */,
+				725DEA911C03164FD587CB1EFFFD7B51 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65C03B2DAAEDC200EE6F39DDDF0CD873 /* PBXTargetDependency */,
+				EB79A503FBEA1C6FB8489AB516E0CA63 /* PBXTargetDependency */,
+			);
+			name = LSNetworkingModule;
+			productName = LSNetworkingModule;
+			productReference = EA34E045E1D4A5EC814DFFEE48BA49F3 /* LSNetworkingModule.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		69D53824F19BDFCE5FBA624B37445D1A /* LSAuthorization */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85C8B956CE33AFF61C88A1BBEC6E7888 /* Build configuration list for PBXNativeTarget "LSAuthorization" */;
+			buildPhases = (
+				25523906BDB01C5142A2D75CF4267A9B /* Headers */,
+				39F01E3476F6156920ABD7E61F332CCD /* Sources */,
+				2F27FBA921BABE759597DB524E6CD6DE /* Frameworks */,
+				DDD1929A816DE4CF6B4A53134704E567 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				68DB165DD0D2F3305CF88A7D4FC2C23A /* PBXTargetDependency */,
+				C7CF17EBCA30556568A32D0DD7DDDD65 /* PBXTargetDependency */,
+			);
+			name = LSAuthorization;
+			productName = LSAuthorization;
+			productReference = 9C0E83FBBE28D9236338FD962BD6EE57 /* LSAuthorization.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AFDE22B661CCBDB90A226E730A0EB054 /* LSAuthorization-LSAuthorization */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B553165FBC9A262E8FA4CA4A6AFEBC2D /* Build configuration list for PBXNativeTarget "LSAuthorization-LSAuthorization" */;
+			buildPhases = (
+				7949ACD7C278A28BEA49DEBFF68801B0 /* Sources */,
+				2E919E9CF92A096D2E18997DA64A94B3 /* Frameworks */,
+				38D4168CAD6B32805075F7AF5649760F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LSAuthorization-LSAuthorization";
+			productName = "LSAuthorization-LSAuthorization";
+			productReference = 11CD4D7777EBC5DDF9ED76D87AF6472C /* LSAuthorization.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		D808AF34967385ECADB0073B65AE72EB /* Pods-LSBluetoothSDK_Demo_iOS_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B03AF664987D5692B67B6AFFB7DE7806 /* Build configuration list for PBXNativeTarget "Pods-LSBluetoothSDK_Demo_iOS_Tests" */;
+			buildPhases = (
+				94093007C9478CF906004885CCEBD0EB /* Headers */,
+				D86DA3AD3EC09AB1D1E797A98E9BAE00 /* Sources */,
+				BF90EDF868967DAB01D9C2DEB5E22A8A /* Frameworks */,
+				BA902ED9EFEE90F0F348E6F8A0D4D2AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCD5DFD99B717BE2821EADA617C929C2 /* PBXTargetDependency */,
+				367D2DE93B7A29687AA89E9BF18A69DB /* PBXTargetDependency */,
+				27FBD0BF1C09BC0CA73E45618D1E8782 /* PBXTargetDependency */,
+				BB77E5104432F0B7E66D9C16E80E84EA /* PBXTargetDependency */,
+				FA787C254F78EF46104EFA17BB3C0A6D /* PBXTargetDependency */,
+			);
+			name = "Pods-LSBluetoothSDK_Demo_iOS_Tests";
+			productName = "Pods-LSBluetoothSDK_Demo_iOS_Tests";
+			productReference = 032DC227F1EDCAD162B8D64EA26A25B0 /* Pods_LSBluetoothSDK_Demo_iOS_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		ED56681FC19D39E81D81C5D60744911A /* LSBluetoothSDK_Demo_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E864B1963677D544E033F442D6D4F3DA /* Build configuration list for PBXNativeTarget "LSBluetoothSDK_Demo_iOS" */;
+			buildPhases = (
+				3C374A1F707DD33222B9ABF782F3F4A4 /* Headers */,
+				AFA36AFE72C6B98C6E37214684DBFCB8 /* Sources */,
+				D3A382DD80E6F98441EFFD2F3EE67744 /* Frameworks */,
+				3278575F0F2EAA5C906AF181E91DC5A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A4D9ADB6BC62C9511C6B27D81BEDECD /* PBXTargetDependency */,
+			);
+			name = LSBluetoothSDK_Demo_iOS;
+			productName = LSBluetoothSDK_Demo_iOS;
+			productReference = FAD7977E8E6D78859992FA5DC4897A8D /* LSBluetoothSDK_Demo_iOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = B28CBC9D49E42C004B695429F01A67DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0130B3724283586C0E9D2A112D4F2AA1 /* AFNetworking */,
+				69D53824F19BDFCE5FBA624B37445D1A /* LSAuthorization */,
+				AFDE22B661CCBDB90A226E730A0EB054 /* LSAuthorization-LSAuthorization */,
+				ED56681FC19D39E81D81C5D60744911A /* LSBluetoothSDK_Demo_iOS */,
+				395F835CB31F6C045A739DBFD662563C /* LSBluetoothSDK_iOS */,
+				50E004361FDD7C079254DBB4B74093E1 /* LSNetworkingModule */,
+				067CCF346286F2633830B6F655FC2158 /* LSNetworkingModule-Resources */,
+				02953019232D5BA21E11664DB3C1FB78 /* Pods-LSBluetoothSDK_Demo_iOS_Example */,
+				D808AF34967385ECADB0073B65AE72EB /* Pods-LSBluetoothSDK_Demo_iOS_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3278575F0F2EAA5C906AF181E91DC5A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38D4168CAD6B32805075F7AF5649760F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CF76433BDB6F530A6A759FFAA02797B /* Protocols in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51B338009A28492821105E82A3A3C869 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		548631918BFAE9E9D487233F944BBA79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		725DEA911C03164FD587CB1EFFFD7B51 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA863E21768E7A3ED742EF72099D07AD /* Resources.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8280589C4D6AE83CB04181F85614E13E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FC7F87879AE9BAEDE2AD1A74097222C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				077EA0189CDB2E9FE9A99FCD939DC15A /* en.lproj in Resources */,
+				23D3F47EE34888B6B87A91E1E92B7A63 /* ja.lproj in Resources */,
+				2749CC91FE7DC86C50045CCC1E36487F /* zh-Hans.lproj in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA902ED9EFEE90F0F348E6F8A0D4D2AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDD1929A816DE4CF6B4A53134704E567 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6B40DEC67F56732B79015E29900002C /* LSAuthorization.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		39F01E3476F6156920ABD7E61F332CCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B97D54E10423DEA011EC8EAF0BD92E9 /* LSAuthorization-dummy.m in Sources */,
+				B647E57AF07AC3F3C56CBDCC9C3EEC6B /* LSAuthorization.m in Sources */,
+				903F5A87CC6867609EBBBD5A7D0D0C06 /* LSAuthorizeRequest.m in Sources */,
+				0F262287ADA030A2171C82472EE69D34 /* LSAuthorizeResponse.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CF40CEBFDDAD96514834CF1B40FAA4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				135A06555FFD6AE156C3FD69E02E1CF5 /* BaseNetworkError.m in Sources */,
+				326162BC7876644A419211C1C110CCCC /* ConfigFileCenter.m in Sources */,
+				4CC08F0C07E025B6607B49CDD8302D56 /* ErrorObject.m in Sources */,
+				E4CE483AA08BFAF4C2B9CECDAC3F77DD /* LSBaseRequest.m in Sources */,
+				D2693BB9C638B39C86F84497B59FDDAB /* LSBaseResponse.m in Sources */,
+				D1F3CD10E5F4EE2FA6FE363B3F93C840 /* LSCustomHeaderRequestSerializer.m in Sources */,
+				44DEA3ECF92991425A0D17168E2B9ED3 /* LSJSonResponse.m in Sources */,
+				70469A769629568D6F33AB9F086841B5 /* LSNetwokingURLCache.m in Sources */,
+				C8C1ECBB622A017070BAE67112AC9D58 /* LSNetworkingModule-dummy.m in Sources */,
+				BA4D13046F2C532BFBA296E2721FCC84 /* ProtocolSimulator.m in Sources */,
+				693523854D11E4D02FEB92D6451A6F9C /* ReplaceMe.m in Sources */,
+				61588E11E8BA35480E9CE06D5430F229 /* RequestErrorStringUtility.m in Sources */,
+				00A3C6D6FD5E3CE1BD192F49082DB14C /* RequestInfo.m in Sources */,
+				66D11AAC275DF6B2482926E9C30A1313 /* RequestMap.m in Sources */,
+				0BF9FD078FF0CE63671E1BC39097F4F0 /* ServerCommunicationManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56CCD3726CF2201EEDDFF55066E65919 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7949ACD7C278A28BEA49DEBFF68801B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFA36AFE72C6B98C6E37214684DBFCB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E9DD3A110F5B51B2E0E7CEFDCBBC974 /* LSBluetoothSDK_Demo_iOS-dummy.m in Sources */,
+				352FE0BAAC8195227CB10CC6A5D23319 /* ReplaceMe.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D86DA3AD3EC09AB1D1E797A98E9BAE00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CD3A9D86398841A3A199C036B738762 /* Pods-LSBluetoothSDK_Demo_iOS_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E16D45883ACDDBE532CC4EABBA7C6196 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3033C2DE9CB2085ECBB95717CFB6425A /* AFAutoPurgingImageCache.m in Sources */,
+				77876997CA63145CC72A2D6FB5758513 /* AFHTTPSessionManager.m in Sources */,
+				0D40EE6956924384435BBBD4B718DEC8 /* AFImageDownloader.m in Sources */,
+				6E4C66ABA27A0F4EFDAA3E8B21A9384F /* AFNetworkActivityIndicatorManager.m in Sources */,
+				3BDC8FBDB7922AA1ABA2C90DBA2DBB35 /* AFNetworking-dummy.m in Sources */,
+				95DAE5AD46A86973A77907D38716F694 /* AFNetworkReachabilityManager.m in Sources */,
+				769B6260247C5624A11411541C0AA4E2 /* AFSecurityPolicy.m in Sources */,
+				E17973BC9CEAE4ED0A7492450F95ACEF /* AFURLRequestSerialization.m in Sources */,
+				A5D86CC71480778ECD0EE81138D48C91 /* AFURLResponseSerialization.m in Sources */,
+				856B571FA3AE9D65E81FACB19E3557F4 /* AFURLSessionManager.m in Sources */,
+				8F96E82F250EE718FA3F08AC9AB58423 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				34A7C5747B4C0825465453E196E57FAA /* UIButton+AFNetworking.m in Sources */,
+				AECB9FD1C271F734476CBF6E84BBFC51 /* UIImageView+AFNetworking.m in Sources */,
+				98114570DFFDF5BD81B7724B4810501D /* UIProgressView+AFNetworking.m in Sources */,
+				D29F2AD07AF58334781F008905C30C35 /* UIRefreshControl+AFNetworking.m in Sources */,
+				DC2186197E507C0C73DFB0600D54867A /* UIWebView+AFNetworking.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1DBD5600DFB784CCE0190BE04700863 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E07A9571F0A00BCD13EE15FF56B6362 /* Pods-LSBluetoothSDK_Demo_iOS_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3113422AF19AD6B5C62BED2770071AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0A3E830A61D5F7631C20DFBF23F5EC5 /* LSBluetoothManager+AddDevice.m in Sources */,
+				6D1AF7B837821ABB0D277C8F2A5500B8 /* LSBluetoothSDK_iOS-dummy.m in Sources */,
+				7C5460826AE799D943912BC40A1DD035 /* ReplaceMe.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		27FBD0BF1C09BC0CA73E45618D1E8782 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LSBluetoothSDK_iOS;
+			target = 395F835CB31F6C045A739DBFD662563C /* LSBluetoothSDK_iOS */;
+			targetProxy = 5452D29F55EF9758B01EBAAF0D368DC9 /* PBXContainerItemProxy */;
+		};
+		367D2DE93B7A29687AA89E9BF18A69DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LSAuthorization;
+			target = 69D53824F19BDFCE5FBA624B37445D1A /* LSAuthorization */;
+			targetProxy = 3841C7981DFFA9C126E8893E874D458E /* PBXContainerItemProxy */;
+		};
+		37482316AF065648979E3B5B2D8F5500 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LSBluetoothSDK_Demo_iOS;
+			target = ED56681FC19D39E81D81C5D60744911A /* LSBluetoothSDK_Demo_iOS */;
+			targetProxy = E6A5B0F248FD6B4016EFC41153E827E0 /* PBXContainerItemProxy */;
+		};
+		52854983DD6EB373F4E923D331F2B4C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LSAuthorization;
+			target = 69D53824F19BDFCE5FBA624B37445D1A /* LSAuthorization */;
+			targetProxy = 9356AA32D91D65EF1D4F3E92CE7C5B09 /* PBXContainerItemProxy */;
+		};
+		65C03B2DAAEDC200EE6F39DDDF0CD873 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AFNetworking;
+			target = 0130B3724283586C0E9D2A112D4F2AA1 /* AFNetworking */;
+			targetProxy = 26FAA356ABD241BD7F2CA6D8DCE697FF /* PBXContainerItemProxy */;
+		};
+		68DB165DD0D2F3305CF88A7D4FC2C23A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "LSAuthorization-LSAuthorization";
+			target = AFDE22B661CCBDB90A226E730A0EB054 /* LSAuthorization-LSAuthorization */;
+			targetProxy = 226E75E89E3D0E68D78396DB27CA6374 /* PBXContainerItemProxy */;
+		};
+		9667D4F9CE713A4D08F3FD24132770E8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AFNetworking;
+			target = 0130B3724283586C0E9D2A112D4F2AA1 /* AFNetworking */;
+			targetProxy = FC4CE01FC7E73D41D0A85251E2FFF217 /* PBXContainerItemProxy */;
+		};
+		9A4D9ADB6BC62C9511C6B27D81BEDECD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LSBluetoothSDK_iOS;
+			target = 395F835CB31F6C045A739DBFD662563C /* LSBluetoothSDK_iOS */;
+			targetProxy = 1F21566BB91F82436C42DB75B3E8B9D9 /* PBXContainerItemProxy */;
+		};
+		A42EFB0284DBE24F86053D136B76448F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LSBluetoothSDK_iOS;
+			target = 395F835CB31F6C045A739DBFD662563C /* LSBluetoothSDK_iOS */;
+			targetProxy = 4244338E643BC9D82977712E0C2AB4A7 /* PBXContainerItemProxy */;
+		};
+		AA059C4421198070A6D00E0E1E7F3055 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LSAuthorization;
+			target = 69D53824F19BDFCE5FBA624B37445D1A /* LSAuthorization */;
+			targetProxy = 2388F9BC0AA556C94A9365A61C346A04 /* PBXContainerItemProxy */;
+		};
+		BB77E5104432F0B7E66D9C16E80E84EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LSNetworkingModule;
+			target = 50E004361FDD7C079254DBB4B74093E1 /* LSNetworkingModule */;
+			targetProxy = 09017E9D115A1A00E93D7FAAD008ABE6 /* PBXContainerItemProxy */;
+		};
+		C7CF17EBCA30556568A32D0DD7DDDD65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LSNetworkingModule;
+			target = 50E004361FDD7C079254DBB4B74093E1 /* LSNetworkingModule */;
+			targetProxy = B7695B328BE03A4FCFA05019FEB573B4 /* PBXContainerItemProxy */;
+		};
+		DCD5DFD99B717BE2821EADA617C929C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AFNetworking;
+			target = 0130B3724283586C0E9D2A112D4F2AA1 /* AFNetworking */;
+			targetProxy = D8FDDE73C19C7DCBC8E77A061B685830 /* PBXContainerItemProxy */;
+		};
+		EB79A503FBEA1C6FB8489AB516E0CA63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "LSNetworkingModule-Resources";
+			target = 067CCF346286F2633830B6F655FC2158 /* LSNetworkingModule-Resources */;
+			targetProxy = 6CABF26E47A097AF9361ABF4EB70099B /* PBXContainerItemProxy */;
+		};
+		ECE436EEBE4FFCF0C7F286E358984D2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LSNetworkingModule;
+			target = 50E004361FDD7C079254DBB4B74093E1 /* LSNetworkingModule */;
+			targetProxy = DF5458F05D42FBBBEF580BD51A9B5076 /* PBXContainerItemProxy */;
+		};
+		FA787C254F78EF46104EFA17BB3C0A6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-LSBluetoothSDK_Demo_iOS_Example";
+			target = 02953019232D5BA21E11664DB3C1FB78 /* Pods-LSBluetoothSDK_Demo_iOS_Example */;
+			targetProxy = D8D593E27615E01205958B04EF98899D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		027D41E0BE508062C965DED484A2424F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1A6DDFBD4F71D5CE43C9F96349F10ED /* Pods-LSBluetoothSDK_Demo_iOS_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LSBluetoothSDK_Demo_iOS_Tests/Pods-LSBluetoothSDK_Demo_iOS_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LSBluetoothSDK_Demo_iOS_Tests/Pods-LSBluetoothSDK_Demo_iOS_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		22D4A7C63E8D2A8FC9C4B22F1508C5F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEF7BB5672D986457C326A2A5A10213F /* LSBluetoothSDK_iOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LSBluetoothSDK_iOS/LSBluetoothSDK_iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LSBluetoothSDK_iOS/LSBluetoothSDK_iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/LSBluetoothSDK_iOS/LSBluetoothSDK_iOS.modulemap";
+				PRODUCT_MODULE_NAME = LSBluetoothSDK_iOS;
+				PRODUCT_NAME = LSBluetoothSDK_iOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		248141211D6806F6F20869DFA15988EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7DD76F37CD140687F796F2BB30146AD /* LSAuthorization.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/LSAuthorization";
+				IBSC_MODULE = LSAuthorization;
+				INFOPLIST_FILE = "Target Support Files/LSAuthorization/ResourceBundle-LSAuthorization-LSAuthorization-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = LSAuthorization;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		259DAC9C00B8157C07D29057C187EACD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7DD76F37CD140687F796F2BB30146AD /* LSAuthorization.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/LSAuthorization";
+				IBSC_MODULE = LSAuthorization;
+				INFOPLIST_FILE = "Target Support Files/LSAuthorization/ResourceBundle-LSAuthorization-LSAuthorization-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = LSAuthorization;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		3965FF71C1C0B151A20DF3EDAAC91AD1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24480F8C348611FFFF223828D384866E /* AFNetworking.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AFNetworking/AFNetworking-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AFNetworking/AFNetworking.modulemap";
+				PRODUCT_MODULE_NAME = AFNetworking;
+				PRODUCT_NAME = AFNetworking;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		65D0DAA6ABA4461D3D80CB4E34D652DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7DD76F37CD140687F796F2BB30146AD /* LSAuthorization.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LSAuthorization/LSAuthorization-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LSAuthorization/LSAuthorization-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LSAuthorization/LSAuthorization.modulemap";
+				PRODUCT_MODULE_NAME = LSAuthorization;
+				PRODUCT_NAME = LSAuthorization;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6A1DFD91623E44E9BF03AE539F9561FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEF7BB5672D986457C326A2A5A10213F /* LSBluetoothSDK_iOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LSBluetoothSDK_iOS/LSBluetoothSDK_iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LSBluetoothSDK_iOS/LSBluetoothSDK_iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/LSBluetoothSDK_iOS/LSBluetoothSDK_iOS.modulemap";
+				PRODUCT_MODULE_NAME = LSBluetoothSDK_iOS;
+				PRODUCT_NAME = LSBluetoothSDK_iOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7711C4021E19F02E4BA0F6C2093958FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24480F8C348611FFFF223828D384866E /* AFNetworking.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AFNetworking/AFNetworking-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AFNetworking/AFNetworking-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AFNetworking/AFNetworking.modulemap";
+				PRODUCT_MODULE_NAME = AFNetworking;
+				PRODUCT_NAME = AFNetworking;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7EF7227D9B20A1D549000096ACCB23D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		85D19C96FCE4A2D61273885F81864FB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 927D76FAC0328AB97BBC37E07862B84F /* Pods-LSBluetoothSDK_Demo_iOS_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LSBluetoothSDK_Demo_iOS_Example/Pods-LSBluetoothSDK_Demo_iOS_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LSBluetoothSDK_Demo_iOS_Example/Pods-LSBluetoothSDK_Demo_iOS_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		92FDE10EF4F43BC9BCD88B48B06B0A9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B449622F6E5D51B276081EA1AC86B2C6 /* LSBluetoothSDK_Demo_iOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LSBluetoothSDK_Demo_iOS/LSBluetoothSDK_Demo_iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LSBluetoothSDK_Demo_iOS/LSBluetoothSDK_Demo_iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/LSBluetoothSDK_Demo_iOS/LSBluetoothSDK_Demo_iOS.modulemap";
+				PRODUCT_MODULE_NAME = LSBluetoothSDK_Demo_iOS;
+				PRODUCT_NAME = LSBluetoothSDK_Demo_iOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		955132ED87F3FE561C7C1DC61BE4A2ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64C8DE778A0630DD189ED43EB2609AC6 /* LSNetworkingModule.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LSNetworkingModule/LSNetworkingModule-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LSNetworkingModule/LSNetworkingModule-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LSNetworkingModule/LSNetworkingModule.modulemap";
+				PRODUCT_MODULE_NAME = LSNetworkingModule;
+				PRODUCT_NAME = LSNetworkingModule;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9FE0758FD8A7A2200E36F94A98D89B7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68A1001F40D273C86B8A76CE4E0D17C6 /* Pods-LSBluetoothSDK_Demo_iOS_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LSBluetoothSDK_Demo_iOS_Tests/Pods-LSBluetoothSDK_Demo_iOS_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LSBluetoothSDK_Demo_iOS_Tests/Pods-LSBluetoothSDK_Demo_iOS_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BC6AD9F3931034FFB675B8405FDCFD23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7DD76F37CD140687F796F2BB30146AD /* LSAuthorization.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LSAuthorization/LSAuthorization-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LSAuthorization/LSAuthorization-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LSAuthorization/LSAuthorization.modulemap";
+				PRODUCT_MODULE_NAME = LSAuthorization;
+				PRODUCT_NAME = LSAuthorization;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C46057DDFAD61A3E535FE17AEB2BB20F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64C8DE778A0630DD189ED43EB2609AC6 /* LSNetworkingModule.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/LSNetworkingModule";
+				IBSC_MODULE = LSNetworkingModule;
+				INFOPLIST_FILE = "Target Support Files/LSNetworkingModule/ResourceBundle-Resources-LSNetworkingModule-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = Resources;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		CCB347CCD5EF81A525BA5B4B7DEF5F27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64C8DE778A0630DD189ED43EB2609AC6 /* LSNetworkingModule.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LSNetworkingModule/LSNetworkingModule-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LSNetworkingModule/LSNetworkingModule-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LSNetworkingModule/LSNetworkingModule.modulemap";
+				PRODUCT_MODULE_NAME = LSNetworkingModule;
+				PRODUCT_NAME = LSNetworkingModule;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EA813D142950C6F387D1D173EAA92579 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B449622F6E5D51B276081EA1AC86B2C6 /* LSBluetoothSDK_Demo_iOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LSBluetoothSDK_Demo_iOS/LSBluetoothSDK_Demo_iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LSBluetoothSDK_Demo_iOS/LSBluetoothSDK_Demo_iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/LSBluetoothSDK_Demo_iOS/LSBluetoothSDK_Demo_iOS.modulemap";
+				PRODUCT_MODULE_NAME = LSBluetoothSDK_Demo_iOS;
+				PRODUCT_NAME = LSBluetoothSDK_Demo_iOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EBF46CC625F185AEDA840C0B500F51CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64C8DE778A0630DD189ED43EB2609AC6 /* LSNetworkingModule.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/LSNetworkingModule";
+				IBSC_MODULE = LSNetworkingModule;
+				INFOPLIST_FILE = "Target Support Files/LSNetworkingModule/ResourceBundle-Resources-LSNetworkingModule-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = Resources;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		F5F69412641F3E4F2B0B855C5FA212B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A41F1048B8F61A004317EFD53BB832D /* Pods-LSBluetoothSDK_Demo_iOS_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LSBluetoothSDK_Demo_iOS_Example/Pods-LSBluetoothSDK_Demo_iOS_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LSBluetoothSDK_Demo_iOS_Example/Pods-LSBluetoothSDK_Demo_iOS_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00CC3BD690A3377D048D905E5C32AD2E /* Build configuration list for PBXNativeTarget "LSNetworkingModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCB347CCD5EF81A525BA5B4B7DEF5F27 /* Debug */,
+				955132ED87F3FE561C7C1DC61BE4A2ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41D6DFBE997E173748D09E9A11D890A3 /* Build configuration list for PBXNativeTarget "AFNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3965FF71C1C0B151A20DF3EDAAC91AD1 /* Debug */,
+				7711C4021E19F02E4BA0F6C2093958FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EF7227D9B20A1D549000096ACCB23D7 /* Debug */,
+				4BE66A09A74FD25164AAB3C2645B9B93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7AA067A0AF6C25EDEF846268AC7B06D8 /* Build configuration list for PBXNativeTarget "LSNetworkingModule-Resources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C46057DDFAD61A3E535FE17AEB2BB20F /* Debug */,
+				EBF46CC625F185AEDA840C0B500F51CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85C8B956CE33AFF61C88A1BBEC6E7888 /* Build configuration list for PBXNativeTarget "LSAuthorization" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC6AD9F3931034FFB675B8405FDCFD23 /* Debug */,
+				65D0DAA6ABA4461D3D80CB4E34D652DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B03AF664987D5692B67B6AFFB7DE7806 /* Build configuration list for PBXNativeTarget "Pods-LSBluetoothSDK_Demo_iOS_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				027D41E0BE508062C965DED484A2424F /* Debug */,
+				9FE0758FD8A7A2200E36F94A98D89B7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B553165FBC9A262E8FA4CA4A6AFEBC2D /* Build configuration list for PBXNativeTarget "LSAuthorization-LSAuthorization" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				259DAC9C00B8157C07D29057C187EACD /* Debug */,
+				248141211D6806F6F20869DFA15988EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3D6870AB56428C5DCF2BC1CCC6FC704 /* Build configuration list for PBXNativeTarget "Pods-LSBluetoothSDK_Demo_iOS_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85D19C96FCE4A2D61273885F81864FB8 /* Debug */,
+				F5F69412641F3E4F2B0B855C5FA212B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E864B1963677D544E033F442D6D4F3DA /* Build configuration list for PBXNativeTarget "LSBluetoothSDK_Demo_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92FDE10EF4F43BC9BCD88B48B06B0A9B /* Debug */,
+				EA813D142950C6F387D1D173EAA92579 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F97524B73BAD441256502B980F73E15D /* Build configuration list for PBXNativeTarget "LSBluetoothSDK_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22D4A7C63E8D2A8FC9C4B22F1508C5F1 /* Debug */,
+				6A1DFD91623E44E9BF03AE539F9561FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

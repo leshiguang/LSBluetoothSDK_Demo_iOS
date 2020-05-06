@@ -1,0 +1,52 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - LSAuthorization (0.1.9):
+    - LSNetworkingModule
+  - LSBluetoothSDK_Demo_iOS (0.1.0):
+    - LSBluetoothSDK_iOS
+  - LSBluetoothSDK_iOS (1.4.5):
+    - LSAuthorization
+  - LSNetworkingModule (2.1.8):
+    - AFNetworking
+
+DEPENDENCIES:
+  - LSBluetoothSDK_Demo_iOS (from `../`)
+  - LSBluetoothSDK_iOS (= 1.4.5)
+  - LSNetworkingModule (= 2.1.8)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - AFNetworking
+  https://gitlab.lifesense.com/commonlib_ios/CocoaPodsSpecs.git:
+    - LSAuthorization
+    - LSBluetoothSDK_iOS
+    - LSNetworkingModule
+
+EXTERNAL SOURCES:
+  LSBluetoothSDK_Demo_iOS:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  LSAuthorization: 23fcf58212b4491759b7bef1e73b2fab7a709ab5
+  LSBluetoothSDK_Demo_iOS: cc1e812b911c5bafdcbe72c7bfb82cae915bb949
+  LSBluetoothSDK_iOS: 70f625a943b6e9f601f71ae54797a6eb2b1210fd
+  LSNetworkingModule: 94c494be78faade274628aed9f8bf44554a81f93
+
+PODFILE CHECKSUM: 89cb8e9b60be2a15d641c6551daa8546145536ed
+
+COCOAPODS: 1.8.4
