@@ -8,24 +8,24 @@
 ## Example
 
 
-##introduction
+## introduction
 
 ------
-###1、Search bluetooth device
+### 1、Search bluetooth device
 
     -(BOOL)searchDevice:(NSArray *)deviceTypes
           broadcast:(BroadcastType)broadcastType
        resultsBlock:(SearchResultsBlock)searchResults;
 
-###2、Pair device
+### 2、Pair device
 
     -(BOOL)pairingWithDevice:(LSDeviceInfo *)lsDevice
                 delegate:(id<LSDevicePairingDelegate>)pairedDelegate;
 
-###3、Add Paired Device to measure device list
+### 3、Add Paired Device to measure device list
 
     -(BOOL)addMeasureDevice:(LSDeviceInfo *)lsDevice result:(void (^)(LSAccessCode)) result;
-###4、Start sync data
+### 4、Start sync data
 
     -(BOOL)startDataReceiveService:(id<LSDeviceDataDelegate>)dataDelegate;
 
