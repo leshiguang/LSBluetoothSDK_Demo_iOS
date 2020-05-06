@@ -1,5 +1,5 @@
 
-source'https://gitlab.lifesense.com/commonlib_ios/CocoaPodsSpecs.git'
+source'https://gitlab.lifesense.com/leshiguang/cocoapods.git'
 source 'https://github.com/CocoaPods/Specs.git'
 
 use_frameworks!

@@ -195,7 +195,7 @@
 		DB8D76C3DEDA3855C1B85090 /* Pods-LSBluetoothSDK_Demo_iOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSBluetoothSDK_Demo_iOS_Example.debug.xcconfig"; path = "Target Support Files/Pods-LSBluetoothSDK_Demo_iOS_Example/Pods-LSBluetoothSDK_Demo_iOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F433629B7ACB3D190F684AA9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		F6E93C2F5644D7092A1F32E8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		FF4914AFC82F746520C394F9 /* LSBluetoothSDK_Demo_iOS.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LSBluetoothSDK_Demo_iOS.podspec; path = ../LSBluetoothSDK_Demo_iOS.podspec; sourceTree = "<group>"; };
+		FF4914AFC82F746520C394F9 /* LSBluetoothSDK_Demo_iOS.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LSBluetoothSDK_Demo_iOS.podspec; path = ../LSBluetoothSDK_Demo_iOS.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
