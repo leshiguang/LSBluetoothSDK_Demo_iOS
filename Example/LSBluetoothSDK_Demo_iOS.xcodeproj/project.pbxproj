@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3310A992246AB94000EF6AD2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3310A990246AB94000EF6AD2 /* LaunchScreen.xib */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -68,7 +69,6 @@
 		B384F49124629F4E00874E2E /* FatScaleSettingTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B384F43C24629F4D00874E2E /* FatScaleSettingTVC.m */; };
 		B384F49224629F4E00874E2E /* UpgradeFileItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B384F43E24629F4D00874E2E /* UpgradeFileItem.m */; };
 		B384F49624629F4E00874E2E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B384F44324629F4D00874E2E /* Images.xcassets */; };
-		B384F49924629F8C00874E2E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B384F49724629F8C00874E2E /* LaunchScreen.xib */; };
 		BE2A21D94CB7B1D14FAFE49A /* Pods_LSBluetoothSDK_Demo_iOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2DF8A0C833D7379809C928C /* Pods_LSBluetoothSDK_Demo_iOS_Tests.framework */; };
 		F400D7C22E361C90337D556E /* Pods_LSBluetoothSDK_Demo_iOS_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B6FB95582E469913583C7D8 /* Pods_LSBluetoothSDK_Demo_iOS_Example.framework */; };
 /* End PBXBuildFile section */
@@ -86,6 +86,7 @@
 /* Begin PBXFileReference section */
 		03857A882242646575931F2A /* Pods-LSBluetoothSDK_Demo_iOS_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSBluetoothSDK_Demo_iOS_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LSBluetoothSDK_Demo_iOS_Tests/Pods-LSBluetoothSDK_Demo_iOS_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		08A072014F06B62F1D859C7C /* Pods-LSBluetoothSDK_Demo_iOS_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSBluetoothSDK_Demo_iOS_Example.release.xcconfig"; path = "Target Support Files/Pods-LSBluetoothSDK_Demo_iOS_Example/Pods-LSBluetoothSDK_Demo_iOS_Example.release.xcconfig"; sourceTree = "<group>"; };
+		3310A991246AB94000EF6AD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "LSBluetooth-Demo/Base.lproj/LaunchScreen.xib"; sourceTree = "<group>"; };
 		5B6FB95582E469913583C7D8 /* Pods_LSBluetoothSDK_Demo_iOS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LSBluetoothSDK_Demo_iOS_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* LSBluetoothSDK_Demo_iOS_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LSBluetoothSDK_Demo_iOS_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -188,7 +189,6 @@
 		B384F43D24629F4D00874E2E /* LSSettinItemDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSSettinItemDelegate.h; sourceTree = "<group>"; };
 		B384F43E24629F4D00874E2E /* UpgradeFileItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpgradeFileItem.m; sourceTree = "<group>"; };
 		B384F44324629F4D00874E2E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "../../../BluetoothDemo-iOS/LSBluetooth-Demo/Images.xcassets"; sourceTree = "<group>"; };
-		B384F49824629F8C00874E2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "../../../BluetoothDemo-iOS/LSBluetooth-Demo/Base.lproj/LaunchScreen.xib"; sourceTree = "<group>"; };
 		B384F49A2462A16400874E2E /* LSSleepAnalyze.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LSSleepAnalyze.framework; path = "../../BluetoothDemo-iOS/LSSleepAnalyze.framework"; sourceTree = "<group>"; };
 		B384F49B2462A16500874E2E /* LSScaleFormula.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LSScaleFormula.framework; path = "../../BluetoothDemo-iOS/LSScaleFormula.framework"; sourceTree = "<group>"; };
 		D2DF8A0C833D7379809C928C /* Pods_LSBluetoothSDK_Demo_iOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LSBluetoothSDK_Demo_iOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -276,7 +276,7 @@
 			children = (
 				B384F44324629F4D00874E2E /* Images.xcassets */,
 				B384F3D224629F4D00874E2E /* LSBluetooth-Demo */,
-				B384F49724629F8C00874E2E /* LaunchScreen.xib */,
+				3310A990246AB94000EF6AD2 /* LaunchScreen.xib */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
 			name = "Example for LSBluetoothSDK_Demo_iOS";
@@ -508,6 +508,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3310A992246AB94000EF6AD2 /* LaunchScreen.xib in Resources */,
 				B384F45924629F4E00874E2E /* ic_user_info.png in Resources */,
 				B384F49624629F4E00874E2E /* Images.xcassets in Resources */,
 				B384F46124629F4E00874E2E /* ic_user_info_header.png in Resources */,
@@ -524,7 +525,6 @@
 				B384F47C24629F4E00874E2E /* fat_scale.png in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 				B384F47324629F4E00874E2E /* blood_pressure.png in Resources */,
-				B384F49924629F8C00874E2E /* LaunchScreen.xib in Resources */,
 				B384F45B24629F4E00874E2E /* LSBluetooth-Demo.podspec in Resources */,
 				B384F47A24629F4E00874E2E /* ScanResultsCell.xib in Resources */,
 				B384F47F24629F4E00874E2E /* DeviceCell.xib in Resources */,
@@ -697,6 +697,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		3310A990246AB94000EF6AD2 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3310A991246AB94000EF6AD2 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
 		6003F596195388D20070C39A /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -727,14 +735,6 @@
 				B384F3F724629F4D00874E2E /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B384F49724629F8C00874E2E /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B384F49824629F8C00874E2E /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -817,7 +817,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DB8D76C3DEDA3855C1B85090 /* Pods-LSBluetoothSDK_Demo_iOS_Example.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = HZEC6N5GYF;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LSBluetoothSDK_Demo_iOS/LSBluetoothSDK_Demo_iOS-Prefix.pch";
@@ -834,7 +833,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 08A072014F06B62F1D859C7C /* Pods-LSBluetoothSDK_Demo_iOS_Example.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = HZEC6N5GYF;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LSBluetoothSDK_Demo_iOS/LSBluetoothSDK_Demo_iOS-Prefix.pch";

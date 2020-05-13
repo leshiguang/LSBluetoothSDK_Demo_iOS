@@ -1,6 +1,6 @@
 {
   "name": "LSBluetoothSDK_Demo_iOS",
-  "version": "0.1.0",
+  "version": "1.4.6",
   "summary": "A short description of LSBluetoothSDK_Demo_iOS.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/alex.wu/LSBluetoothSDK_Demo_iOS",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/alex.wu/LSBluetoothSDK_Demo_iOS.git",
-    "tag": "0.1.0"
+    "tag": "1.4.6"
   },
   "platforms": {
     "ios": "8.0"

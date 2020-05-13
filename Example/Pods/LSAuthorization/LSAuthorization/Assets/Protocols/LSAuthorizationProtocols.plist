@@ -14,6 +14,15 @@
 		<string>LSAuthorizeRequest</string>
 		<key>requestParameters</key>
 		<dict>
+			<key>model</key>
+			<dict>
+				<key>name</key>
+				<string>model</string>
+				<key>type</key>
+				<string>NSString</string>
+				<key>desc</key>
+				<string>model</string>
+			</dict>
 			<key>mac</key>
 			<dict>
 				<key>name</key>
