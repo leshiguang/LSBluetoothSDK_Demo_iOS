@@ -50,6 +50,7 @@
 #define gps_positioning_success     @"Positioning Success"
 #define gps_refuse                  @"Refuse"
 #define prompt_sync_setting         @"syncing setting"
+#define prompt_device_unknown       @"Device is not certified."
 
 
 
@@ -708,8 +709,29 @@ static NSString *spaceString=@"\n -----------------------";
         self.currentDevice.delayDisconnect=YES;
     }
     //add new one
-    [self.lsBleManager addMeasureDevice:self.currentDevice result:^(LSAccessCode result) {
-        
+    __weak DeviceViewController *weakSelf=self;
+     self.currentDevice.macAddress=self.currentDevice.broadcastId;
+    [self.lsBleManager addMeasureDevice:self.currentDevice
+                                 result:^(LSAccessCode result) {
+        if(result == SUCCESS){
+            //设备认证成功
+            //start data syncing
+            BOOL isSuccess=[weakSelf.lsBleManager startDataReceiveService:weakSelf];
+            if(!isSuccess && !weakSelf.lsBleManager.isBluetoothPowerOn){
+                weakSelf.processingView.hidden=YES;
+                [weakSelf showAlertView:msg_connect_failed message:prompt_bluetooth_disable cancelBtn:NO handler:nil];
+            }
+            else{
+                weakSelf.processingView.hidden=NO;
+                if(!weakSelf.processingView.isAnimating){
+                    [weakSelf.processingView startAnimating];
+                }
+               [weakSelf updateDeviceConnectState:LSDeviceStateConnecting];
+            }
+        }
+        else{
+            [weakSelf showAlertView:msg_connect_failed message:prompt_device_unknown cancelBtn:NO handler:nil];
+        }
     }];
 }
 
@@ -754,19 +776,6 @@ static NSString *spaceString=@"\n -----------------------";
         self.newsLabel.hidden=YES;
         //add device
         [self addDevices];
-        //start data syncing
-        BOOL isSuccess=[self.lsBleManager startDataReceiveService:self];
-        if(!isSuccess && !self.lsBleManager.isBluetoothPowerOn){
-            self.processingView.hidden=YES;
-            [self showAlertView:msg_connect_failed message:prompt_bluetooth_disable cancelBtn:NO handler:nil];
-        }
-        else{
-            self.processingView.hidden=NO;
-            if(!self.processingView.isAnimating){
-                [self.processingView startAnimating];
-            }
-           [self updateDeviceConnectState:LSDeviceStateConnecting];
-        }
     }
 }
 

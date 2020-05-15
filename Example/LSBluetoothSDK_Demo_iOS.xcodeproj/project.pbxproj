@@ -328,79 +328,79 @@
 		B384F3D224629F4D00874E2E /* LSBluetooth-Demo */ = {
 			isa = PBXGroup;
 			children = (
-				B384F3D324629F4D00874E2E /* CustomTableView.m */,
-				B384F3D424629F4D00874E2E /* weight_scale.png */,
-				B384F3D524629F4D00874E2E /* UserNameTableViewCell.h */,
-				B384F3D624629F4D00874E2E /* ScanFilter.m */,
-				B384F3D724629F4D00874E2E /* ic_user_info.png */,
-				B384F3D824629F4D00874E2E /* DeviceUser.h */,
-				B384F3D924629F4D00874E2E /* DeviceAlarmClock+Handler.m */,
-				B384F3DA24629F4D00874E2E /* LSBluetooth-Demo.podspec */,
-				B384F3DB24629F4D00874E2E /* DeviceUserProfiles.m */,
-				B384F3DD24629F4D00874E2E /* UserDetailsTVC.m */,
-				B384F3DE24629F4D00874E2E /* DeviceTableViewCell.h */,
-				B384F3DF24629F4D00874E2E /* DataFormatConverter.m */,
 				B384F3E024629F4D00874E2E /* AlertViewUtils.h */,
-				B384F3E124629F4D00874E2E /* ic_device_list.png */,
-				B384F3E224629F4D00874E2E /* ScanResultsTableViewCell.h */,
-				B384F3E324629F4D00874E2E /* LSDeviceSettingProfiles.m */,
-				B384F3E424629F4D00874E2E /* ic_user_info_header.png */,
-				B384F3E524629F4D00874E2E /* SearchDeviceTVC.h */,
-				B384F3E624629F4D00874E2E /* NSDate+Utils.h */,
-				B384F3E724629F4D00874E2E /* LSUsageExample.m */,
-				B384F3E824629F4D00874E2E /* unknown.jpg */,
-				B384F3E924629F4D00874E2E /* DatabaseManagerDelegate.h */,
-				B384F3EA24629F4D00874E2E /* PairedDeviceListTVC.h */,
-				B384F3EB24629F4D00874E2E /* BleDevice.m */,
-				B384F3EC24629F4D00874E2E /* UserNameCell.xib */,
-				B384F3ED24629F4D00874E2E /* UpgradeFileItem.h */,
-				B384F3EE24629F4D00874E2E /* BleDevice+Handler.m */,
-				B384F3EF24629F4D00874E2E /* DeviceUserProfiles+Handler.m */,
-				B384F3F024629F4D00874E2E /* DeviceAlarmClock.m */,
-				B384F3F124629F4D00874E2E /* ScanFilter+Handler.h */,
-				B384F3F224629F4D00874E2E /* DeviceViewController.m */,
-				B384F3F324629F4D00874E2E /* DeviceUser+Handler.m */,
-				B384F3F424629F4D00874E2E /* LaunchScreen.xib */,
-				B384F3F624629F4D00874E2E /* Main.storyboard */,
-				B384F3F824629F4D00874E2E /* ChooseDeviceTypeTVC.m */,
-				B384F3F924629F4D00874E2E /* LSDatabaseManager.m */,
-				B384F3FA24629F4D00874E2E /* pedometer.png */,
-				B384F3FB24629F4D00874E2E /* DeviceUserProfiles.h */,
-				B384F3FC24629F4D00874E2E /* DeviceAlarmClock+Handler.h */,
-				B384F3FD24629F4D00874E2E /* DeviceUser.m */,
-				B384F3FE24629F4D00874E2E /* UserNameTableViewCell.m */,
-				B384F3FF24629F4D00874E2E /* ScanFilter.h */,
-				B384F40024629F4D00874E2E /* CustomTableView.h */,
-				B384F40224629F4D00874E2E /* blood_pressure.png */,
-				B384F40324629F4D00874E2E /* ScanResultsTableViewCell.m */,
 				B384F40424629F4D00874E2E /* AlertViewUtils.m */,
-				B384F40624629F4D00874E2E /* DeviceTableViewCell.m */,
-				B384F40724629F4D00874E2E /* DataFormatConverter.h */,
-				B384F40824629F4D00874E2E /* UserDetailsTVC.h */,
-				B384F40A24629F4D00874E2E /* height.png */,
-				B384F40B24629F4D00874E2E /* ScanResultsCell.xib */,
 				B384F40C24629F4D00874E2E /* BleDevice.h */,
-				B384F40D24629F4D00874E2E /* PairedDeviceListTVC.m */,
-				B384F40E24629F4D00874E2E /* LSUsageExample.h */,
-				B384F40F24629F4D00874E2E /* fat_scale.png */,
-				B384F41024629F4D00874E2E /* NSDate+Utils.m */,
-				B384F41124629F4D00874E2E /* kitchen_scale.png */,
-				B384F41224629F4D00874E2E /* DeviceCell.xib */,
-				B384F41324629F4D00874E2E /* SearchDeviceTVC.m */,
-				B384F41424629F4D00874E2E /* LSDeviceSettingProfiles.h */,
-				B384F42624629F4D00874E2E /* LSDatabaseManager.h */,
-				B384F42724629F4D00874E2E /* ChooseDeviceTypeTVC.h */,
-				B384F42824629F4D00874E2E /* LSDatabaseAvailability.h */,
-				B384F42924629F4D00874E2E /* DeviceUser+Handler.h */,
-				B384F42A24629F4D00874E2E /* DeviceViewController.h */,
-				B384F42B24629F4D00874E2E /* DeviceAlarmClock.h */,
-				B384F42C24629F4D00874E2E /* ScanFilter+Handler.m */,
-				B384F42D24629F4D00874E2E /* Info.plist */,
-				B384F42E24629F4D00874E2E /* Model.xcdatamodeld */,
+				B384F3EB24629F4D00874E2E /* BleDevice.m */,
 				B384F43024629F4D00874E2E /* BleDevice+Handler.h */,
+				B384F3EE24629F4D00874E2E /* BleDevice+Handler.m */,
+				B384F40224629F4D00874E2E /* blood_pressure.png */,
+				B384F42724629F4D00874E2E /* ChooseDeviceTypeTVC.h */,
+				B384F3F824629F4D00874E2E /* ChooseDeviceTypeTVC.m */,
+				B384F40024629F4D00874E2E /* CustomTableView.h */,
+				B384F3D324629F4D00874E2E /* CustomTableView.m */,
+				B384F3E924629F4D00874E2E /* DatabaseManagerDelegate.h */,
+				B384F40724629F4D00874E2E /* DataFormatConverter.h */,
+				B384F3DF24629F4D00874E2E /* DataFormatConverter.m */,
+				B384F42B24629F4D00874E2E /* DeviceAlarmClock.h */,
+				B384F3F024629F4D00874E2E /* DeviceAlarmClock.m */,
+				B384F3FC24629F4D00874E2E /* DeviceAlarmClock+Handler.h */,
+				B384F3D924629F4D00874E2E /* DeviceAlarmClock+Handler.m */,
+				B384F41224629F4D00874E2E /* DeviceCell.xib */,
+				B384F3DE24629F4D00874E2E /* DeviceTableViewCell.h */,
+				B384F40624629F4D00874E2E /* DeviceTableViewCell.m */,
+				B384F3D824629F4D00874E2E /* DeviceUser.h */,
+				B384F3FD24629F4D00874E2E /* DeviceUser.m */,
+				B384F42924629F4D00874E2E /* DeviceUser+Handler.h */,
+				B384F3F324629F4D00874E2E /* DeviceUser+Handler.m */,
+				B384F3FB24629F4D00874E2E /* DeviceUserProfiles.h */,
+				B384F3DB24629F4D00874E2E /* DeviceUserProfiles.m */,
 				B384F43124629F4D00874E2E /* DeviceUserProfiles+Handler.h */,
+				B384F3EF24629F4D00874E2E /* DeviceUserProfiles+Handler.m */,
+				B384F42A24629F4D00874E2E /* DeviceViewController.h */,
+				B384F3F224629F4D00874E2E /* DeviceViewController.m */,
+				B384F40F24629F4D00874E2E /* fat_scale.png */,
+				B384F40A24629F4D00874E2E /* height.png */,
+				B384F3E124629F4D00874E2E /* ic_device_list.png */,
+				B384F3E424629F4D00874E2E /* ic_user_info_header.png */,
+				B384F3D724629F4D00874E2E /* ic_user_info.png */,
+				B384F42D24629F4D00874E2E /* Info.plist */,
+				B384F41124629F4D00874E2E /* kitchen_scale.png */,
+				B384F3F424629F4D00874E2E /* LaunchScreen.xib */,
+				B384F3DA24629F4D00874E2E /* LSBluetooth-Demo.podspec */,
+				B384F42824629F4D00874E2E /* LSDatabaseAvailability.h */,
+				B384F42624629F4D00874E2E /* LSDatabaseManager.h */,
+				B384F3F924629F4D00874E2E /* LSDatabaseManager.m */,
+				B384F41424629F4D00874E2E /* LSDeviceSettingProfiles.h */,
+				B384F3E324629F4D00874E2E /* LSDeviceSettingProfiles.m */,
+				B384F40E24629F4D00874E2E /* LSUsageExample.h */,
+				B384F3E724629F4D00874E2E /* LSUsageExample.m */,
+				B384F3F624629F4D00874E2E /* Main.storyboard */,
+				B384F42E24629F4D00874E2E /* Model.xcdatamodeld */,
+				B384F3E624629F4D00874E2E /* NSDate+Utils.h */,
+				B384F41024629F4D00874E2E /* NSDate+Utils.m */,
+				B384F3EA24629F4D00874E2E /* PairedDeviceListTVC.h */,
+				B384F40D24629F4D00874E2E /* PairedDeviceListTVC.m */,
+				B384F3FA24629F4D00874E2E /* pedometer.png */,
+				B384F3FF24629F4D00874E2E /* ScanFilter.h */,
+				B384F3D624629F4D00874E2E /* ScanFilter.m */,
+				B384F3F124629F4D00874E2E /* ScanFilter+Handler.h */,
+				B384F42C24629F4D00874E2E /* ScanFilter+Handler.m */,
+				B384F40B24629F4D00874E2E /* ScanResultsCell.xib */,
+				B384F3E224629F4D00874E2E /* ScanResultsTableViewCell.h */,
+				B384F40324629F4D00874E2E /* ScanResultsTableViewCell.m */,
+				B384F3E524629F4D00874E2E /* SearchDeviceTVC.h */,
+				B384F41324629F4D00874E2E /* SearchDeviceTVC.m */,
 				B384F43224629F4D00874E2E /* setting view */,
+				B384F3E824629F4D00874E2E /* unknown.jpg */,
+				B384F3ED24629F4D00874E2E /* UpgradeFileItem.h */,
 				B384F43E24629F4D00874E2E /* UpgradeFileItem.m */,
+				B384F40824629F4D00874E2E /* UserDetailsTVC.h */,
+				B384F3DD24629F4D00874E2E /* UserDetailsTVC.m */,
+				B384F3EC24629F4D00874E2E /* UserNameCell.xib */,
+				B384F3D524629F4D00874E2E /* UserNameTableViewCell.h */,
+				B384F3FE24629F4D00874E2E /* UserNameTableViewCell.m */,
+				B384F3D424629F4D00874E2E /* weight_scale.png */,
 			);
 			path = "LSBluetooth-Demo";
 			sourceTree = "<group>";
@@ -476,7 +476,7 @@
 				ORGANIZATIONNAME = alex.wu;
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
-						DevelopmentTeam = HZEC6N5GYF;
+						DevelopmentTeam = NA7GFJM47L;
 					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
@@ -817,7 +817,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DB8D76C3DEDA3855C1B85090 /* Pods-LSBluetoothSDK_Demo_iOS_Example.debug.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = HZEC6N5GYF;
+				DEVELOPMENT_TEAM = NA7GFJM47L;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LSBluetoothSDK_Demo_iOS/LSBluetoothSDK_Demo_iOS-Prefix.pch";
 				INFOPLIST_FILE = "LSBluetoothSDK_Demo_iOS/LSBluetoothSDK_Demo_iOS-Info.plist";
@@ -833,7 +833,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 08A072014F06B62F1D859C7C /* Pods-LSBluetoothSDK_Demo_iOS_Example.release.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = HZEC6N5GYF;
+				DEVELOPMENT_TEAM = NA7GFJM47L;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LSBluetoothSDK_Demo_iOS/LSBluetoothSDK_Demo_iOS-Prefix.pch";
 				INFOPLIST_FILE = "LSBluetoothSDK_Demo_iOS/LSBluetoothSDK_Demo_iOS-Info.plist";

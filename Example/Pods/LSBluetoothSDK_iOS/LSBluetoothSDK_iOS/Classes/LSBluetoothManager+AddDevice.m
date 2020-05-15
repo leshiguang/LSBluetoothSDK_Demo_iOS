@@ -14,8 +14,10 @@
  */
 -(BOOL)addMeasureDevice:(LSDeviceInfo *)lsDevice result:(void (^)(LSAccessCode)) result {
     lsw_authorize_device(@"device-activate", @"1.0", lsDevice.macAddress, lsDevice.modelNumber, ^(LSAccessCode code) {
+        NSLog(@"resp of authorize:%@,modelNumber=%@,mac=%@",@(code),lsDevice.modelNumber,lsDevice.macAddress);
         if (code == SUCCESS) {
-            [self addMeasureDevice:lsDevice service:@"device-activate" version:@"1.0"];
+            BOOL status=[self addMeasureDevice:lsDevice service:@"device-activate" version:@"1.0"];
+            NSLog(@"添加设备，状态：%@",@(status));
         }
         if (result) {
             result(code);
