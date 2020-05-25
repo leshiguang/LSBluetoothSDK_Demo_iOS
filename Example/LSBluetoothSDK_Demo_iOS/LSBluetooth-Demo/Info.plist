@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>LX_APPID</key>
-	<string>test_app_id</string>
+	<string>com.leshiguang.saas.rbac.demo.appid</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>

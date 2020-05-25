@@ -9,6 +9,9 @@
 
 
 ## introduction
+[android 开发接入文档](Android-docs.zip  "android开发文档")
+
+[ios 开发接入文档](iOS-SDK.zip  "ios开发文档")
 
 ------
 ### 1、Search bluetooth device
