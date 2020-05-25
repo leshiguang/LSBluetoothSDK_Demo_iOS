@@ -1,5 +1,5 @@
 CONFIGURATION_BUILD_DIR = ${PODS_CONFIGURATION_BUILD_DIR}/LSAuthorization
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking" "${PODS_CONFIGURATION_BUILD_DIR}/LSNetworkingModule" "${PODS_ROOT}/LSAuthorization/LSAuthorizationFramework-0.1.6/ios"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/AFNetworking" "${PODS_CONFIGURATION_BUILD_DIR}/LSNetworkingModule" "${PODS_ROOT}/LSAuthorization/LSAuthorizationFramework-0.1.9/ios"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 OTHER_LDFLAGS = $(inherited) -framework "LSAuthorizationFramework"
 PODS_BUILD_DIR = ${BUILD_DIR}

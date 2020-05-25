@@ -14,26 +14,27 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - LSAuthorization (0.1.9):
+  - LSAuthorization (0.2.0):
     - LSNetworkingModule
   - LSBluetoothSDK_Demo_iOS (0.1.0):
     - LSBluetoothSDK_iOS
-  - LSBluetoothSDK_iOS (1.4.5):
+  - LSBluetoothSDK_iOS (1.4.7):
     - LSAuthorization
   - LSNetworkingModule (2.1.8):
     - AFNetworking
 
 DEPENDENCIES:
   - LSBluetoothSDK_Demo_iOS (from `../`)
-  - LSBluetoothSDK_iOS (= 1.4.5)
+  - LSBluetoothSDK_iOS (= 1.4.7)
   - LSNetworkingModule (= 2.1.8)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - AFNetworking
-  https://gitlab.lifesense.com/commonlib_ios/CocoaPodsSpecs.git:
+  https://github.com/leshiguang/cocoapods.git:
     - LSAuthorization
     - LSBluetoothSDK_iOS
+  https://gitlab.lifesense.com/commonlib_ios/CocoaPodsSpecs.git:
     - LSNetworkingModule
 
 EXTERNAL SOURCES:
@@ -42,11 +43,11 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  LSAuthorization: 23fcf58212b4491759b7bef1e73b2fab7a709ab5
+  LSAuthorization: 9652b71eb44c2ee18b8c58417f0c08889b952d9b
   LSBluetoothSDK_Demo_iOS: cc1e812b911c5bafdcbe72c7bfb82cae915bb949
-  LSBluetoothSDK_iOS: 70f625a943b6e9f601f71ae54797a6eb2b1210fd
+  LSBluetoothSDK_iOS: 9ab6e8dc6e8b6bfdec1afe979810da24a0b4e3c1
   LSNetworkingModule: 94c494be78faade274628aed9f8bf44554a81f93
 
-PODFILE CHECKSUM: 89cb8e9b60be2a15d641c6551daa8546145536ed
+PODFILE CHECKSUM: ae1b9230cd284cb012942a57aaa2bc03aed20f29
 
 COCOAPODS: 1.8.4

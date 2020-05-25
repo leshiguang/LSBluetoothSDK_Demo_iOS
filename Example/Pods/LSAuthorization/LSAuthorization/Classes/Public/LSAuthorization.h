@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#define lsw_authorize_device(serviceId, serviceVersion, mac, block) [[LSAuthorization sharedInstance] authorizeDevice:serviceId andVersion:serviceVersion andMac:mac withBlock:block]
+#define lsw_authorize_device(serviceId, serviceVersion, mac, model, block) [[LSAuthorization sharedInstance] authorizeDevice:serviceId andVersion:serviceVersion andMac:mac andModel:model withBlock:block]
 #define lsw_authorize(serviceId, serviceVersion, block) [[LSAuthorization sharedInstance] authorize:serviceId andVersion:serviceVersion withBlock:block]
 
 #define NULLABLE_STRING(s) s ? s : @""
@@ -35,7 +35,7 @@ typedef NS_ENUM(NSInteger, LSAccessCode) {
 /// @param serviceVersion 服务版本，由服务中心指定
 /// @param mac 设备mac地址
 /// @param complete 回调
--(void) authorizeDevice:(NSString *)serviceId andVersion:(NSString *)serviceVersion andMac:(NSString *)mac withBlock:(void (^)(LSAccessCode)) complete;
+-(void) authorizeDevice:(NSString *)serviceId andVersion:(NSString *)serviceVersion andMac:(NSString *)mac andModel:(NSString *)model withBlock:(void (^)(LSAccessCode)) complete;
 
 
 

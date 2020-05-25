@@ -54,6 +54,8 @@
 @property(nonatomic,assign,readonly) BOOL autoRegister;     //自动注册设备ID
 
 @property(nonatomic,assign)long syncUtc;                    //custom utc value by App
+@property(nonatomic,assign)BOOL syncAllData;                //不区分血压计的用户编号，同步所有数据，默认为NO
+
 /**
  * 设备关键信息概述
  */

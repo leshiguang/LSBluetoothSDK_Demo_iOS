@@ -267,6 +267,7 @@
 		294F3EAD33EEB9E0C6BCDF214C20A018 /* LSCustomHeaderRequestSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LSCustomHeaderRequestSerializer.h; path = LSNetworkingModule/Classes/LSCustomHeaderRequestSerializer.h; sourceTree = "<group>"; };
 		2C6F485DDC4EEE8BDC505B70D43FDFEB /* UIImage+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+AFNetworking.h"; path = "UIKit+AFNetworking/UIImage+AFNetworking.h"; sourceTree = "<group>"; };
 		2DC7843CFA9EE3E09212A5741DD6090D /* LSBaseResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LSBaseResponse.m; path = LSNetworkingModule/Classes/LSBaseResponse.m; sourceTree = "<group>"; };
+		2E9BD9FCAC128F08578CBB1454D1AAA1 /* LSAuthorizationFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LSAuthorizationFramework.framework; path = "LSAuthorizationFramework-0.1.9/ios/LSAuthorizationFramework.framework"; sourceTree = "<group>"; };
 		3462E6FC1A205F91E813BBC87E4E56D6 /* ProtocolSimulator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ProtocolSimulator.m; path = LSNetworkingModule/Classes/ProtocolSimulator.m; sourceTree = "<group>"; };
 		3478464F2FB61446852DA3C700E303E9 /* UIImageView+AFNetworking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+AFNetworking.h"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.h"; sourceTree = "<group>"; };
 		36A0C6BA654C3A1873CEEA8DFB65BBFF /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+AFNetworking.m"; path = "UIKit+AFNetworking/UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
@@ -330,7 +331,6 @@
 		925B365AC31AE808CBF8E786F6EE9F68 /* Pods-LSBluetoothSDK_Demo_iOS_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LSBluetoothSDK_Demo_iOS_Example-frameworks.sh"; sourceTree = "<group>"; };
 		927D76FAC0328AB97BBC37E07862B84F /* Pods-LSBluetoothSDK_Demo_iOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LSBluetoothSDK_Demo_iOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		92AB7D66BCBAE20D227418C879B6413F /* BaseNetworkErrorProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BaseNetworkErrorProtocol.h; path = LSNetworkingModule/Classes/BaseNetworkErrorProtocol.h; sourceTree = "<group>"; };
-		932AFAC94BFB769B75A58D50683EE0D4 /* LSAuthorizationFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LSAuthorizationFramework.framework; path = "LSAuthorizationFramework-0.1.6/ios/LSAuthorizationFramework.framework"; sourceTree = "<group>"; };
 		932F7DC9E0AA51CAE13CC9314CE66D7C /* LSAuthorizeResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LSAuthorizeResponse.m; path = LSAuthorization/Classes/Public/LSAuthorizeResponse.m; sourceTree = "<group>"; };
 		9535F4AF2A8BBB546B67961C5FC95CFA /* ResourceBundle-LSAuthorization-LSAuthorization-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-LSAuthorization-LSAuthorization-Info.plist"; sourceTree = "<group>"; };
 		95550ED424E3887CFABE1B2FDB931C43 /* Pods-LSBluetoothSDK_Demo_iOS_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LSBluetoothSDK_Demo_iOS_Example-umbrella.h"; sourceTree = "<group>"; };
@@ -614,6 +614,14 @@
 			path = "Example/Pods/Target Support Files/LSBluetoothSDK_Demo_iOS";
 			sourceTree = "<group>";
 		};
+		49B10F10977E15204643BC770D2A3F85 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E9BD9FCAC128F08578CBB1454D1AAA1 /* LSAuthorizationFramework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5E94265A59C4FCE73651E54C4BEF242D /* Reachability */ = {
 			isa = PBXGroup;
 			children = (
@@ -627,14 +635,6 @@
 			isa = PBXGroup;
 			children = (
 				36ED891677583E4BAFA59CF44B64AC10 /* LSDeviceBluetooth.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		6C0C07D4AF0CA505276D8D3E03A5AA29 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				932AFAC94BFB769B75A58D50683EE0D4 /* LSAuthorizationFramework.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -688,7 +688,7 @@
 				8C125DDECA2EAF0119B808A5FFDD6A98 /* LSAuthorizeResponse.h */,
 				932F7DC9E0AA51CAE13CC9314CE66D7C /* LSAuthorizeResponse.m */,
 				84F0BA090DF0894E49C47FDF2CC9E998 /* LSProtocolPathUtils.h */,
-				6C0C07D4AF0CA505276D8D3E03A5AA29 /* Frameworks */,
+				49B10F10977E15204643BC770D2A3F85 /* Frameworks */,
 				EB8E786AB7485BC176485686705BBC0B /* Resources */,
 				954EC66CA2CCD86B6DA520401571F120 /* Support Files */,
 			);

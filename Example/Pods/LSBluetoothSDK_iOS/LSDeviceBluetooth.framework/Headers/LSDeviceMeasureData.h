@@ -103,6 +103,7 @@
 @property(nonatomic)double weight;                     //物体重量
 @property(nonatomic)NSInteger sectionWeight;           //
 @property(nonatomic)NSInteger time;
+@property(nonatomic,assign)int negtiveValueState;      //负值状态，0x00=正值，0x01=负值
 @end
 
 #pragma mark - LSPedometerData 手环步数测量数据

@@ -12,7 +12,7 @@
 
 
 
-- (instancetype)init:(NSString *)serviceId andVersion:(NSString *)serviceVersion andMac:(NSString *)mac {
+- (instancetype)init:(NSString *)serviceId andVersion:(NSString *)serviceVersion andMac:(NSString *)mac andModel:(NSString*)model {
     self = [super init];
     if (self) {
         self.method = HTTP_POST;
@@ -22,6 +22,7 @@
         self.serviceId = serviceId;
         self.serviceVersion = serviceVersion;
         self.mac = mac;
+        self.model = model;
         self.platform = 1;
         self.appId = [[NSBundle mainBundle] objectForInfoDictionaryKey:@"LX_APPID"];
         self.artifactId = [NSBundle mainBundle].bundleIdentifier;
@@ -53,6 +54,12 @@
 
 -(void) setArtifactId:(NSString * _Nonnull)artifactId {
     [self addDictionaryValue:@{@"artifactId" : artifactId}];
+}
+
+
+- (void)setModel:(NSString *)model {
+    [self addDictionaryValue:@{@"model" : model}];
+
 }
 
 @end

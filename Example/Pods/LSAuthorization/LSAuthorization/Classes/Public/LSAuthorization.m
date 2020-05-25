@@ -35,8 +35,8 @@
     });
     return authorization;
 }
-- (void)authorizeDevice:(NSString *)serviceId andVersion:(NSString *)serviceVersion andMac:(NSString *)mac withBlock:(nonnull void (^)(LSAccessCode))complete {
-    [[LSAuthorizationService sharedInstance] authorizeDevice:serviceId andVersion:serviceVersion andMac:mac withBlock:^(NSInteger ret) {
+- (void)authorizeDevice:(NSString *)serviceId andVersion:(NSString *)serviceVersion andMac:(NSString *)mac andModel:(NSString*)model withBlock:(nonnull void (^)(LSAccessCode))complete {
+    [[LSAuthorizationService sharedInstance] authorizeDevice:serviceId andVersion:serviceVersion andMac:mac andModel:model withBlock:^(NSInteger ret) {
         complete(ret);
     }];
 }
@@ -48,8 +48,8 @@
     }];
 }
 
-- (void)onRequest:(NSString *)serviceId andVersion:(NSString *)serviceVersion andMac:(NSString *) mac complete:(nonnull void (^)(NSInteger))complete {
-    LSAuthorizeRequest *request = [[LSAuthorizeRequest alloc] init:serviceId andVersion:serviceVersion andMac:mac];
+- (void)onRequest:(NSString *)serviceId andVersion:(NSString *)serviceVersion andMac:(NSString *) mac  andModel:(NSString*)model complete:(nonnull void (^)(NSInteger))complete {
+    LSAuthorizeRequest *request = [[LSAuthorizeRequest alloc] init:serviceId andVersion:serviceVersion andMac:mac andModel:model];
     [[ServerCommunicationManager GetServerCommunication] sendRequest:request success:^(NSURLSessionDataTask * _Nullable task, NSDictionary*  _Nonnull responseObject) {
         if (!responseObject || !responseObject[@"code"]) {
           complete(-1);
