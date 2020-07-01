@@ -1,6 +1,0 @@
-framework module LSDeviceBluetooth {
-  umbrella header "LSDeviceBluetooth.h"
-
-  export *
-  module * { export * }
-}
