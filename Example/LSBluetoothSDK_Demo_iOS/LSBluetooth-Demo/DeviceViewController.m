@@ -704,10 +704,8 @@ static NSString *spaceString=@"\n -----------------------";
 -(void)addDevices
 {
     //clear
-    //set delay disconnect for 1014B
-    if([self.currentDevice.deviceName caseInsensitiveCompare:@"1014B"] == NSOrderedSame){
-        self.currentDevice.delayDisconnect=YES;
-    }
+    //set delay disconnect for A3 BPM OR Scale
+    self.currentDevice.delayDisconnect=YES;
     //add new one
     __weak DeviceViewController *weakSelf=self;
      self.currentDevice.macAddress=self.currentDevice.broadcastId;
