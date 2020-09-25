@@ -13,7 +13,7 @@ target 'LSBluetoothSDK_Demo_iOS_Example' do
     inherit! :search_paths
     pod 'LSBluetoothSDK_iOS','1.4.7'
 
-    pod 'LSNetworkingModule', '2.1.8'
+#    pod 'LSNetworkingModule', '2.1.8'
     
     
   end

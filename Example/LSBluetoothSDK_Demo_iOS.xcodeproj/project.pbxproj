@@ -593,17 +593,15 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-LSBluetoothSDK_Demo_iOS_Tests/Pods-LSBluetoothSDK_Demo_iOS_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/LSAuthorization/LSAuthorization.framework",
 				"${PODS_ROOT}/LSBluetoothSDK_iOS/LSDeviceBluetooth.framework",
-				"${BUILT_PRODUCTS_DIR}/LSNetworkingModule/LSNetworkingModule.framework",
+				"${BUILT_PRODUCTS_DIR}/LSNetwork_iOS/LSNetwork_iOS.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LSAuthorization.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LSDeviceBluetooth.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LSNetworkingModule.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LSNetwork_iOS.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -617,17 +615,15 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-LSBluetoothSDK_Demo_iOS_Example/Pods-LSBluetoothSDK_Demo_iOS_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/LSAuthorization/LSAuthorization.framework",
 				"${PODS_ROOT}/LSBluetoothSDK_iOS/LSDeviceBluetooth.framework",
-				"${BUILT_PRODUCTS_DIR}/LSNetworkingModule/LSNetworkingModule.framework",
+				"${BUILT_PRODUCTS_DIR}/LSNetwork_iOS/LSNetwork_iOS.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LSAuthorization.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LSDeviceBluetooth.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LSNetworkingModule.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LSNetwork_iOS.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
