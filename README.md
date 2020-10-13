@@ -38,8 +38,6 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
-
-
 ## Author
 
 alex.wu, yong.wu@lifesense.com
