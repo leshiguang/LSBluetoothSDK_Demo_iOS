@@ -9,7 +9,6 @@
 #import "DeviceViewController.h"
 #import "DataFormatConverter.h"
 #import <LSDeviceBluetooth/LSDeviceBluetooth.h>
-#import "LSBluetoothManager+AddDevice.h"
 
 #import "DeviceUser.h"
 #import "ScanFilter.h"
@@ -709,27 +708,30 @@ static NSString *spaceString=@"\n -----------------------";
     //add new one
     __weak DeviceViewController *weakSelf=self;
      self.currentDevice.macAddress=self.currentDevice.broadcastId;
-    [self.lsBleManager addMeasureDevice:self.currentDevice
-                                 result:^(LSAccessCode result) {
-        if(result == SUCCESS){
-            //设备认证成功
-            //start data syncing
-            BOOL isSuccess=[weakSelf.lsBleManager startDataReceiveService:weakSelf];
-            if(!isSuccess && !weakSelf.lsBleManager.isBluetoothPowerOn){
-                weakSelf.processingView.hidden=YES;
-                [weakSelf showAlertView:msg_connect_failed message:prompt_bluetooth_disable cancelBtn:NO handler:nil];
+    [self.lsBleManager addMeasureDevice:@"com.leshiguang.saas.rbac.demo.appid" andDevice:self.currentDevice
+                                 result:^(NSUInteger result) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+
+            if(result == 200){
+                //设备认证成功
+                //start data syncing
+                BOOL isSuccess=[weakSelf.lsBleManager startDataReceiveService:weakSelf];
+                if(!isSuccess && !weakSelf.lsBleManager.isBluetoothPowerOn){
+                    weakSelf.processingView.hidden=YES;
+                    [weakSelf showAlertView:msg_connect_failed message:prompt_bluetooth_disable cancelBtn:NO handler:nil];
+                }
+                else{
+                    weakSelf.processingView.hidden=NO;
+                    if(!weakSelf.processingView.isAnimating){
+                        [weakSelf.processingView startAnimating];
+                    }
+                   [weakSelf updateDeviceConnectState:LSDeviceStateConnecting];
+                }
             }
             else{
-                weakSelf.processingView.hidden=NO;
-                if(!weakSelf.processingView.isAnimating){
-                    [weakSelf.processingView startAnimating];
-                }
-               [weakSelf updateDeviceConnectState:LSDeviceStateConnecting];
+                [weakSelf showAlertView:msg_connect_failed message:prompt_device_unknown cancelBtn:NO handler:nil];
             }
-        }
-        else{
-            [weakSelf showAlertView:msg_connect_failed message:prompt_device_unknown cancelBtn:NO handler:nil];
-        }
+        });
     }];
 }
 

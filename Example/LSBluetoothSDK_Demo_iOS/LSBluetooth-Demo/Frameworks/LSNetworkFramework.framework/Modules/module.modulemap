@@ -1,0 +1,6 @@
+framework module LSNetworkFramework {
+  umbrella header "LSNetworkFramework.h"
+
+  export *
+  module * { export * }
+}

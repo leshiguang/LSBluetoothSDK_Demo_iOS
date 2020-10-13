@@ -8,7 +8,6 @@
 
 #import "LSUsageExample.h"
 #import <LSDeviceBluetooth/LSDeviceBluetooth.h>
-#import "LSBluetoothManager+AddDevice.h"
 
 @interface LSUsageExample()<LSDeviceDataDelegate,LSDevicePairingDelegate>
 @property(nonatomic,strong)LSBluetoothManager *lsBleManager;
@@ -236,7 +235,7 @@
     //remove all devices that have been added
     
     //add the new measure device
-    [self.lsBleManager addMeasureDevice:lsDevice result:^(LSAccessCode result) {
+    [self.lsBleManager addMeasureDevice:@"" andDevice:lsDevice result:^(NSUInteger result) {
         
     }];
 }
@@ -829,7 +828,7 @@
     
     //Update device time，during the data syncing process
     lsDevice.syncUtc=0;//TODO
-    [[LSBluetoothManager defaultManager] addMeasureDevice:lsDevice result:^(LSAccessCode result) {
+    [[LSBluetoothManager defaultManager] addMeasureDevice:@"" andDevice:lsDevice result:^(NSUInteger result) {
         
     }];
     

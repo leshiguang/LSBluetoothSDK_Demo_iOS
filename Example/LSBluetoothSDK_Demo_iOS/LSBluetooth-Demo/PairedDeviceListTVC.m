@@ -21,7 +21,6 @@
 #import <QuartzCore/CALayer.h>
 #import "ScanFilter+Handler.h"
 #import "DeviceViewController.h"
-#import "LSBluetoothManager+AddDevice.h"
 //test message
 static NSString *AppVersionName = @"V1.4.3 build1";
 static NSString *KSyncingDataTips=@"Syncing Data.";
@@ -221,7 +220,7 @@ static NSString *kWeightAppendData=@"WeightAppendData";
         //add new measure device
         for(LSDeviceInfo *lsDevice in self.measureDevices)
         {
-            [self.bleManager addMeasureDevice:lsDevice result:^(LSAccessCode result) {
+            [self.bleManager addMeasureDevice:@"" andDevice:lsDevice result:^(NSUInteger result) {
                 if(lsDevice.deviceType==LSDeviceTypePedometer
                    && [lsDevice.protocolType caseInsensitiveCompare:@"A2"]==NSOrderedSame)
                 {

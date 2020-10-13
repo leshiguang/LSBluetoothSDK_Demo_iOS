@@ -69,8 +69,12 @@
 		B384F49124629F4E00874E2E /* FatScaleSettingTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = B384F43C24629F4D00874E2E /* FatScaleSettingTVC.m */; };
 		B384F49224629F4E00874E2E /* UpgradeFileItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B384F43E24629F4D00874E2E /* UpgradeFileItem.m */; };
 		B384F49624629F4E00874E2E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B384F44324629F4D00874E2E /* Images.xcassets */; };
-		BE2A21D94CB7B1D14FAFE49A /* Pods_LSBluetoothSDK_Demo_iOS_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2DF8A0C833D7379809C928C /* Pods_LSBluetoothSDK_Demo_iOS_Tests.framework */; };
-		F400D7C22E361C90337D556E /* Pods_LSBluetoothSDK_Demo_iOS_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B6FB95582E469913583C7D8 /* Pods_LSBluetoothSDK_Demo_iOS_Example.framework */; };
+		B3BC941F253429CC007DC1B8 /* LSAuthorizationFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3BC941C253429CC007DC1B8 /* LSAuthorizationFramework.framework */; };
+		B3BC9420253429CC007DC1B8 /* LSAuthorizationFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3BC941C253429CC007DC1B8 /* LSAuthorizationFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B3BC9421253429CC007DC1B8 /* LSNetworkFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3BC941D253429CC007DC1B8 /* LSNetworkFramework.framework */; };
+		B3BC9422253429CC007DC1B8 /* LSNetworkFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3BC941D253429CC007DC1B8 /* LSNetworkFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B3BC9423253429CC007DC1B8 /* LSDeviceBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3BC941E253429CC007DC1B8 /* LSDeviceBluetooth.framework */; };
+		B3BC9424253429CC007DC1B8 /* LSDeviceBluetooth.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3BC941E253429CC007DC1B8 /* LSDeviceBluetooth.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,11 +87,24 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B3BC9425253429CC007DC1B8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B3BC9424253429CC007DC1B8 /* LSDeviceBluetooth.framework in Embed Frameworks */,
+				B3BC9420253429CC007DC1B8 /* LSAuthorizationFramework.framework in Embed Frameworks */,
+				B3BC9422253429CC007DC1B8 /* LSNetworkFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		03857A882242646575931F2A /* Pods-LSBluetoothSDK_Demo_iOS_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSBluetoothSDK_Demo_iOS_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LSBluetoothSDK_Demo_iOS_Tests/Pods-LSBluetoothSDK_Demo_iOS_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		08A072014F06B62F1D859C7C /* Pods-LSBluetoothSDK_Demo_iOS_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSBluetoothSDK_Demo_iOS_Example.release.xcconfig"; path = "Target Support Files/Pods-LSBluetoothSDK_Demo_iOS_Example/Pods-LSBluetoothSDK_Demo_iOS_Example.release.xcconfig"; sourceTree = "<group>"; };
 		3310A991246AB94000EF6AD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "LSBluetooth-Demo/Base.lproj/LaunchScreen.xib"; sourceTree = "<group>"; };
-		5B6FB95582E469913583C7D8 /* Pods_LSBluetoothSDK_Demo_iOS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LSBluetoothSDK_Demo_iOS_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* LSBluetoothSDK_Demo_iOS_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LSBluetoothSDK_Demo_iOS_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -104,7 +121,10 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		7CFD97EF8439B242FDDC3E5D /* Pods-LSBluetoothSDK_Demo_iOS_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSBluetoothSDK_Demo_iOS_Tests.release.xcconfig"; path = "Target Support Files/Pods-LSBluetoothSDK_Demo_iOS_Tests/Pods-LSBluetoothSDK_Demo_iOS_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		B355FF6A2531527000F8A407 /* LSDeviceBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LSDeviceBluetooth.framework; path = "../../../Users/alexwu/Library/Developer/Xcode/DerivedData/LSDeviceBluetooth-gesnveatyjutahgxckhpstuverfh/Build/Products/Release-universal/LSDeviceBluetooth.framework"; sourceTree = "<group>"; };
+		B355FF722531595300F8A407 /* LSAuthorizationFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LSAuthorizationFramework.framework; sourceTree = "<group>"; };
+		B355FF732531595300F8A407 /* LSNetworkFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LSNetworkFramework.framework; sourceTree = "<group>"; };
+		B355FF762531596500F8A407 /* LSDeviceBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LSDeviceBluetooth.framework; sourceTree = "<group>"; };
 		B384F3D324629F4D00874E2E /* CustomTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableView.m; sourceTree = "<group>"; };
 		B384F3D424629F4D00874E2E /* weight_scale.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = weight_scale.png; sourceTree = "<group>"; };
 		B384F3D524629F4D00874E2E /* UserNameTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserNameTableViewCell.h; sourceTree = "<group>"; };
@@ -191,8 +211,9 @@
 		B384F44324629F4D00874E2E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "../../../BluetoothDemo-iOS/LSBluetooth-Demo/Images.xcassets"; sourceTree = "<group>"; };
 		B384F49A2462A16400874E2E /* LSSleepAnalyze.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LSSleepAnalyze.framework; path = "../../BluetoothDemo-iOS/LSSleepAnalyze.framework"; sourceTree = "<group>"; };
 		B384F49B2462A16500874E2E /* LSScaleFormula.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LSScaleFormula.framework; path = "../../BluetoothDemo-iOS/LSScaleFormula.framework"; sourceTree = "<group>"; };
-		D2DF8A0C833D7379809C928C /* Pods_LSBluetoothSDK_Demo_iOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LSBluetoothSDK_Demo_iOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DB8D76C3DEDA3855C1B85090 /* Pods-LSBluetoothSDK_Demo_iOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSBluetoothSDK_Demo_iOS_Example.debug.xcconfig"; path = "Target Support Files/Pods-LSBluetoothSDK_Demo_iOS_Example/Pods-LSBluetoothSDK_Demo_iOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		B3BC941C253429CC007DC1B8 /* LSAuthorizationFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LSAuthorizationFramework.framework; path = "LSBluetoothSDK_Demo_iOS/LSBluetooth-Demo/Frameworks/LSAuthorizationFramework.framework"; sourceTree = "<group>"; };
+		B3BC941D253429CC007DC1B8 /* LSNetworkFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LSNetworkFramework.framework; path = "LSBluetoothSDK_Demo_iOS/LSBluetooth-Demo/Frameworks/LSNetworkFramework.framework"; sourceTree = "<group>"; };
+		B3BC941E253429CC007DC1B8 /* LSDeviceBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LSDeviceBluetooth.framework; path = "LSBluetoothSDK_Demo_iOS/LSBluetooth-Demo/Frameworks/LSDeviceBluetooth.framework"; sourceTree = "<group>"; };
 		F433629B7ACB3D190F684AA9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		F6E93C2F5644D7092A1F32E8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		FF4914AFC82F746520C394F9 /* LSBluetoothSDK_Demo_iOS.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LSBluetoothSDK_Demo_iOS.podspec; path = ../LSBluetoothSDK_Demo_iOS.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -203,10 +224,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3BC9423253429CC007DC1B8 /* LSDeviceBluetooth.framework in Frameworks */,
+				B3BC941F253429CC007DC1B8 /* LSAuthorizationFramework.framework in Frameworks */,
+				B3BC9421253429CC007DC1B8 /* LSNetworkFramework.framework in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				F400D7C22E361C90337D556E /* Pods_LSBluetoothSDK_Demo_iOS_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,24 +240,12 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				BE2A21D94CB7B1D14FAFE49A /* Pods_LSBluetoothSDK_Demo_iOS_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5A91CF7DBB7F0A670B1403EB /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				DB8D76C3DEDA3855C1B85090 /* Pods-LSBluetoothSDK_Demo_iOS_Example.debug.xcconfig */,
-				08A072014F06B62F1D859C7C /* Pods-LSBluetoothSDK_Demo_iOS_Example.release.xcconfig */,
-				03857A882242646575931F2A /* Pods-LSBluetoothSDK_Demo_iOS_Tests.debug.xcconfig */,
-				7CFD97EF8439B242FDDC3E5D /* Pods-LSBluetoothSDK_Demo_iOS_Tests.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -243,7 +254,6 @@
 				6003F5B5195388D20070C39A /* Tests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
-				5A91CF7DBB7F0A670B1403EB /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -259,14 +269,16 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B355FF6A2531527000F8A407 /* LSDeviceBluetooth.framework */,
+				B3BC941C253429CC007DC1B8 /* LSAuthorizationFramework.framework */,
+				B3BC941E253429CC007DC1B8 /* LSDeviceBluetooth.framework */,
+				B3BC941D253429CC007DC1B8 /* LSNetworkFramework.framework */,
 				B384F49B2462A16500874E2E /* LSScaleFormula.framework */,
 				B384F49A2462A16400874E2E /* LSSleepAnalyze.framework */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				5B6FB95582E469913583C7D8 /* Pods_LSBluetoothSDK_Demo_iOS_Example.framework */,
-				D2DF8A0C833D7379809C928C /* Pods_LSBluetoothSDK_Demo_iOS_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -325,9 +337,20 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		B355FF6125307D1200F8A407 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B355FF762531596500F8A407 /* LSDeviceBluetooth.framework */,
+				B355FF722531595300F8A407 /* LSAuthorizationFramework.framework */,
+				B355FF732531595300F8A407 /* LSNetworkFramework.framework */,
+			);
+			path = Frameworks;
+			sourceTree = SOURCE_ROOT;
+		};
 		B384F3D224629F4D00874E2E /* LSBluetooth-Demo */ = {
 			isa = PBXGroup;
 			children = (
+				B355FF6125307D1200F8A407 /* Frameworks */,
 				B384F3E024629F4D00874E2E /* AlertViewUtils.h */,
 				B384F40424629F4D00874E2E /* AlertViewUtils.m */,
 				B384F40C24629F4D00874E2E /* BleDevice.h */,
@@ -430,11 +453,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "LSBluetoothSDK_Demo_iOS_Example" */;
 			buildPhases = (
-				14DC25A244649D59CFE83865 /* [CP] Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				D4AB6C6E752FF0272AEB5F46 /* [CP] Embed Pods Frameworks */,
+				B3BC9425253429CC007DC1B8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -476,7 +498,7 @@
 				ORGANIZATIONNAME = alex.wu;
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
-						DevelopmentTeam = NA7GFJM47L;
+						DevelopmentTeam = 2F5VFZ8ND4;
 					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
@@ -542,28 +564,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		14DC25A244649D59CFE83865 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-LSBluetoothSDK_Demo_iOS_Example-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		2529FA243C26FB72FC1B3BEF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -606,28 +606,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LSBluetoothSDK_Demo_iOS_Tests/Pods-LSBluetoothSDK_Demo_iOS_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D4AB6C6E752FF0272AEB5F46 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-LSBluetoothSDK_Demo_iOS_Example/Pods-LSBluetoothSDK_Demo_iOS_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/LSAuthorization/LSAuthorization.framework",
-				"${PODS_ROOT}/LSBluetoothSDK_iOS/LSDeviceBluetooth.framework",
-				"${BUILT_PRODUCTS_DIR}/LSNetwork_iOS/LSNetwork_iOS.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LSAuthorization.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LSDeviceBluetooth.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LSNetwork_iOS.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LSBluetoothSDK_Demo_iOS_Example/Pods-LSBluetoothSDK_Demo_iOS_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -739,6 +717,7 @@
 		6003F5BD195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -754,6 +733,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -779,6 +759,7 @@
 		6003F5BE195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -794,6 +775,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -811,12 +793,25 @@
 		};
 		6003F5C0195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DB8D76C3DEDA3855C1B85090 /* Pods-LSBluetoothSDK_Demo_iOS_Example.debug.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = NA7GFJM47L;
+				DEVELOPMENT_TEAM = 2F5VFZ8ND4;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Frameworks/LSDeviceBluetooth/Frameworks",
+					"$(PROJECT_DIR)/Frameworks/LSDeviceBluetooth.framework/Frameworks",
+					"$(PROJECT_DIR)/Frameworks/LSDeviceBluetooth.framework/Frameworks/LSAuthorizationFramework.framework/Frameworks",
+					"$(PROJECT_DIR)/LSBluetoothSDK_Demo_iOS/LSBluetooth-Demo/Frameworks",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LSBluetoothSDK_Demo_iOS/LSBluetoothSDK_Demo_iOS-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Frameworks/LSDeviceBluetooth/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = "LSBluetoothSDK_Demo_iOS/LSBluetoothSDK_Demo_iOS-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MACH_O_TYPE = mh_execute;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -827,12 +822,25 @@
 		};
 		6003F5C1195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 08A072014F06B62F1D859C7C /* Pods-LSBluetoothSDK_Demo_iOS_Example.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = NA7GFJM47L;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Frameworks/LSDeviceBluetooth/Frameworks",
+					"$(PROJECT_DIR)/Frameworks/LSDeviceBluetooth.framework/Frameworks",
+					"$(PROJECT_DIR)/Frameworks/LSDeviceBluetooth.framework/Frameworks/LSAuthorizationFramework.framework/Frameworks",
+					"$(PROJECT_DIR)/LSBluetoothSDK_Demo_iOS/LSBluetooth-Demo/Frameworks",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LSBluetoothSDK_Demo_iOS/LSBluetoothSDK_Demo_iOS-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Frameworks/LSDeviceBluetooth/Frameworks",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = "LSBluetoothSDK_Demo_iOS/LSBluetoothSDK_Demo_iOS-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MACH_O_TYPE = mh_execute;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -843,7 +851,6 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 03857A882242646575931F2A /* Pods-LSBluetoothSDK_Demo_iOS_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -868,7 +875,6 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7CFD97EF8439B242FDDC3E5D /* Pods-LSBluetoothSDK_Demo_iOS_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (

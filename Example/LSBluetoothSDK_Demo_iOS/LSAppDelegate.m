@@ -53,6 +53,8 @@
     //init LSBluetoothManager with dispatch queue
     dispatch_queue_t dispatchQueue=dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     [[LSBluetoothManager defaultManager] initManagerWithDispatch:dispatchQueue];
+    NSLog(@"LSBluetooth SDK Version :%@",[LSBluetoothManager defaultManager]);
+
     //get sdk version
     NSLog(@"LSBluetooth SDK Version :%@",[[LSBluetoothManager defaultManager] versionName]);
     //save log message in file if need

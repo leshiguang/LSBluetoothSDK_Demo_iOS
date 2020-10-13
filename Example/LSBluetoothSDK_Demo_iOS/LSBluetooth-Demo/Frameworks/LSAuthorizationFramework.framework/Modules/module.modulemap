@@ -1,0 +1,6 @@
+framework module LSAuthorizationFramework {
+  umbrella header "LSAuthorizationFramework.h"
+
+  export *
+  module * { export * }
+}
