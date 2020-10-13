@@ -10,7 +10,7 @@
 
 ## introduction
 
-[ios api documents](iOS-SDK.zip  "ios api documents")
+[ios api documents](https://docs.leshiguang.com/#/develop-native/ios/bluetooth  "ios api documents")
 
 ------
 ### 1、Search bluetooth device
@@ -38,16 +38,11 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
-LSBluetoothSDK_Demo_iOS is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
 
-```ruby
-pod 'LSBluetoothSDK_Demo_iOS'
-```
 
 ## Author
 
-alex.wu, alex.wu@dianping.com
+alex.wu, yong.wu@lifesense.com
 
 ## License
 
