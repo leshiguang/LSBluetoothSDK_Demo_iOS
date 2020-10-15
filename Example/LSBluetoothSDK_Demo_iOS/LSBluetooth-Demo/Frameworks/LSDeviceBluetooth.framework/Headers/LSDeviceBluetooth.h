@@ -117,3 +117,9 @@ FOUNDATION_EXPORT const unsigned char LSDeviceBluetoothVersionString[];
  */
 
 #pragma mark - Version 1.4.2
+
+
+#pragma mark - Version 1.4.8
+/**
+ *  新增添加设备鉴权l逻辑
+ */
