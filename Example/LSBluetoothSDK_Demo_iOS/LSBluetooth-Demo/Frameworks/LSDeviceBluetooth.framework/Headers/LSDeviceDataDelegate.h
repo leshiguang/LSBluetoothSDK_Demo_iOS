@@ -68,4 +68,16 @@
  */
 @optional
 -(void)bleDevice:(LSDeviceInfo *)device didMeasureDataUpdateForBloodGlucose:(LSBloodGlucoseData *)data;
+
+@optional
+
+/// 爆款秤wifi扫描数据回调
+/// @param device 设备id
+/// @param data 数据model
+-(void)bleDevice:(LSDeviceInfo *)device didMeasureDataUpdateForWifi:(LSScaleWifiModel *)data;
+
+/// 爆款秤wifi配网结果回调
+/// @param device 设备id
+/// @param data 数据model
+- (void)bleDevice:(LSDeviceInfo *)device didConnectWifiResult:(LSScaleConnectWifiResult *)data;
 @end

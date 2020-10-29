@@ -14,15 +14,15 @@
 		</data>
 		<key>Headers/LSBluetoothManager+Push.h</key>
 		<data>
-		GMyOKbq5/cFb1U1mJxVUCEHvNJ0=
+		6t34UX6w3VCetwalp+6PSdMz28g=
 		</data>
 		<key>Headers/LSBluetoothManager.h</key>
 		<data>
-		Shh2Et800DVcw6qTSuWofTaHTMU=
+		0VlbTbpj6f7aSBVx29AunL6plGQ=
 		</data>
 		<key>Headers/LSBluetoothManagerProfiles.h</key>
 		<data>
-		HawGc5MgzVMvVrnc0fl/8QaRESs=
+		RM6WbdstfQqPfUSabUZL2CRhHYg=
 		</data>
 		<key>Headers/LSBluetoothStatusDelegate.h</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Headers/LSDBaseModel.h</key>
 		<data>
-		JHut/jPEYfVJcaB/IHp+BwME9G4=
+		cTw5m1qSL/XjzzqJ/x7iM3kRFXQ=
 		</data>
 		<key>Headers/LSDataFormatUtils.h</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>Headers/LSDeviceBluetooth.h</key>
 		<data>
-		r//4tKSgTPYAdahr6Nuyd8yp3q0=
+		leaGqOc/KM6TRmS4iwiUgPZhOQY=
 		</data>
 		<key>Headers/LSDeviceData.h</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Headers/LSDeviceDataDelegate.h</key>
 		<data>
-		sydZsOg72Vmnmli46i/sq10/p+M=
+		VdzlzVqJYFikdiPrJlo692oDzzk=
 		</data>
 		<key>Headers/LSDeviceFeature.h</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Headers/LSDeviceMeasureData.h</key>
 		<data>
-		RayTGfiw2mAND6RzNWHlWVVHdhs=
+		UWZsCiPeyqR21osQl5DOwU1L/BU=
 		</data>
 		<key>Headers/LSDeviceOperationCmdInfo.h</key>
 		<data>
@@ -106,7 +106,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Td3APrEfTyLD9ihvGiP/S6gcpgQ=
+		nAaCaHUtuhmS+dkRMfHn4bD0hFA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -133,21 +133,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fuiNeeS9plMyW2/NBiB5GxpGJZo6Ck2NibRiEL/Lmi8=
+			rmk1SWQEUW6xtTeg/UqR3IF1QWFRtYy9eZdRCf+CeB8=
 			</data>
 		</dict>
 		<key>Headers/LSBluetoothManager.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SKf/Y2DnCnVhrn2ZW06q4PnVQKnkgU3E7Cw+vSIhGMA=
+			Xcq7MPojOceY0rTHaHf34gWfml83OhyrToQP0nBMUO8=
 			</data>
 		</dict>
 		<key>Headers/LSBluetoothManagerProfiles.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			78qinc07H9sNUiF5DI713G8L4FTqo50PxZ8nPEEe36k=
+			qgMkme5nMdaSSj0HvUsA4N3oCGS9XjmtyXJP6jX6noM=
 			</data>
 		</dict>
 		<key>Headers/LSBluetoothStatusDelegate.h</key>
@@ -168,7 +168,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			J91IbnqT27T8b/aVWfJa/cjr7m7SBAnrajC+amyRbzg=
+			8mjYx0tbS2X2TW5zsu82nFxndhrVxhEuRWLOmChidn8=
 			</data>
 		</dict>
 		<key>Headers/LSDataFormatUtils.h</key>
@@ -189,7 +189,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			loBef6MirYzBykmkGkKj+8jTFFvrTsm4DzYYWYugOBU=
+			KpwG9Bdes61IIdWgNnkYrNZEoub5y8VQnXf0VbmY00U=
 			</data>
 		</dict>
 		<key>Headers/LSDeviceData.h</key>
@@ -203,7 +203,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			i2l45knO21Zkf4/Zy15jLYNcvA8iLFLg6y694ch+w+U=
+			LP/98z34pJ6tWljgSYjsxAB80n8BPTARsepHqkqwIIc=
 			</data>
 		</dict>
 		<key>Headers/LSDeviceFeature.h</key>
@@ -231,7 +231,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			o0zqloDXltkXjVzm/VkJ/kKHtGqPeQomdmphHfBwgqA=
+			6XyBZGlXYUgeGWIKIZc1vWlJe89qpJ+GsgTrzz2CAjY=
 			</data>
 		</dict>
 		<key>Headers/LSDeviceOperationCmdInfo.h</key>

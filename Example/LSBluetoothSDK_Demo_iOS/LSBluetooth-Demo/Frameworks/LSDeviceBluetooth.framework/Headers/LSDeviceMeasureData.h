@@ -501,3 +501,17 @@
 @property (nonatomic,assign) NSUInteger len;   //数据包长度
 @property (nonatomic,strong) NSArray <ATStatisticalItem*> *items;//数据统计项列表
 @end
+
+
+@interface LSScaleWifiModelItem : NSObject
+@property (nonatomic, copy) NSString *ssidName;
+@property (nonatomic, copy) NSString *bssid;
+@end
+
+@interface LSScaleWifiModel : LSUBaseModel
+@property (nonatomic, copy) NSArray *wifiModelAry;
+@end
+
+@interface LSScaleConnectWifiResult : LSUBaseModel
+@property (nonatomic, assign) BOOL connectState;
+@end

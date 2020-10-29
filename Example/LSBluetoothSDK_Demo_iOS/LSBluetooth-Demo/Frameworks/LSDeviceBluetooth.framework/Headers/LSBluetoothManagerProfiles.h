@@ -989,7 +989,6 @@ typedef NS_ENUM(NSUInteger,LSScaleCommandProfile)
     LSScaleCmdResponseAuth=0x0008,           //App对设备上传的登录请求进行响应
     LSScaleCmdRequestInit=0x0009,            //设备上传的初始化请求
     LSScaleCmdResponseInit=0x000A,           //App对设备上传的初始化请求进行响应
-    
 #pragma mark - psuh cmd
     
     LSScaleCmdResponseSetting=0x1000,        //设备对App的push指令响应
@@ -1017,6 +1016,14 @@ typedef NS_ENUM(NSUInteger,LSScaleCommandProfile)
     LSScaleCmdSyncingDataBpm=0x4901,           //App写数据同步通知命令字
     LSScaleCmdMeasureDataBpm=0x4902,           //设备上传测量数据，命令字
 };
+
+#pragma mark - 爆款秤配网
+typedef NS_ENUM(NSUInteger, LSScaleWifiProfile)
+{
+    LSScaleCmdScanWifi=0x0000,                  //开始扫描wifi
+    LSScaleCmdConnectWifi=0x0001,               //连接wifi
+};
+
 
 /**
  * 互联秤，测量数据包包括的数据类型

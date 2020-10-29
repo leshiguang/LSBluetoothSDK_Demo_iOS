@@ -225,4 +225,17 @@
                forDevice:(NSString *)broadcastId
                 andBlock:(DeviceSettingBlock)settingBlock;
 
+/// 开启秤的wifi扫描能力 (爆款秤)
+/// @param deviceMac 设备mac地址
+/// @param block block
+- (void)scanScalesWifi:(NSString *)deviceMac
+              andBlock:(DeviceSettingBlock)block;
+
+
+/// 秤通过蓝牙配网
+/// @param broadcastId mac地址
+/// @param bssid bssid
+/// @param password 密码
+/// @param block block
+- (void)connectWifi:(NSString *)broadcastId bssid:(NSString *)bssid password:(NSString *)password andBlock:(DeviceSettingBlock)block;
 @end
