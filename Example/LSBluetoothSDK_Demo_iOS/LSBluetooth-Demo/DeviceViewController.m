@@ -27,6 +27,8 @@
 #define fun_setting                 @"Other Setting"
 #define fun_read_battery            @"Read Battery"
 #define fun_push_user_info          @"Push User Info"
+#define fun_scan_wifi               @"Scan Wifi"
+#define fun_connent_wifi            @"connect wifi"
 
 
 
@@ -55,7 +57,7 @@
 
 
 @interface DeviceViewController ()<LSDeviceDataDelegate,LSDeviceUpgradingDelegate,
-LSBluetoothStatusDelegate,LSDevicePairingDelegate,UIAlertViewDelegate,LSSettingItemDelegate>
+LSBluetoothStatusDelegate,LSDevicePairingDelegate,UIAlertViewDelegate,LSSettingItemDelegate,LSDebugMessageDelegate>
 
 @property (nonatomic, strong)  LSBluetoothManager *lsBleManager;
 @property (nonatomic, strong)  LSProductUserInfo *productUserInfo;
@@ -72,6 +74,7 @@ LSBluetoothStatusDelegate,LSDevicePairingDelegate,UIAlertViewDelegate,LSSettingI
 @property (nonatomic, strong)  UIAlertController *alertController;
 @property (nonatomic, strong)  LSWeightData *scaleData;
 
+@property (nonatomic, strong) LSScaleWifiModel *wifiModel;
 @end
 
 static NSString *spaceString=@"\n -----------------------";
@@ -86,7 +89,8 @@ static NSString *spaceString=@"\n -----------------------";
     // Do any additional setup after loading the view.
        NSLog(@"deviceConnectedState:%@,key:%@",@([self.lsBleManager checkDeviceConnectState:self.currentDevice.broadcastId]),self.currentDevice.broadcastId);
     [self connectDevice];
- 
+    [[LSBluetoothManager defaultManager] setDebugMessageDelegate:self permission:@"syncing"];
+    [[LSBluetoothManager defaultManager] setDebugMessageDelegate:self permission:@"all"];
     //update gps state
     [self.lsBleManager updatePhoneGpsState:YES];
 }
@@ -626,6 +630,16 @@ static NSString *spaceString=@"\n -----------------------";
                 [self updateScaleUserInfo];
             }];
         }]];
+        
+        [actionSheet addAction:[UIAlertAction actionWithTitle:fun_scan_wifi style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            [self dismissViewControllerAnimated:YES completion:^{}];
+            [self sacaleScanWifi];
+        }]];
+        
+        [actionSheet addAction:[UIAlertAction actionWithTitle:fun_connent_wifi style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            [self dismissViewControllerAnimated:YES completion:^{}];
+            [self connectWifi];
+        }]];
     }
     // Present action sheet.
     [self presentViewController:actionSheet animated:YES completion:nil];
@@ -708,7 +722,10 @@ static NSString *spaceString=@"\n -----------------------";
     //add new one
     __weak DeviceViewController *weakSelf=self;
      self.currentDevice.macAddress=self.currentDevice.broadcastId;
-    [self.lsBleManager addMeasureDevice:@"com.leshiguang.saas.rbac.demo.appid" andDevice:self.currentDevice
+    
+//    com.leshiguang.saas.rbac.demo.appid
+//    88d01e7cb606c28eb35f9667df309aeb57ccf54b
+    [self.lsBleManager addMeasureDevice:@"88d01e7cb606c28eb35f9667df309aeb57ccf54b" andDevice:self.currentDevice
                                  result:^(NSUInteger result) {
         dispatch_async(dispatch_get_main_queue(), ^{
 
@@ -968,6 +985,40 @@ static NSString *spaceString=@"\n -----------------------";
     }];
 }
 
+- (void)sacaleScanWifi {
+    [self.lsBleManager scanScalesWifi:self.currentDevice.broadcastId andBlock:^(BOOL isSuccess, NSUInteger errorCode) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if(isSuccess){
+                [self dismissIndicatorView:nil];
+                //更新成功
+                [self appendOutputText:spaceString];
+                NSString *msg=[NSString stringWithFormat:@"#success >> test scan wifi "];
+                [self appendOutputText:msg];
+//                [self appendOutputText:userInfo.description];
+            }
+            else{
+                [self dismissIndicatorView:nil];
+                //更新失败
+                [self appendOutputText:spaceString];
+                NSString *msg=[NSString stringWithFormat:@"#failed to scan wifi,code:%@",@(errorCode)];
+                [self appendOutputText:msg];
+            }
+        });
+    }];
+}
+
+- (void)connectWifi {
+    for (LSScaleWifiModelItem *model in self.wifiModel.wifiModelAry) {
+        if ([model.ssidName isEqualToString:@"lifesense_2.4G"]) {
+            [[LSBluetoothManager defaultManager] connectWifi:self.currentDevice.broadcastId bssid:model.bssid password:@"life8511" andBlock:^(BOOL isSuccess, NSUInteger errorCode) {
+                [self dismissIndicatorView:nil];
+            }];
+        } else {
+            [self dismissIndicatorView:nil];
+        }
+    }
+}
+
 
 #pragma mark - LSDeviceDataDelegate
 //device connection state change
@@ -1076,7 +1127,35 @@ static NSString *spaceString=@"\n -----------------------";
             [self appendOutputText:str];
         }
     });
-    
+}
+
+- (void)bleDevice:(LSDeviceInfo *)device didMeasureDataUpdateForWifi:(LSScaleWifiModel *)data {
+    dispatch_async(dispatch_get_main_queue(), ^{
+        self.wifiModel = data;
+        self.dataCount++;
+        [self updateNewDataPrompt];
+        [self appendOutputText:spaceString];
+        NSArray *dataStr=[DataFormatConverter parseScaleMeasureData:data];
+        for(NSString *str in dataStr)
+        {
+            [self appendOutputText:str];
+        }
+        
+    });
+}
+
+- (void)bleDevice:(LSDeviceInfo *)device didConnectWifiResult:(LSScaleConnectWifiResult *)data {
+    dispatch_async(dispatch_get_main_queue(), ^{
+        self.dataCount++;
+        [self updateNewDataPrompt];
+        [self appendOutputText:spaceString];
+        NSArray *dataStr=[DataFormatConverter parseScaleMeasureData:data];
+        for(NSString *str in dataStr)
+        {
+            [self appendOutputText:str];
+        }
+        
+    });
 }
 
 //blood prossure measurement data update
@@ -1285,6 +1364,8 @@ static NSString *spaceString=@"\n -----------------------";
     [self upgradeFirmware:item.filePath];
 }
 
-
+-(void)onDebugMessage:(NSString *)msg {
+    NSLog(@"%@",msg);
+}
 
 @end

@@ -403,6 +403,21 @@
 @property (nonatomic ,assign) NSUInteger athleteLevel;  //运动等级
 @end
 
+#pragma mark - LSScanWifiModel 爆款秤开扫描wifi
+@interface LSScanWifiModel : LSDBaseModel
+//Enable to scan AP whose SSID is hidden; enable (1), disable (0).
+@property (nonatomic, assign) NSUInteger showHidden;
+//ios传2
+@property (nonatomic, assign) NSUInteger scanType;
+@end
+
+@interface LSConnectWifiModel : LSDBaseModel
+@property (nonatomic, strong) NSString *bssid;
+@property (nonatomic, assign) NSInteger connected;
+@property (nonatomic, assign) NSInteger passwrodLength;
+@property (nonatomic, strong) NSString *password;
+@end
+
 
 #pragma mark - LSScaleTargetInfo 互联秤的目标信息
 

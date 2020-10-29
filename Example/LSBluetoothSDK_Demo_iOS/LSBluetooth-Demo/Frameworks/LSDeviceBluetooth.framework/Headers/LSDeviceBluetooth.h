@@ -123,3 +123,9 @@ FOUNDATION_EXPORT const unsigned char LSDeviceBluetoothVersionString[];
 /**
  *  新增添加设备鉴权l逻辑
  */
+
+
+#pragma mark - Version 1.4.9
+/**
+ * 修改 deploy target至 iOS 11.0
+ */

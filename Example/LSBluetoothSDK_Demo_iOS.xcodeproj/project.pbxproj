@@ -498,7 +498,7 @@
 				ORGANIZATIONNAME = alex.wu;
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
-						DevelopmentTeam = 2F5VFZ8ND4;
+						DevelopmentTeam = Q4ULFJ6L7N;
 					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
@@ -794,7 +794,7 @@
 		6003F5C0195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 2F5VFZ8ND4;
+				DEVELOPMENT_TEAM = Q4ULFJ6L7N;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PROJECT_DIR)/Frameworks",

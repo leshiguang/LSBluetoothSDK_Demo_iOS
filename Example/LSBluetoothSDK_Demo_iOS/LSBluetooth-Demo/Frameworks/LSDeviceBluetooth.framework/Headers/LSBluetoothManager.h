@@ -282,6 +282,8 @@ FOUNDATION_EXPORT NSString *const  LSDeviceBluetoothFrameworkVersion;
  */
 -(void)logMessage:(NSString *)msg;
 
+
+
 #pragma mark - Added in version 1.2.4
 
 /**
@@ -293,4 +295,14 @@ FOUNDATION_EXPORT NSString *const  LSDeviceBluetoothFrameworkVersion;
  * Device SN 转 Device ID
  */
 -(NSString *)toDeviceID:(NSString *)deviceSn;
+
+
+///**
+// * Added in version 1.0.0
+// * 设置设备的产品用户信息，A3脂肪秤、A3体重秤
+// * 当deviceId为空时，表示在配对模式下，设置设备的用户信息，
+// * deviceId不为空时，表示在数据同步模式下，设置指定设备的用户信息
+// */
+//-(void)setProductUserInfo:(LSProductUserInfo *)userInfo forDevice:(NSString *)deviceId;
+
 @end

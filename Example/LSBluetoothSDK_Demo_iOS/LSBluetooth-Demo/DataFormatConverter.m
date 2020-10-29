@@ -472,6 +472,19 @@ static NSUInteger devicePower;
         [strMap addObject:[NSString stringWithFormat:@"MUS:%@",@(fatData.muscleMassRatio)]];
         [strMap addObject:[NSString stringWithFormat:@"BONE:%@",@(fatData.boneDensity)]];
     }
+    else if ([data isKindOfClass:[LSScaleWifiModel class]])
+    {
+        [strMap addObject:[NSString stringWithFormat:@"#ScaleWeight wifi"]];
+        LSScaleWifiModel *wifiData=(LSScaleWifiModel *)data;
+        for (LSScaleWifiModelItem *model in wifiData.wifiModelAry) {
+            [strMap addObject:[NSString stringWithFormat:@"ssidName:%@ ---- bssid:%@",model.ssidName,model.bssid]];
+        }
+    }
+    else if ([data isKindOfClass:[LSScaleConnectWifiResult class]]) {
+        [strMap addObject:[NSString stringWithFormat:@"#ScaleWeight wifi connect"]];
+        LSScaleConnectWifiResult *wifiData=(LSScaleConnectWifiResult *)data;
+        [strMap addObject:[NSString stringWithFormat:@"connect:%@",wifiData.connectState ? @"success" :@"fail "]];
+    }
  
     return strMap;
 }
