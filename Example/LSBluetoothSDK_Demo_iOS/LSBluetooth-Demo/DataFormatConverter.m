@@ -485,6 +485,18 @@ static NSUInteger devicePower;
         LSScaleConnectWifiResult *wifiData=(LSScaleConnectWifiResult *)data;
         [strMap addObject:[NSString stringWithFormat:@"connect:%@",wifiData.connectState ? @"success" :@"fail "]];
     }
+    else if ([data isKindOfClass:[LSScaleWifiStateModel class]]) {
+        [strMap addObject:[NSString stringWithFormat:@"#ScaleWeight wifi state"]];
+        LSScaleWifiStateModel *wifiData=(LSScaleWifiStateModel *)data;
+        [strMap addObject:[NSString stringWithFormat:@"connect:%@",wifiData.connectState ? @"success" :@"fail "]];
+        [strMap addObject:[NSString stringWithFormat:@"ssidName:%@",wifiData.ssidName]];
+        [strMap addObject:[NSString stringWithFormat:@"bssid:%@",wifiData.bssid]];
+    }
+    else if ([data isKindOfClass:[LSScaleRestConnectWifiResult class]]) {
+        [strMap addObject:[NSString stringWithFormat:@"#ScaleWeight Rest connect wifi"]];
+        LSScaleRestConnectWifiResult *wifiData=(LSScaleRestConnectWifiResult *)data;
+        [strMap addObject:[NSString stringWithFormat:@"connect:%@",wifiData.restConnectState ? @"success" :@"fail "]];
+    }
  
     return strMap;
 }

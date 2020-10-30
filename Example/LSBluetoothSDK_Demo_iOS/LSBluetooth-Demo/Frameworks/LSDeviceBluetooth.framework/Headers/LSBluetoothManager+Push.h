@@ -238,4 +238,14 @@
 /// @param password 密码
 /// @param block block
 - (void)connectWifi:(NSString *)broadcastId bssid:(NSString *)bssid password:(NSString *)password andBlock:(DeviceSettingBlock)block;
+
+/// 重置wifi
+/// @param broadcastId mac地址
+/// @param block 回调
+- (void)restConnectRequest:(NSString *)broadcastId andBlock:(DeviceSettingBlock)block;
+
+/// 获取wifi连接状态
+/// @param broadcastId mac地址
+/// @param block 回调
+- (void)wifiStatusRequest:(NSString *)broadcastId andBlock:(DeviceSettingBlock)block;
 @end

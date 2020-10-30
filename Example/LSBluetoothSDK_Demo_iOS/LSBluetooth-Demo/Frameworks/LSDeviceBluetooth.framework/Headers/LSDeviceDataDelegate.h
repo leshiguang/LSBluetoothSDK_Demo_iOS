@@ -72,12 +72,26 @@
 @optional
 
 /// 爆款秤wifi扫描数据回调
-/// @param device 设备id
+/// @param device 设备信息
 /// @param data 数据model
 -(void)bleDevice:(LSDeviceInfo *)device didMeasureDataUpdateForWifi:(LSScaleWifiModel *)data;
 
+@optional
 /// 爆款秤wifi配网结果回调
-/// @param device 设备id
+/// @param device 设备信息
 /// @param data 数据model
 - (void)bleDevice:(LSDeviceInfo *)device didConnectWifiResult:(LSScaleConnectWifiResult *)data;
+
+@optional
+/// 爆款秤wifi重置结果回调
+/// @param device 设备信息
+/// @param data 数据model
+- (void)bleDevice:(LSDeviceInfo *)device didReconnectWifiResult:(LSScaleRestConnectWifiResult *)data;
+
+@optional
+
+/// 爆款秤wifi连接状态回调
+/// @param device 设备信息
+/// @param data 数据model
+- (void)bleDevice:(LSDeviceInfo *)device didWifiState:(LSScaleWifiStateModel *)data;
 @end
