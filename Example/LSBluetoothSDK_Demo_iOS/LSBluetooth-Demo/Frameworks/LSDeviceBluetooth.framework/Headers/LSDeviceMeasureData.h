@@ -509,9 +509,19 @@
 @end
 
 @interface LSScaleWifiModel : LSUBaseModel
-@property (nonatomic, copy) NSArray *wifiModelAry;
+@property (nonatomic, copy) NSArray <LSScaleWifiModelItem *> *wifiModelAry;
 @end
 
 @interface LSScaleConnectWifiResult : LSUBaseModel
 @property (nonatomic, assign) BOOL connectState;
+@end
+
+@interface LSScaleRestConnectWifiResult : LSUBaseModel
+@property (nonatomic, assign) BOOL restConnectState;
+@end
+
+@interface LSScaleWifiStateModel : LSUBaseModel
+@property (nonatomic, assign) BOOL connectState;
+@property (nonatomic, copy) NSString *ssidName;
+@property (nonatomic, copy) NSString *bssid;
 @end

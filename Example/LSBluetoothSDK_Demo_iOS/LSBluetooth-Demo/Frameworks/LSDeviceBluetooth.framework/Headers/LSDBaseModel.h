@@ -418,6 +418,12 @@
 @property (nonatomic, strong) NSString *password;
 @end
 
+@interface LSRestConnectWifiModel: LSDBaseModel
+@end
+
+@interface LSWifiStatusModel : LSDBaseModel
+@end
+
 
 #pragma mark - LSScaleTargetInfo 互联秤的目标信息
 

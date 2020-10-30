@@ -29,7 +29,8 @@
 #define fun_push_user_info          @"Push User Info"
 #define fun_scan_wifi               @"Scan Wifi"
 #define fun_connent_wifi            @"connect wifi"
-
+#define fun_reconnect_wifi          @"rest connect wifi"
+#define fun_wifi_state              @"wifi state"
 
 
 #define msg_connect_failed          @"Connect Failed"
@@ -640,6 +641,16 @@ static NSString *spaceString=@"\n -----------------------";
             [self dismissViewControllerAnimated:YES completion:^{}];
             [self connectWifi];
         }]];
+        
+        [actionSheet addAction:[UIAlertAction actionWithTitle:fun_reconnect_wifi style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            [self dismissViewControllerAnimated:YES completion:^{}];
+            [self reconnectWifi];
+        }]];
+        
+        [actionSheet addAction:[UIAlertAction actionWithTitle:fun_wifi_state style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+            [self dismissViewControllerAnimated:YES completion:^{}];
+            [self wifiState];
+        }]];
     }
     // Present action sheet.
     [self presentViewController:actionSheet animated:YES completion:nil];
@@ -1019,6 +1030,17 @@ static NSString *spaceString=@"\n -----------------------";
     }
 }
 
+- (void)reconnectWifi {
+    [[LSBluetoothManager defaultManager] restConnectRequest:self.currentDevice.broadcastId andBlock:^(BOOL isSuccess, NSUInteger errorCode) {
+        [self dismissIndicatorView:nil];
+    }];
+}
+
+- (void)wifiState {
+    [[LSBluetoothManager defaultManager] wifiStatusRequest:self.currentDevice.broadcastId andBlock:^(BOOL isSuccess, NSUInteger errorCode) {
+        [self dismissIndicatorView:nil];
+    }];
+}
 
 #pragma mark - LSDeviceDataDelegate
 //device connection state change
@@ -1245,6 +1267,30 @@ static NSString *spaceString=@"\n -----------------------";
         NSString *msg=[NSString stringWithFormat:@"blood glucose value=%@,unit=%@ ",@(data.concentration),data.measureUnits];
         [self appendOutputText:msg];
     });
+}
+
+- (void)bleDevice:(LSDeviceInfo *)device didWifiState:(LSScaleWifiStateModel *)data {
+    NSLog(@"wifi 连接状态回调 ----- connectState:%@ ssidName:%@",@(data.connectState),data.ssidName);
+    self.dataCount++;
+    [self updateNewDataPrompt];
+    [self appendOutputText:spaceString];
+    NSArray *dataStr=[DataFormatConverter parseScaleMeasureData:data];
+    for(NSString *str in dataStr)
+    {
+        [self appendOutputText:str];
+    }
+}
+
+- (void)bleDevice:(LSDeviceInfo *)device didReconnectWifiResult:(LSScaleRestConnectWifiResult *)data {
+    NSLog(@"重置wifi ------- %@",@(data.restConnectState));
+    self.dataCount++;
+    [self updateNewDataPrompt];
+    [self appendOutputText:spaceString];
+    NSArray *dataStr=[DataFormatConverter parseScaleMeasureData:data];
+    for(NSString *str in dataStr)
+    {
+        [self appendOutputText:str];
+    }
 }
 
 #pragma mark - LSDeviceUpgradingDelegate

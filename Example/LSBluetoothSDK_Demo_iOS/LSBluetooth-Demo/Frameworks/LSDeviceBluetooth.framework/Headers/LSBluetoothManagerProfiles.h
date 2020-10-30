@@ -1022,6 +1022,8 @@ typedef NS_ENUM(NSUInteger, LSScaleWifiProfile)
 {
     LSScaleCmdScanWifi=0x0000,                  //开始扫描wifi
     LSScaleCmdConnectWifi=0x0001,               //连接wifi
+    LSScaleCmdRestConnectWifi=0x0007,             //重置wifi
+    LSScaleCmdWifiState=0x0006,                 //获取wifi状态
 };
 
 
