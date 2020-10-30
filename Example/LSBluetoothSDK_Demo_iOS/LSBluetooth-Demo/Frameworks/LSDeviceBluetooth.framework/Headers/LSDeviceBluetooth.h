@@ -129,3 +129,8 @@ FOUNDATION_EXPORT const unsigned char LSDeviceBluetoothVersionString[];
 /**
  * 修改 deploy target至 iOS 11.0
  */
+
+#pragma mark - Version 1.5.0
+/**
+ * 接入爆款秤wifi配网
+ */
